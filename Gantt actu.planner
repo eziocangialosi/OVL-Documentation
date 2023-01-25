@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<project name="OpenVehiculeLocator" company="" manager="" phase="" project-start="20230116T000000Z" mrproject-version="2" calendar="2">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Travaill&#xE9;" description="Un jour de travail normal"/>
+      <day-type id="1" name="Ch&#xF4;m&#xE9;" description="Un jour ch&#xF4;m&#xE9; normal"/>
+      <day-type id="2" name="Utiliser la base" description="Utilise un jour du calendrier de base"/>
+      <day-type id="3" name="Lundi" description=""/>
+      <day-type id="4" name="Mercredi" description=""/>
+      <day-type id="5" name="Mardi" description=""/>
+      <day-type id="6" name="Jeudi" description=""/>
+    </day-types>
+    <calendar id="1" name="D&#xE9;faut">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days>
+        <day date="20230518" type="day-type" id="1"/>
+      </days>
+      <calendar id="2" name="OVL">
+        <default-week mon="3" tue="5" wed="4" thu="6" fri="1" sat="2" sun="2"/>
+        <overridden-day-types>
+          <overridden-day-type id="4">
+            <interval start="0900" end="1300"/>
+          </overridden-day-type>
+          <overridden-day-type id="5">
+            <interval start="1300" end="1800"/>
+          </overridden-day-type>
+          <overridden-day-type id="6">
+            <interval start="1300" end="1700"/>
+          </overridden-day-type>
+          <overridden-day-type id="3">
+            <interval start="1400" end="1800"/>
+          </overridden-day-type>
+        </overridden-day-types>
+        <days>
+          <day date="20230313" type="day-type" id="3"/>
+          <day date="20230222" type="day-type" id="1"/>
+          <day date="20230417" type="day-type" id="1"/>
+          <day date="20230427" type="day-type" id="1"/>
+          <day date="20230223" type="day-type" id="1"/>
+          <day date="20230426" type="day-type" id="1"/>
+          <day date="20230425" type="day-type" id="1"/>
+          <day date="20230106" type="day-type" id="1"/>
+          <day date="20230221" type="day-type" id="1"/>
+          <day date="20230424" type="day-type" id="1"/>
+          <day date="20230220" type="day-type" id="1"/>
+          <day date="20230323" type="day-type" id="6"/>
+          <day date="20230322" type="day-type" id="4"/>
+          <day date="20230119" type="day-type" id="1"/>
+          <day date="20230321" type="day-type" id="5"/>
+          <day date="20230420" type="day-type" id="1"/>
+          <day date="20230320" type="day-type" id="3"/>
+          <day date="20230419" type="day-type" id="1"/>
+          <day date="20230216" type="day-type" id="1"/>
+          <day date="20230418" type="day-type" id="1"/>
+          <day date="20230215" type="day-type" id="1"/>
+          <day date="20230317" type="day-type" id="1"/>
+          <day date="20230214" type="day-type" id="1"/>
+          <day date="20230213" type="day-type" id="1"/>
+          <day date="20230316" type="day-type" id="6"/>
+          <day date="20230501" type="day-type" id="1"/>
+          <day date="20230315" type="day-type" id="4"/>
+          <day date="20230314" type="day-type" id="5"/>
+        </days>
+      </calendar>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Etudes Pr&#xE9;alables" note="" work="403200" start="20230116T000000Z" end="20230209T160000Z" work-start="20230116T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="R&#xE9;union de d&#xE9;but de projet" note="" work="14400" start="20230116T000000Z" end="20230116T180000Z" work-start="20230116T140000Z" percent-complete="65" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="3" name="Formalisation des &#xE9;changes" note="" work="61200" start="20230116T180000Z" end="20230124T170000Z" work-start="20230117T130000Z" percent-complete="77" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="2" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="4" name="D&#xE9;finition des protocoles utilis&#xE9;s" note="" work="61200" start="20230116T180000Z" end="20230124T170000Z" work-start="20230117T130000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="2" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="5" name="D&#xE9;finition de l'&#xE9;lectronique utilis&#xE9;s" note="" work="61200" start="20230116T180000Z" end="20230124T170000Z" work-start="20230117T130000Z" percent-complete="88" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="2" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="6" name="D&#xE9;finition du design des IHM" note="" work="61200" start="20230116T180000Z" end="20230124T170000Z" work-start="20230117T130000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="2" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="7" name="R&#xE9;alisation des diagrammes UML" note="" work="86400" start="20230124T170000Z" end="20230202T150000Z" work-start="20230124T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="5" type="FS" lag="-10800"/>
+          <predecessor id="1" predecessor-id="4" type="FS"/>
+          <predecessor id="1" predecessor-id="3" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="8" name="Revue de Projet 1" note="" work="0" start="20230126T000000Z" end="20230126T000000Z" work-start="20230126T130000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20230126T000000Z"/>
+      </task>
+      <task id="9" name="R&#xE9;alisation de la documentation interne" note="" work="57600" start="20230203T150000Z" end="20230209T160000Z" work-start="20230206T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="7" type="FS" lag="86400"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="10" name="R&#xE9;alisation de Proofs of Concepts" note="" work="1310400" start="20230211T160000Z" end="20230323T143000Z" work-start="20230227T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="9" type="FS" lag="172800"/>
+      </predecessors>
+      <task id="11" name="D&#xE9;veloppement du traqueur (hors GPRS)" note="" work="122400" start="20230211T160000Z" end="20230309T170000Z" work-start="20230227T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="12" name="D&#xE9;veloppement du traqueur, bilioth&#xE8;que GPRS" note="" work="122400" start="20230211T160000Z" end="20230309T170000Z" work-start="20230227T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="13" name="Fusion du d&#xE9;veloppement traqueur" note="" work="0" start="20230311T170000Z" end="20230311T170000Z" work-start="20230313T140000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="12" type="FS" lag="172800"/>
+          <predecessor id="1" predecessor-id="11" type="FS" lag="172800"/>
+        </predecessors>
+      </task>
+      <task id="14" name="Assemblage de la biblioth&#xE8;que GPRS avec le reste du programme" note="" work="54000" start="20230311T170000Z" end="20230316T141640Z" work-start="20230313T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="12" type="FS" lag="172800"/>
+          <predecessor id="1" predecessor-id="11" type="FS" lag="172800"/>
+        </predecessors>
+      </task>
+      <task id="15" name="Configuration de la BDD" note="" work="183600" start="20230211T160000Z" end="20230316T170000Z" work-start="20230227T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="16" name="D&#xE9;veloppement du serveur de gestion des traqueurs" note="" work="183600" start="20230211T160000Z" end="20230316T170000Z" work-start="20230227T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="17" name="D&#xE9;veloppement de l'API" note="" work="183600" start="20230211T160000Z" end="20230316T170000Z" work-start="20230227T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="18" name="D&#xE9;veloppement de l'application mobile" note="" work="183600" start="20230211T160000Z" end="20230316T170000Z" work-start="20230227T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="19" name="D&#xE9;veloppement de l'application web" note="" work="183600" start="20230211T160000Z" end="20230316T170000Z" work-start="20230227T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="20" name="Revue de Projet 2" note="" work="0" start="20230318T000000Z" end="20230318T000000Z" work-start="20230320T140000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20230318T000000Z"/>
+      </task>
+      <task id="21" name="Tests de l'API et des IHM" note="" work="46800" start="20230321T170000Z" end="20230322T122000Z" work-start="20230321T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="19" type="FS" lag="432000"/>
+          <predecessor id="1" predecessor-id="18" type="FS" lag="432000"/>
+          <predecessor id="1" predecessor-id="17" type="FS" lag="432000"/>
+        </predecessors>
+      </task>
+      <task id="22" name="Tests du serveur de gestion et du traqueur" note="" work="46800" start="20230321T170000Z" end="20230323T143000Z" work-start="20230321T170000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="16" type="FS" lag="432000"/>
+          <predecessor id="1" predecessor-id="14" type="FS" lag="432000"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="23" name="Prototypage" note="" work="651600" start="20230324T143000Z" end="20230502T000000Z" work-start="20230327T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="22" type="FS" lag="86400"/>
+        <predecessor id="1" predecessor-id="21" type="FS" lag="86400"/>
+      </predecessors>
+      <task id="24" name="Am&#xE9;lioration du traqueur, correction des bugs majeurs, gestion des erreurs tierces" note="" work="93600" start="20230324T143000Z" end="20230404T180000Z" work-start="20230327T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="25" name="Am&#xE9;lioration du serveur de gestion, correction des bugs majeurs, gestion des erreurs tierces" note="" work="93600" start="20230324T143000Z" end="20230404T180000Z" work-start="20230327T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="26" name="Am&#xE9;rlioration de l'API, correction des bugs majeurs, gestion des erreurs utilisateur" note="" work="93600" start="20230324T143000Z" end="20230404T180000Z" work-start="20230327T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="27" name="Am&#xE9;rlioration de l'App Web, correction des bugs majeurs, gestion des erreurs utilisateur et/ou tierces" note="" work="93600" start="20230324T143000Z" end="20230404T180000Z" work-start="20230327T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="28" name="Am&#xE9;rlioration de l'App mobile, correction des bugs majeurs, gestion des erreurs utilisateur et/ou tierces" note="" work="93600" start="20230324T143000Z" end="20230404T180000Z" work-start="20230327T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="29" name="R&#xE9;alisation de la documentation utilisateur" note="" work="93600" start="20230324T143000Z" end="20230404T180000Z" work-start="20230327T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="30" name="Tests d'int&#xE9;gration complets" note="" work="28800" start="20230404T230000Z" end="20230406T170000Z" work-start="20230405T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="28" type="FS"/>
+          <predecessor id="1" predecessor-id="27" type="FS"/>
+          <predecessor id="1" predecessor-id="26" type="FS"/>
+          <predecessor id="1" predecessor-id="25" type="FS"/>
+          <predecessor id="1" predecessor-id="24" type="FS" lag="18000"/>
+        </predecessors>
+      </task>
+      <task id="31" name="Production d'une version alpha" note="" work="61200" start="20230408T170000Z" end="20230413T170000Z" work-start="20230410T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="30" type="FS" lag="172800"/>
+        </predecessors>
+      </task>
+      <task id="32" name="Revue de Projet 3" note="" work="0" start="20230502T000000Z" end="20230502T000000Z" work-start="20230502T130000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20230502T000000Z"/>
+      </task>
+    </task>
+    <task id="33" name="Fiabilisation (Facultatif en fonction de l'avancement)" note="" work="154800" start="20230414T020000Z" end="20230511T170000Z" work-start="20230502T130000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="31" type="FS" lag="32400"/>
+      </predecessors>
+      <task id="34" name="Tests du syst&#xE8;me complet en conditions r&#xE9;elles et d&#xE9;grad&#xE9;es" note="" work="46800" start="20230414T020000Z" end="20230504T170000Z" work-start="20230502T130000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="35" name="D&#xE9;buggage des bugs notables" note="" work="46800" start="20230414T020000Z" end="20230504T170000Z" work-start="20230502T130000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="36" name="Am&#xE9;lioration et correction de la documentation utilisateur" note="" work="32400" start="20230505T010000Z" end="20230509T180000Z" work-start="20230508T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="35" type="FS" lag="28800"/>
+          <predecessor id="1" predecessor-id="34" type="FS" lag="28800"/>
+        </predecessors>
+      </task>
+      <task id="37" name="Production d'une version beta" note="" work="28800" start="20230509T220000Z" end="20230511T170000Z" work-start="20230510T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="36" type="FS" lag="14400"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="38" name="Fin de projet" note="" work="0" start="20230519T000000Z" end="20230519T000000Z" work-start="20230522T140000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20230519T000000Z"/>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources>
+    <resource id="1" name="Th&#xE9;o Mar&#xE9;chal" short-name="Th&#xE9;o" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="2" name="Zoubir Bennane" short-name="Zoubir" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="3" name="Sylvain Brunet" short-name="Sylvain" type="1" units="0" email="" note="" std-rate="0"/>
+    <resource id="4" name="Ezio Cangialosi" short-name="Ezio" type="1" units="0" email="eziocangialosi@gmail.com" note="" std-rate="0"/>
+  </resources>
+  <allocations>
+    <allocation task-id="37" resource-id="1" units="25"/>
+    <allocation task-id="36" resource-id="1" units="25"/>
+    <allocation task-id="35" resource-id="1" units="25"/>
+    <allocation task-id="34" resource-id="1" units="25"/>
+    <allocation task-id="29" resource-id="1" units="25"/>
+    <allocation task-id="31" resource-id="1" units="25"/>
+    <allocation task-id="30" resource-id="1" units="25"/>
+    <allocation task-id="26" resource-id="1" units="100"/>
+    <allocation task-id="25" resource-id="1" units="100"/>
+    <allocation task-id="22" resource-id="1" units="100"/>
+    <allocation task-id="21" resource-id="1" units="100"/>
+    <allocation task-id="15" resource-id="1" units="100"/>
+    <allocation task-id="14" resource-id="1" units="5"/>
+    <allocation task-id="17" resource-id="1" units="100"/>
+    <allocation task-id="16" resource-id="1" units="100"/>
+    <allocation task-id="12" resource-id="1" units="100"/>
+    <allocation task-id="6" resource-id="1" units="25"/>
+    <allocation task-id="9" resource-id="1" units="25"/>
+    <allocation task-id="7" resource-id="1" units="25"/>
+    <allocation task-id="5" resource-id="1" units="25"/>
+    <allocation task-id="4" resource-id="1" units="25"/>
+    <allocation task-id="3" resource-id="1" units="25"/>
+    <allocation task-id="2" resource-id="1" units="25"/>
+    <allocation task-id="37" resource-id="2" units="25"/>
+    <allocation task-id="36" resource-id="2" units="25"/>
+    <allocation task-id="35" resource-id="2" units="25"/>
+    <allocation task-id="34" resource-id="2" units="25"/>
+    <allocation task-id="29" resource-id="2" units="25"/>
+    <allocation task-id="31" resource-id="2" units="25"/>
+    <allocation task-id="30" resource-id="2" units="25"/>
+    <allocation task-id="27" resource-id="2" units="100"/>
+    <allocation task-id="21" resource-id="2" units="100"/>
+    <allocation task-id="19" resource-id="2" units="100"/>
+    <allocation task-id="6" resource-id="2" units="25"/>
+    <allocation task-id="9" resource-id="2" units="25"/>
+    <allocation task-id="7" resource-id="2" units="25"/>
+    <allocation task-id="5" resource-id="2" units="25"/>
+    <allocation task-id="4" resource-id="2" units="25"/>
+    <allocation task-id="3" resource-id="2" units="25"/>
+    <allocation task-id="2" resource-id="2" units="25"/>
+    <allocation task-id="37" resource-id="3" units="25"/>
+    <allocation task-id="36" resource-id="3" units="25"/>
+    <allocation task-id="35" resource-id="3" units="25"/>
+    <allocation task-id="34" resource-id="3" units="25"/>
+    <allocation task-id="29" resource-id="3" units="25"/>
+    <allocation task-id="31" resource-id="3" units="25"/>
+    <allocation task-id="30" resource-id="3" units="25"/>
+    <allocation task-id="28" resource-id="3" units="100"/>
+    <allocation task-id="21" resource-id="3" units="100"/>
+    <allocation task-id="18" resource-id="3" units="100"/>
+    <allocation task-id="6" resource-id="3" units="25"/>
+    <allocation task-id="9" resource-id="3" units="25"/>
+    <allocation task-id="7" resource-id="3" units="25"/>
+    <allocation task-id="5" resource-id="3" units="25"/>
+    <allocation task-id="4" resource-id="3" units="25"/>
+    <allocation task-id="3" resource-id="3" units="25"/>
+    <allocation task-id="2" resource-id="3" units="25"/>
+    <allocation task-id="37" resource-id="4" units="25"/>
+    <allocation task-id="36" resource-id="4" units="25"/>
+    <allocation task-id="35" resource-id="4" units="25"/>
+    <allocation task-id="34" resource-id="4" units="25"/>
+    <allocation task-id="29" resource-id="4" units="25"/>
+    <allocation task-id="31" resource-id="4" units="25"/>
+    <allocation task-id="30" resource-id="4" units="25"/>
+    <allocation task-id="24" resource-id="4" units="100"/>
+    <allocation task-id="22" resource-id="4" units="100"/>
+    <allocation task-id="14" resource-id="4" units="100"/>
+    <allocation task-id="11" resource-id="4" units="100"/>
+    <allocation task-id="6" resource-id="4" units="25"/>
+    <allocation task-id="9" resource-id="4" units="25"/>
+    <allocation task-id="7" resource-id="4" units="25"/>
+    <allocation task-id="5" resource-id="4" units="25"/>
+    <allocation task-id="4" resource-id="4" units="25"/>
+    <allocation task-id="3" resource-id="4" units="25"/>
+    <allocation task-id="2" resource-id="4" units="25"/>
+  </allocations>
+</project>
