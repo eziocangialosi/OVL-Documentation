@@ -69,8 +69,8 @@
 
 | PUT         | /set/status/{id_iot}/{status_alarm}/{status_ecomode}/{status_protection}/{status_vh_charge}                                                                                   |
 | ----------- | ------------------------------------------------------------------------------------------------------------ |
-| Used to     | Obtain all position history of a tracker based on his id.                                                                      |
-| Json Output | `{"history": [{"lat": float, "lon": float, "timestamp": int},...], "error": {"Code": int, "Message": string}}` |
+| Used to     | Set new iot_device settings.                                                                      |
+| Json Output | `"error": {"Code": int, "Message": string}}` |
 | Status      | Implemented ✅ |
 | Unit Test      | TODO ⏳ |
 
