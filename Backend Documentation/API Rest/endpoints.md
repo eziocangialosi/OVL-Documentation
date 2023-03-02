@@ -51,7 +51,12 @@
 | Status      | Implemented ✅ |
 | Unit Test      | TODO ⏳ |
 
-
+| GET         | /position/safezone/{id}                                                                                       |
+| ----------- | ------------------------------------------------------------------------------------------------------------ |
+| Used to     | Obtain safezone for a specified tracker.                                                                      |
+| Json Output | `{safezone: {lat: float, lon: float}, "error": {"Code": int, "Message": string}}` |
+| Status      | Not Implemented ❌ |
+| Unit Test      | TODO ⏳ |
 
 | POST        | /user/{mail}/{password}                                                                                                   |
 | ----------- | --------------------------------------------------------------------------------------------------------------------- |
