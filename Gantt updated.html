@@ -1,0 +1,2538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:date="http://exslt.org/dates-and-times">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--
+              This file is generated from xml source: DO NOT EDIT
+      -->
+    <title>OpenVehiculeLocator - Planner</title>
+    <meta name="GENERATOR" content="Planner HTML output" />
+    <style type="text/css">
+
+/* CSS Stylesheet for Planner HTML output.
+ * 
+ * Copyright (C) 2004-2005 Imendio AB
+ * Copyright (C) 2003 CodeFactory AB
+ * Copyright (C) 2003 Daniel Lundin (daniel@edgewall.com)
+ * Copyright (C) 2004 Chris Ladd (caladd@particlestorm.net)
+ */
+
+/*
+ * Fonts 
+ */
+html,body,table { 
+ font-family: "Bitstream Vera Sans", helvetica, Arial, sans-serif;
+ font-size: 12px;
+ white-space: nowrap;
+}
+
+tr,td,th,table,font,span,div,h1,h2,h3 {
+ font-family: "Bitstream Vera Sans", helvetica, Arial, sans-serif;
+}
+
+h1 {
+ font-size: 16px;
+}
+
+h2 {
+ font-size: 12px;
+ margin-bottom: 2px;
+}
+
+div.separator {
+ margin: 1em;
+}
+
+/*
+ * Header
+ */
+table.proj-header {
+ border: 0;
+ margin: 0;
+ width: auto;
+}
+
+table.proj-header .header {
+ font-weight: bold;
+}
+
+/*
+ * Footer
+ */
+.footer {
+ float: left;
+ width: 100%;
+ margin-top: 50px;  
+ padding-top: 2px;
+ border-style: dotted;
+ border-width: 1px 0 0 0;
+ border-color: #999;
+ font-size: 9px;
+ text-align: right;
+ clear: both;
+ color: #666;
+}
+
+a:link, a:visited {
+ text-decoration: none;
+ color: #666;
+}
+
+a:hover[href] {
+ text-decoration: underline;
+}
+
+
+/*
+ * Layout
+ */
+
+.gantt, .gantt-tasklist, .gantt-chart, .tasklist, .resourcelist {
+ float: left;
+}
+
+.gantt-tasklist, .gantt-chart, .tasklist-table, .resourcelist-table {
+ border-style: solid;
+ border-width: 1px;
+ border-color: #aaa;
+}
+
+.gantt-tasklist, .gantt-chart, .tasklist, .resourcelist {
+ overflow: auto;
+}
+
+.gantt, .tasklist, .resourcelist {
+  clear: both;
+  width: 100%;
+}
+
+.gantt-tasklist {
+ border-width: 1px 0px 1px 1px;
+ width: 30%;
+}
+
+.gantt-chart {
+ border-color: #aaa #aaa #aaa #fff;
+ width: 69.5%;
+}
+
+.tasklist, .resourcelist {
+ clear: left;
+}
+
+table {
+ width: 100%;
+ border-collapse: collapse;
+ border-style: none;
+ border-color: #fff;
+ white-space: nowrap;
+ margin: 0;
+}
+
+tr, td, th {
+ white-space: nowrap;
+ vertical-align: top;
+ padding-top: 1px;
+ padding-bottom: 1px;
+}
+
+th {
+ vertical-align: top;
+}
+
+tr {
+ height: 1.5em;
+}
+
+tr.header {
+ background-color: #aaa;
+ color: #fff;
+}
+
+tr.even {
+ background-color: #eee;
+}
+
+tr.odd {
+ background-color: #fff;
+}
+
+th span, td span {
+ margin-left: 6px;
+ margin-right: 6px;
+}
+
+th.note {
+ min-width: 20em;
+}
+
+td.note {
+ white-space: normal;
+}
+
+/*
+ * Gantt
+ */
+div.gantt-empty-begin, div.gantt-empty-end, div.gantt-complete-done, div.gantt-complete-notdone, div.gantt-summary {
+ overflow: hidden;
+ clear: none;
+ float: left; 
+ height: 0.75em;
+ margin-top: 0.15em;
+ margin-bottom: 0;
+}
+
+div.gantt-complete-done {
+ background-color: #495f6b;
+ height: 0.75em;
+ margin-top: 0;
+ margin-bottom: 0;
+}
+
+div.gantt-complete-notdone {
+ background-color: #8db6cd;
+ border-style: solid;
+ border-width: 1px;
+}
+
+div.gantt-summary {
+ height: 0.3em;
+ margin-top: 0.25em;
+ border-bottom: 2px dashed #000;
+}
+
+div.gantt-empty-end {
+ margin-left: 0;
+}
+
+div.gantt-milestone {
+ float: left;
+ font-size: 0.9em;
+ color: #000000;
+ position: relative;
+ margin-left: 0;
+ margin-right: 0;
+}
+
+div.gantt-resources {
+ float: left;
+ margin-left: 0.5em;
+ white-space: nowrap;
+}
+
+th.gantt-1day-header {
+  width: 19px;
+}
+
+th.gantt-2day-header {
+  width: 39px;
+}
+
+th.gantt-3day-header {
+  width: 59px;
+}
+
+th.gantt-4day-header {
+  width: 79px;
+}
+
+th.gantt-5day-header {
+  width: 99px;
+}
+
+th.gantt-6day-header {
+  width: 119px;
+}
+
+th.gantt-week-header, .gantt-resources {
+ width: 139px;
+}
+
+th.gantt-day-header {
+ margin: 0;
+ padding-top: 1px;
+ padding-bottom: 1px;
+ width: 19px;
+}
+
+</style>
+<!--[if IE]><style type="text/css">
+
+/* IE specific overrides to compensate for the different box model used by IE
+ * (see http://en.wikipedia.org/wiki/Internet_Explorer_box_model_bug)
+ */
+
+.gantt-resources {
+  overflow: hidden;
+}
+
+
+.tasklist, .resourcelist {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 1em;
+}
+
+
+.gantt-tasklist, .gantt-chart {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+
+.gantt-chart {
+  padding-bottom: 1px;
+}
+
+
+
+.tasklist-table, .resourcelist-table {
+  width: 99.8%;
+}
+
+/*
+div.gantt-empty-begin, div.gantt-empty-end, div.gantt-complete-done, div.gantt-complete-notdone, div.gantt-summary {
+ height: 1.75em;
+}
+
+div.gantt-complete-done {
+ height: 0.75em;
+}
+
+div.gantt-summary {
+ height: 0.3em;
+}
+*/
+th.gantt-1day-header {
+  width: 20px;
+}
+
+th.gantt-2day-header {
+  width: 40px;
+}
+
+th.gantt-3day-header {
+  width: 60px;
+}
+
+th.gantt-4day-header {
+  width: 80px;
+}
+
+th.gantt-5day-header {
+  width: 100px;
+}
+
+th.gantt-6day-header {
+  width: 120px;
+}
+
+th.gantt-week-header {
+ width: 140px;
+}
+
+th.gantt-day-header {
+ width: 20px;
+}
+
+</style><![endif]-->
+<!--[if gte IE 7]><style type="text/css">
+
+.gantt-chart {
+  padding-bottom: 0px;
+}
+
+</style><![endif]-->
+  </head>
+  <body>
+    <h1 class="proj-title">
+      <a name="project" id="project">OpenVehiculeLocator</a>
+    </h1>
+    <table class="proj-header">
+      <tr>
+        <td class="header">Début :</td>
+        <td>16 janv. 2023</td>
+      </tr>
+      <tr>
+        <td class="header">Fin :</td>
+        <td>19 mai 2023</td>
+      </tr>
+      <tr>
+        <td class="header">Date du rapport :</td>
+        <td>10 mars 2023</td>
+      </tr>
+    </table>
+    <div class="separator"></div>
+    <div class="gantt">
+      <h2>
+        <a name="gantt" id="gantt">Diagramme de Gantt</a>
+      </h2>
+      <div class="gantt-tasklist">
+        <table cellspacing="0" cellpadding="0" border="1">
+          <tr class="header" align="left">
+            <th>
+              <span>TPÉ</span>
+            </th>
+            <th>
+              <span>Nom</span>
+            </th>
+            <th>
+              <span>Travail</span>
+            </th>
+          </tr>
+          <tr class="header">
+            <th> </th>
+            <th> </th>
+            <th> </th>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>1</span>
+            </td>
+            <td>
+              <a name="task-1" style="white-space: nowrap; font-weight: bold; margin-left: 0px;" id="task-1">
+                <span>Etudes Préalables</span>
+              </a>
+            </td>
+            <td>
+              <span style="white-space: nowrap; font-weight: bold;">11d </span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>1.1</span>
+            </td>
+            <td>
+              <a name="gantt-2" style="white-space: nowrap; margin-left: 18px;" id="gantt-2">
+                <span>Réunion de début de projet</span>
+              </a>
+            </td>
+            <td>
+              <span>4h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>1.2</span>
+            </td>
+            <td>
+              <a name="gantt-3" style="white-space: nowrap; margin-left: 18px;" id="gantt-3">
+                <span>Formalisation des échanges</span>
+              </a>
+            </td>
+            <td>
+              <span>2d 1h </span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>1.3</span>
+            </td>
+            <td>
+              <a name="gantt-4" style="white-space: nowrap; margin-left: 18px;" id="gantt-4">
+                <span>Définition des protocoles utilisés</span>
+              </a>
+            </td>
+            <td>
+              <span>2d 1h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>1.4</span>
+            </td>
+            <td>
+              <a name="gantt-5" style="white-space: nowrap; margin-left: 18px;" id="gantt-5">
+                <span>Définition de l'électronique utilisés</span>
+              </a>
+            </td>
+            <td>
+              <span>2d 1h </span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>1.5</span>
+            </td>
+            <td>
+              <a name="gantt-6" style="white-space: nowrap; margin-left: 18px;" id="gantt-6">
+                <span>Définition du design des IHM</span>
+              </a>
+            </td>
+            <td>
+              <span>2d 1h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>1.6</span>
+            </td>
+            <td>
+              <a name="gantt-7" style="white-space: nowrap; margin-left: 18px;" id="gantt-7">
+                <span>Réalisation des diagrammes UML</span>
+              </a>
+            </td>
+            <td>
+              <span>1d 4h </span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>1.7</span>
+            </td>
+            <td>
+              <a name="gantt-8" style="white-space: nowrap; margin-left: 18px;" id="gantt-8">
+                <span>Revue de Projet 1</span>
+              </a>
+            </td>
+            <td>
+              <span></span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>1.8</span>
+            </td>
+            <td>
+              <a name="gantt-9" style="white-space: nowrap; margin-left: 18px;" id="gantt-9">
+                <span>Réalisation de la documentation interne</span>
+              </a>
+            </td>
+            <td>
+              <span>4h </span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>2</span>
+            </td>
+            <td>
+              <a name="task-10" style="white-space: nowrap; font-weight: bold; margin-left: 0px;" id="task-10">
+                <span>Réalisation de Proofs of Concepts</span>
+              </a>
+            </td>
+            <td>
+              <span style="white-space: nowrap; font-weight: bold;">22d 3h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>2.1</span>
+            </td>
+            <td>
+              <a name="gantt-11" style="white-space: nowrap; margin-left: 18px;" id="gantt-11">
+                <span>Développement du traqueur (hors GPRS)</span>
+              </a>
+            </td>
+            <td>
+              <span>2d </span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>2.2</span>
+            </td>
+            <td>
+              <a name="gantt-12" style="white-space: nowrap; margin-left: 18px;" id="gantt-12">
+                <span>Développement du traqueur, biliothèque GPRS</span>
+              </a>
+            </td>
+            <td>
+              <span>1d 4h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>2.3</span>
+            </td>
+            <td>
+              <a name="gantt-13" style="white-space: nowrap; margin-left: 18px;" id="gantt-13">
+                <span>Fusion du développement traqueur</span>
+              </a>
+            </td>
+            <td>
+              <span></span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>2.4</span>
+            </td>
+            <td>
+              <a name="gantt-14" style="white-space: nowrap; margin-left: 18px;" id="gantt-14">
+                <span>Assemblage de la bibliothèque GPRS avec le reste du programme</span>
+              </a>
+            </td>
+            <td>
+              <span>4h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>2.5</span>
+            </td>
+            <td>
+              <a name="gantt-15" style="white-space: nowrap; margin-left: 18px;" id="gantt-15">
+                <span>Configuration de la BDD</span>
+              </a>
+            </td>
+            <td>
+              <span>4h </span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>2.6</span>
+            </td>
+            <td>
+              <a name="gantt-16" style="white-space: nowrap; margin-left: 18px;" id="gantt-16">
+                <span>Développement de l'API</span>
+              </a>
+            </td>
+            <td>
+              <span>4d 1h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>2.7</span>
+            </td>
+            <td>
+              <a name="gantt-17" style="white-space: nowrap; margin-left: 18px;" id="gantt-17">
+                <span>Développement de l'application mobile</span>
+              </a>
+            </td>
+            <td>
+              <span>4d 1h </span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>2.8</span>
+            </td>
+            <td>
+              <a name="gantt-18" style="white-space: nowrap; margin-left: 18px;" id="gantt-18">
+                <span>Développement de l'application web</span>
+              </a>
+            </td>
+            <td>
+              <span>4d 1h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>2.9</span>
+            </td>
+            <td>
+              <a name="gantt-19" style="white-space: nowrap; margin-left: 18px;" id="gantt-19">
+                <span>Revue de Projet 2</span>
+              </a>
+            </td>
+            <td>
+              <span></span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>2.10</span>
+            </td>
+            <td>
+              <a name="gantt-20" style="white-space: nowrap; margin-left: 18px;" id="gantt-20">
+                <span>Tests de l'API et des IHM</span>
+              </a>
+            </td>
+            <td>
+              <span>3d 5h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>2.11</span>
+            </td>
+            <td>
+              <a name="gantt-21" style="white-space: nowrap; margin-left: 18px;" id="gantt-21">
+                <span>Tests du serveur de gestion et du traqueur</span>
+              </a>
+            </td>
+            <td>
+              <span>1d 7h </span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>3</span>
+            </td>
+            <td>
+              <a name="task-22" style="white-space: nowrap; font-weight: bold; margin-left: 0px;" id="task-22">
+                <span>Prototypage</span>
+              </a>
+            </td>
+            <td>
+              <span style="white-space: nowrap; font-weight: bold;">22d 5h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>3.1</span>
+            </td>
+            <td>
+              <a name="gantt-23" style="white-space: nowrap; margin-left: 18px;" id="gantt-23">
+                <span>Amélioration du traqueur, correction des bugs majeurs, gestion des erreurs tierces</span>
+              </a>
+            </td>
+            <td>
+              <span>3d 2h </span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>3.2</span>
+            </td>
+            <td>
+              <a name="gantt-24" style="white-space: nowrap; margin-left: 18px;" id="gantt-24">
+                <span>Amélioration du serveur de gestion, correction des bugs majeurs, gestion des erreurs tierces</span>
+              </a>
+            </td>
+            <td>
+              <span>3d 2h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>3.3</span>
+            </td>
+            <td>
+              <a name="gantt-25" style="white-space: nowrap; margin-left: 18px;" id="gantt-25">
+                <span>Amérlioration de l'API, correction des bugs majeurs, gestion des erreurs utilisateur</span>
+              </a>
+            </td>
+            <td>
+              <span>3d 2h </span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>3.4</span>
+            </td>
+            <td>
+              <a name="gantt-26" style="white-space: nowrap; margin-left: 18px;" id="gantt-26">
+                <span>Amérlioration de l'App Web, correction des bugs majeurs, gestion des erreurs utilisateur et/ou tierces</span>
+              </a>
+            </td>
+            <td>
+              <span>3d 2h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>3.5</span>
+            </td>
+            <td>
+              <a name="gantt-27" style="white-space: nowrap; margin-left: 18px;" id="gantt-27">
+                <span>Amérlioration de l'App mobile, correction des bugs majeurs, gestion des erreurs utilisateur et/ou tierces</span>
+              </a>
+            </td>
+            <td>
+              <span>3d 2h </span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>3.6</span>
+            </td>
+            <td>
+              <a name="gantt-28" style="white-space: nowrap; margin-left: 18px;" id="gantt-28">
+                <span>Réalisation de la documentation utilisateur</span>
+              </a>
+            </td>
+            <td>
+              <span>3d 2h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>3.7</span>
+            </td>
+            <td>
+              <a name="gantt-29" style="white-space: nowrap; margin-left: 18px;" id="gantt-29">
+                <span>Tests d'intégration complets</span>
+              </a>
+            </td>
+            <td>
+              <span>1d </span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>3.8</span>
+            </td>
+            <td>
+              <a name="gantt-30" style="white-space: nowrap; margin-left: 18px;" id="gantt-30">
+                <span>Production d'une version alpha</span>
+              </a>
+            </td>
+            <td>
+              <span>2d 1h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>4</span>
+            </td>
+            <td>
+              <a name="task-31" style="white-space: nowrap; font-weight: bold; margin-left: 0px;" id="task-31">
+                <span>Fiabilisation (Facultatif en fonction de l'avancement)</span>
+              </a>
+            </td>
+            <td>
+              <span style="white-space: nowrap; font-weight: bold;">5d 3h </span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>4.1</span>
+            </td>
+            <td>
+              <a name="gantt-32" style="white-space: nowrap; margin-left: 18px;" id="gantt-32">
+                <span>Tests du système complet en conditions réelles et dégradées</span>
+              </a>
+            </td>
+            <td>
+              <span>1d 5h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>4.2</span>
+            </td>
+            <td>
+              <a name="gantt-33" style="white-space: nowrap; margin-left: 18px;" id="gantt-33">
+                <span>Débuggage des bugs notables</span>
+              </a>
+            </td>
+            <td>
+              <span>1d 5h </span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>4.3</span>
+            </td>
+            <td>
+              <a name="gantt-34" style="white-space: nowrap; margin-left: 18px;" id="gantt-34">
+                <span>Amélioration et correction de la documentation utilisateur</span>
+              </a>
+            </td>
+            <td>
+              <span>1d 1h </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>4.4</span>
+            </td>
+            <td>
+              <a name="gantt-35" style="white-space: nowrap; margin-left: 18px;" id="gantt-35">
+                <span>Revue de Projet 3</span>
+              </a>
+            </td>
+            <td>
+              <span></span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <span>4.5</span>
+            </td>
+            <td>
+              <a name="gantt-36" style="white-space: nowrap; margin-left: 18px;" id="gantt-36">
+                <span>Production d'une version beta</span>
+              </a>
+            </td>
+            <td>
+              <span>1d </span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <span>5</span>
+            </td>
+            <td>
+              <a name="gantt-37" style="white-space: nowrap; margin-left: 0px;" id="gantt-37">
+                <span>Fin de projet</span>
+              </a>
+            </td>
+            <td>
+              <span></span>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="gantt-chart">
+        <table cellspacing="0" cellpadding="0" border="1" style="table-layout: fixed;">
+          <tr class="header" align="left">
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 3, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 4, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 5, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 6, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 7, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 8, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 9, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 10, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 11, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 12, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 13, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 14, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 15, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 16, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 17, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 18, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 19, 2023</th>
+            <th class="gantt-week-header" align="center" colspan="7">Semaine 20, 2023</th>
+            <th class="gantt-4day-header" colspan="4"></th>
+            <th></th>
+          </tr>
+          <tr class="header" align="left">
+            <th class="gantt-day-header" align="center">16</th>
+            <th class="gantt-day-header" align="center">17</th>
+            <th class="gantt-day-header" align="center">18</th>
+            <th class="gantt-day-header" align="center">19</th>
+            <th class="gantt-day-header" align="center">20</th>
+            <th class="gantt-day-header" align="center">21</th>
+            <th class="gantt-day-header" align="center">22</th>
+            <th class="gantt-day-header" align="center">23</th>
+            <th class="gantt-day-header" align="center">24</th>
+            <th class="gantt-day-header" align="center">25</th>
+            <th class="gantt-day-header" align="center">26</th>
+            <th class="gantt-day-header" align="center">27</th>
+            <th class="gantt-day-header" align="center">28</th>
+            <th class="gantt-day-header" align="center">29</th>
+            <th class="gantt-day-header" align="center">30</th>
+            <th class="gantt-day-header" align="center">31</th>
+            <th class="gantt-day-header" align="center">1</th>
+            <th class="gantt-day-header" align="center">2</th>
+            <th class="gantt-day-header" align="center">3</th>
+            <th class="gantt-day-header" align="center">4</th>
+            <th class="gantt-day-header" align="center">5</th>
+            <th class="gantt-day-header" align="center">6</th>
+            <th class="gantt-day-header" align="center">7</th>
+            <th class="gantt-day-header" align="center">8</th>
+            <th class="gantt-day-header" align="center">9</th>
+            <th class="gantt-day-header" align="center">10</th>
+            <th class="gantt-day-header" align="center">11</th>
+            <th class="gantt-day-header" align="center">12</th>
+            <th class="gantt-day-header" align="center">13</th>
+            <th class="gantt-day-header" align="center">14</th>
+            <th class="gantt-day-header" align="center">15</th>
+            <th class="gantt-day-header" align="center">16</th>
+            <th class="gantt-day-header" align="center">17</th>
+            <th class="gantt-day-header" align="center">18</th>
+            <th class="gantt-day-header" align="center">19</th>
+            <th class="gantt-day-header" align="center">20</th>
+            <th class="gantt-day-header" align="center">21</th>
+            <th class="gantt-day-header" align="center">22</th>
+            <th class="gantt-day-header" align="center">23</th>
+            <th class="gantt-day-header" align="center">24</th>
+            <th class="gantt-day-header" align="center">25</th>
+            <th class="gantt-day-header" align="center">26</th>
+            <th class="gantt-day-header" align="center">27</th>
+            <th class="gantt-day-header" align="center">28</th>
+            <th class="gantt-day-header" align="center">1</th>
+            <th class="gantt-day-header" align="center">2</th>
+            <th class="gantt-day-header" align="center">3</th>
+            <th class="gantt-day-header" align="center">4</th>
+            <th class="gantt-day-header" align="center">5</th>
+            <th class="gantt-day-header" align="center">6</th>
+            <th class="gantt-day-header" align="center">7</th>
+            <th class="gantt-day-header" align="center">8</th>
+            <th class="gantt-day-header" align="center">9</th>
+            <th class="gantt-day-header" align="center">10</th>
+            <th class="gantt-day-header" align="center">11</th>
+            <th class="gantt-day-header" align="center">12</th>
+            <th class="gantt-day-header" align="center">13</th>
+            <th class="gantt-day-header" align="center">14</th>
+            <th class="gantt-day-header" align="center">15</th>
+            <th class="gantt-day-header" align="center">16</th>
+            <th class="gantt-day-header" align="center">17</th>
+            <th class="gantt-day-header" align="center">18</th>
+            <th class="gantt-day-header" align="center">19</th>
+            <th class="gantt-day-header" align="center">20</th>
+            <th class="gantt-day-header" align="center">21</th>
+            <th class="gantt-day-header" align="center">22</th>
+            <th class="gantt-day-header" align="center">23</th>
+            <th class="gantt-day-header" align="center">24</th>
+            <th class="gantt-day-header" align="center">25</th>
+            <th class="gantt-day-header" align="center">26</th>
+            <th class="gantt-day-header" align="center">27</th>
+            <th class="gantt-day-header" align="center">28</th>
+            <th class="gantt-day-header" align="center">29</th>
+            <th class="gantt-day-header" align="center">30</th>
+            <th class="gantt-day-header" align="center">31</th>
+            <th class="gantt-day-header" align="center">1</th>
+            <th class="gantt-day-header" align="center">2</th>
+            <th class="gantt-day-header" align="center">3</th>
+            <th class="gantt-day-header" align="center">4</th>
+            <th class="gantt-day-header" align="center">5</th>
+            <th class="gantt-day-header" align="center">6</th>
+            <th class="gantt-day-header" align="center">7</th>
+            <th class="gantt-day-header" align="center">8</th>
+            <th class="gantt-day-header" align="center">9</th>
+            <th class="gantt-day-header" align="center">10</th>
+            <th class="gantt-day-header" align="center">11</th>
+            <th class="gantt-day-header" align="center">12</th>
+            <th class="gantt-day-header" align="center">13</th>
+            <th class="gantt-day-header" align="center">14</th>
+            <th class="gantt-day-header" align="center">15</th>
+            <th class="gantt-day-header" align="center">16</th>
+            <th class="gantt-day-header" align="center">17</th>
+            <th class="gantt-day-header" align="center">18</th>
+            <th class="gantt-day-header" align="center">19</th>
+            <th class="gantt-day-header" align="center">20</th>
+            <th class="gantt-day-header" align="center">21</th>
+            <th class="gantt-day-header" align="center">22</th>
+            <th class="gantt-day-header" align="center">23</th>
+            <th class="gantt-day-header" align="center">24</th>
+            <th class="gantt-day-header" align="center">25</th>
+            <th class="gantt-day-header" align="center">26</th>
+            <th class="gantt-day-header" align="center">27</th>
+            <th class="gantt-day-header" align="center">28</th>
+            <th class="gantt-day-header" align="center">29</th>
+            <th class="gantt-day-header" align="center">30</th>
+            <th class="gantt-day-header" align="center">1</th>
+            <th class="gantt-day-header" align="center">2</th>
+            <th class="gantt-day-header" align="center">3</th>
+            <th class="gantt-day-header" align="center">4</th>
+            <th class="gantt-day-header" align="center">5</th>
+            <th class="gantt-day-header" align="center">6</th>
+            <th class="gantt-day-header" align="center">7</th>
+            <th class="gantt-day-header" align="center">8</th>
+            <th class="gantt-day-header" align="center">9</th>
+            <th class="gantt-day-header" align="center">10</th>
+            <th class="gantt-day-header" align="center">11</th>
+            <th class="gantt-day-header" align="center">12</th>
+            <th class="gantt-day-header" align="center">13</th>
+            <th class="gantt-day-header" align="center">14</th>
+            <th class="gantt-day-header" align="center">15</th>
+            <th class="gantt-day-header" align="center">16</th>
+            <th class="gantt-day-header" align="center">17</th>
+            <th class="gantt-day-header" align="center">18</th>
+            <th class="gantt-day-header" align="center">19</th>
+            <th class="gantt-day-header" align="center">20</th>
+            <th class="gantt-day-header" align="center">21</th>
+            <th class="gantt-day-header" align="center">22</th>
+            <th class="gantt-day-header" align="center">23</th>
+            <th class="gantt-day-header" align="center">24</th>
+            <th class="gantt-day-header" align="center">25</th>
+            <th align="center"></th>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;"></div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 11px;"></div>
+                <div class="gantt-complete-notdone" style="width: 4px;">
+                  <div class="gantt-complete-done" style="width: 2px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 30px;"></div>
+                <div class="gantt-complete-notdone" style="width: 144px;">
+                  <div class="gantt-complete-done" style="width: 144px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 30px;"></div>
+                <div class="gantt-complete-notdone" style="width: 144px;">
+                  <div class="gantt-complete-done" style="width: 144px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 30px;"></div>
+                <div class="gantt-complete-notdone" style="width: 144px;">
+                  <div class="gantt-complete-done" style="width: 144px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 30px;"></div>
+                <div class="gantt-complete-notdone" style="width: 144px;">
+                  <div class="gantt-complete-done" style="width: 144px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 174px;"></div>
+                <div class="gantt-complete-notdone" style="width: 120px;">
+                  <div class="gantt-complete-done" style="width: 120px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 206px;"></div>
+                <div class="gantt-milestone">◆</div>
+                <div class="gantt-resources"></div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 294px;"></div>
+                <div class="gantt-complete-notdone" style="width: 19px;">
+                  <div class="gantt-complete-done" style="width: 19px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;"></div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 313px;"></div>
+                <div class="gantt-complete-notdone" style="width: 139px;">
+                  <div class="gantt-complete-done" style="width: 139px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Ezio</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 452px;"></div>
+                <div class="gantt-complete-notdone" style="width: 400px;">
+                  <div class="gantt-complete-done" style="width: 400px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Ezio</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 847px;"></div>
+                <div class="gantt-milestone">◆</div>
+                <div class="gantt-resources"></div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 853px;"></div>
+                <div class="gantt-complete-notdone" style="width: 19px;">
+                  <div class="gantt-complete-done" style="width: 19px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Ezio</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 313px;"></div>
+                <div class="gantt-complete-notdone" style="width: 16px;">
+                  <div class="gantt-complete-done" style="width: 16px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 313px;"></div>
+                <div class="gantt-complete-notdone" style="width: 559px;">
+                  <div class="gantt-complete-done" style="width: 559px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 313px;"></div>
+                <div class="gantt-complete-notdone" style="width: 559px;">
+                  <div class="gantt-complete-done" style="width: 559px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Sylvain</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 313px;"></div>
+                <div class="gantt-complete-notdone" style="width: 559px;">
+                  <div class="gantt-complete-done" style="width: 559px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Zoubir</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 1127px;"></div>
+                <div class="gantt-milestone">◆</div>
+                <div class="gantt-resources"></div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 872px;"></div>
+                <div class="gantt-complete-notdone" style="width: 260px;">
+                  <div class="gantt-complete-done" style="width: 260px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[33], Zoubir[33], Sylvain[33]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 872px;"></div>
+                <div class="gantt-complete-notdone" style="width: 261px;">
+                  <div class="gantt-complete-done" style="width: 261px;"></div>
+                </div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[25], Ezio[25]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;"></div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 1153px;"></div>
+                <div class="gantt-complete-notdone" style="width: 180px;"></div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Ezio</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 1153px;"></div>
+                <div class="gantt-complete-notdone" style="width: 180px;"></div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 1153px;"></div>
+                <div class="gantt-complete-notdone" style="width: 180px;"></div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 1153px;"></div>
+                <div class="gantt-complete-notdone" style="width: 180px;"></div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Zoubir</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 1153px;"></div>
+                <div class="gantt-complete-notdone" style="width: 180px;"></div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Sylvain</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 1153px;"></div>
+                <div class="gantt-complete-notdone" style="width: 180px;"></div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 1411px;"></div>
+                <div class="gantt-complete-notdone" style="width: 23px;"></div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 1551px;"></div>
+                <div class="gantt-complete-notdone" style="width: 63px;"></div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;"></div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 1691px;"></div>
+                <div class="gantt-complete-notdone" style="width: 39px;"></div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 1691px;"></div>
+                <div class="gantt-complete-notdone" style="width: 39px;"></div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 1750px;"></div>
+                <div class="gantt-complete-notdone" style="width: 385px;"></div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 2126px;"></div>
+                <div class="gantt-milestone">◆</div>
+                <div class="gantt-resources"></div>
+              </div>
+            </td>
+          </tr>
+          <tr class="even">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 2147px;"></div>
+                <div class="gantt-complete-notdone" style="width: 27px;"></div>
+                <div class="gantt-empty-end"></div>
+                <div class="gantt-resources">Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</div>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td colspan="131">
+              <div style="width: 2601px; white-space: nowrap;">
+                <div class="gantt-empty-begin" style="width: 2527px;"></div>
+                <div class="gantt-milestone">◆</div>
+                <div class="gantt-resources"></div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <div class="tasklist">
+      <h2>
+        <a name="tasks" id="tasks">Tâches</a>
+      </h2>
+      <div class="tasklist-table">
+        <table cellspacing="0" cellpadding="0" border="1">
+          <tr class="header" align="left">
+            <th>
+              <span>TPÉ</span>
+            </th>
+            <th>
+              <span>Nom</span>
+            </th>
+            <th>
+              <span>Démarré</span>
+            </th>
+            <th>
+              <span>Terminé</span>
+            </th>
+            <th>
+              <span>Travail</span>
+            </th>
+            <th>
+              <span>État d'avancement</span>
+            </th>
+            <th>
+              <span>Coût</span>
+            </th>
+            <th>
+              <span>Assigné à</span>
+            </th>
+          </tr>
+          <tr class="odd" style="&#10;            font-weight: bold;&#10;          ">
+            <td>
+              <span>1</span>
+            </td>
+            <td>
+              <a name="task1" style="margin-left: 0px" id="task1">
+                <span>Etudes Préalables</span>
+              </a>
+            </td>
+            <td>
+              <span>Jan 16</span>
+            </td>
+            <td>
+              <span>Jan 31</span>
+            </td>
+            <td>
+              <span>11d </span>
+            </td>
+            <td></td>
+            <td>
+              <span></span>
+            </td>
+            <td></td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>1.1</span>
+            </td>
+            <td>
+              <a name="task2" style="margin-left: 18px" id="task2">
+                <span>Réunion de début de projet</span>
+              </a>
+            </td>
+            <td>
+              <span>Jan 16</span>
+            </td>
+            <td>
+              <span>Jan 16</span>
+            </td>
+            <td>
+              <span>4h </span>
+            </td>
+            <td>
+              <span>65%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>1.2</span>
+            </td>
+            <td>
+              <a name="task3" style="margin-left: 18px" id="task3">
+                <span>Formalisation des échanges</span>
+              </a>
+            </td>
+            <td>
+              <span>Jan 17</span>
+            </td>
+            <td>
+              <span>Jan 24</span>
+            </td>
+            <td>
+              <span>2d 1h </span>
+            </td>
+            <td>
+              <span>100%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>1.3</span>
+            </td>
+            <td>
+              <a name="task4" style="margin-left: 18px" id="task4">
+                <span>Définition des protocoles utilisés</span>
+              </a>
+            </td>
+            <td>
+              <span>Jan 17</span>
+            </td>
+            <td>
+              <span>Jan 24</span>
+            </td>
+            <td>
+              <span>2d 1h </span>
+            </td>
+            <td>
+              <span>100%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>1.4</span>
+            </td>
+            <td>
+              <a name="task5" style="margin-left: 18px" id="task5">
+                <span>Définition de l'électronique utilisés</span>
+              </a>
+            </td>
+            <td>
+              <span>Jan 17</span>
+            </td>
+            <td>
+              <span>Jan 24</span>
+            </td>
+            <td>
+              <span>2d 1h </span>
+            </td>
+            <td>
+              <span>100%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>1.5</span>
+            </td>
+            <td>
+              <a name="task6" style="margin-left: 18px" id="task6">
+                <span>Définition du design des IHM</span>
+              </a>
+            </td>
+            <td>
+              <span>Jan 17</span>
+            </td>
+            <td>
+              <span>Jan 24</span>
+            </td>
+            <td>
+              <span>2d 1h </span>
+            </td>
+            <td>
+              <span>100%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>1.6</span>
+            </td>
+            <td>
+              <a name="task7" style="margin-left: 18px" id="task7">
+                <span>Réalisation des diagrammes UML</span>
+              </a>
+            </td>
+            <td>
+              <span>Jan 24</span>
+            </td>
+            <td>
+              <span>Jan 30</span>
+            </td>
+            <td>
+              <span>1d 4h </span>
+            </td>
+            <td>
+              <span>100%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>1.7</span>
+            </td>
+            <td>
+              <a name="task8" style="margin-left: 18px" id="task8">
+                <span>Revue de Projet 1</span>
+              </a>
+            </td>
+            <td>
+              <span>Jan 26</span>
+            </td>
+            <td>
+              <span>Jan 26</span>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <span></span>
+            </td>
+            <td></td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>1.8</span>
+            </td>
+            <td>
+              <a name="task9" style="margin-left: 18px" id="task9">
+                <span>Réalisation de la documentation interne</span>
+              </a>
+            </td>
+            <td>
+              <span>Jan 30</span>
+            </td>
+            <td>
+              <span>Jan 31</span>
+            </td>
+            <td>
+              <span>4h </span>
+            </td>
+            <td>
+              <span>100%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</td>
+          </tr>
+          <tr class="even" style="&#10;            font-weight: bold;&#10;          ">
+            <td>
+              <span>2</span>
+            </td>
+            <td>
+              <a name="task10" style="margin-left: 0px" id="task10">
+                <span>Réalisation de Proofs of Concepts</span>
+              </a>
+            </td>
+            <td>
+              <span>Jan 31</span>
+            </td>
+            <td>
+              <span>Mar 13</span>
+            </td>
+            <td>
+              <span>22d 3h </span>
+            </td>
+            <td></td>
+            <td>
+              <span></span>
+            </td>
+            <td></td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>2.1</span>
+            </td>
+            <td>
+              <a name="task11" style="margin-left: 18px" id="task11">
+                <span>Développement du traqueur (hors GPRS)</span>
+              </a>
+            </td>
+            <td>
+              <span>Jan 31</span>
+            </td>
+            <td>
+              <span>Feb 7</span>
+            </td>
+            <td>
+              <span>2d </span>
+            </td>
+            <td>
+              <span>100%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Ezio</td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>2.2</span>
+            </td>
+            <td>
+              <a name="task12" style="margin-left: 18px" id="task12">
+                <span>Développement du traqueur, biliothèque GPRS</span>
+              </a>
+            </td>
+            <td>
+              <span>Feb 7</span>
+            </td>
+            <td>
+              <span>Feb 27</span>
+            </td>
+            <td>
+              <span>1d 4h </span>
+            </td>
+            <td>
+              <span>100%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Ezio</td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>2.3</span>
+            </td>
+            <td>
+              <a name="task13" style="margin-left: 18px" id="task13">
+                <span>Fusion du développement traqueur</span>
+              </a>
+            </td>
+            <td>
+              <span>Feb 27</span>
+            </td>
+            <td>
+              <span>Feb 27</span>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <span></span>
+            </td>
+            <td></td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>2.4</span>
+            </td>
+            <td>
+              <a name="task14" style="margin-left: 18px" id="task14">
+                <span>Assemblage de la bibliothèque GPRS avec le reste du programme</span>
+              </a>
+            </td>
+            <td>
+              <span>Feb 27</span>
+            </td>
+            <td>
+              <span>Feb 28</span>
+            </td>
+            <td>
+              <span>4h </span>
+            </td>
+            <td>
+              <span>100%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Ezio</td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>2.5</span>
+            </td>
+            <td>
+              <a name="task15" style="margin-left: 18px" id="task15">
+                <span>Configuration de la BDD</span>
+              </a>
+            </td>
+            <td>
+              <span>Jan 31</span>
+            </td>
+            <td>
+              <span>Feb 1</span>
+            </td>
+            <td>
+              <span>4h </span>
+            </td>
+            <td>
+              <span>100%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo</td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>2.6</span>
+            </td>
+            <td>
+              <a name="task16" style="margin-left: 18px" id="task16">
+                <span>Développement de l'API</span>
+              </a>
+            </td>
+            <td>
+              <span>Jan 31</span>
+            </td>
+            <td>
+              <span>Feb 28</span>
+            </td>
+            <td>
+              <span>4d 1h </span>
+            </td>
+            <td>
+              <span>100%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo</td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>2.7</span>
+            </td>
+            <td>
+              <a name="task17" style="margin-left: 18px" id="task17">
+                <span>Développement de l'application mobile</span>
+              </a>
+            </td>
+            <td>
+              <span>Jan 31</span>
+            </td>
+            <td>
+              <span>Feb 28</span>
+            </td>
+            <td>
+              <span>4d 1h </span>
+            </td>
+            <td>
+              <span>100%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Sylvain</td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>2.8</span>
+            </td>
+            <td>
+              <a name="task18" style="margin-left: 18px" id="task18">
+                <span>Développement de l'application web</span>
+              </a>
+            </td>
+            <td>
+              <span>Jan 31</span>
+            </td>
+            <td>
+              <span>Feb 28</span>
+            </td>
+            <td>
+              <span>4d 1h </span>
+            </td>
+            <td>
+              <span>100%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Zoubir</td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>2.9</span>
+            </td>
+            <td>
+              <a name="task19" style="margin-left: 18px" id="task19">
+                <span>Revue de Projet 2</span>
+              </a>
+            </td>
+            <td>
+              <span>Mar 13</span>
+            </td>
+            <td>
+              <span>Mar 13</span>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <span></span>
+            </td>
+            <td></td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>2.10</span>
+            </td>
+            <td>
+              <a name="task20" style="margin-left: 18px" id="task20">
+                <span>Tests de l'API et des IHM</span>
+              </a>
+            </td>
+            <td>
+              <span>Feb 28</span>
+            </td>
+            <td>
+              <span>Mar 13</span>
+            </td>
+            <td>
+              <span>3d 5h </span>
+            </td>
+            <td>
+              <span>100%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[33], Zoubir[33], Sylvain[33]</td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>2.11</span>
+            </td>
+            <td>
+              <a name="task21" style="margin-left: 18px" id="task21">
+                <span>Tests du serveur de gestion et du traqueur</span>
+              </a>
+            </td>
+            <td>
+              <span>Feb 28</span>
+            </td>
+            <td>
+              <span>Mar 13</span>
+            </td>
+            <td>
+              <span>1d 7h </span>
+            </td>
+            <td>
+              <span>100%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[25], Ezio[25]</td>
+          </tr>
+          <tr class="even" style="&#10;            font-weight: bold;&#10;          ">
+            <td>
+              <span>3</span>
+            </td>
+            <td>
+              <a name="task22" style="margin-left: 0px" id="task22">
+                <span>Prototypage</span>
+              </a>
+            </td>
+            <td>
+              <span>Mar 14</span>
+            </td>
+            <td>
+              <span>Apr 6</span>
+            </td>
+            <td>
+              <span>22d 5h </span>
+            </td>
+            <td></td>
+            <td>
+              <span></span>
+            </td>
+            <td></td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>3.1</span>
+            </td>
+            <td>
+              <a name="task23" style="margin-left: 18px" id="task23">
+                <span>Amélioration du traqueur, correction des bugs majeurs, gestion des erreurs tierces</span>
+              </a>
+            </td>
+            <td>
+              <span>Mar 14</span>
+            </td>
+            <td>
+              <span>Mar 23</span>
+            </td>
+            <td>
+              <span>3d 2h </span>
+            </td>
+            <td>
+              <span>0%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Ezio</td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>3.2</span>
+            </td>
+            <td>
+              <a name="task24" style="margin-left: 18px" id="task24">
+                <span>Amélioration du serveur de gestion, correction des bugs majeurs, gestion des erreurs tierces</span>
+              </a>
+            </td>
+            <td>
+              <span>Mar 14</span>
+            </td>
+            <td>
+              <span>Mar 23</span>
+            </td>
+            <td>
+              <span>3d 2h </span>
+            </td>
+            <td>
+              <span>0%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo</td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>3.3</span>
+            </td>
+            <td>
+              <a name="task25" style="margin-left: 18px" id="task25">
+                <span>Amérlioration de l'API, correction des bugs majeurs, gestion des erreurs utilisateur</span>
+              </a>
+            </td>
+            <td>
+              <span>Mar 14</span>
+            </td>
+            <td>
+              <span>Mar 23</span>
+            </td>
+            <td>
+              <span>3d 2h </span>
+            </td>
+            <td>
+              <span>0%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo</td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>3.4</span>
+            </td>
+            <td>
+              <a name="task26" style="margin-left: 18px" id="task26">
+                <span>Amérlioration de l'App Web, correction des bugs majeurs, gestion des erreurs utilisateur et/ou tierces</span>
+              </a>
+            </td>
+            <td>
+              <span>Mar 14</span>
+            </td>
+            <td>
+              <span>Mar 23</span>
+            </td>
+            <td>
+              <span>3d 2h </span>
+            </td>
+            <td>
+              <span>0%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Zoubir</td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>3.5</span>
+            </td>
+            <td>
+              <a name="task27" style="margin-left: 18px" id="task27">
+                <span>Amérlioration de l'App mobile, correction des bugs majeurs, gestion des erreurs utilisateur et/ou tierces</span>
+              </a>
+            </td>
+            <td>
+              <span>Mar 14</span>
+            </td>
+            <td>
+              <span>Mar 23</span>
+            </td>
+            <td>
+              <span>3d 2h </span>
+            </td>
+            <td>
+              <span>0%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Sylvain</td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>3.6</span>
+            </td>
+            <td>
+              <a name="task28" style="margin-left: 18px" id="task28">
+                <span>Réalisation de la documentation utilisateur</span>
+              </a>
+            </td>
+            <td>
+              <span>Mar 14</span>
+            </td>
+            <td>
+              <span>Mar 23</span>
+            </td>
+            <td>
+              <span>3d 2h </span>
+            </td>
+            <td>
+              <span>0%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>3.7</span>
+            </td>
+            <td>
+              <a name="task29" style="margin-left: 18px" id="task29">
+                <span>Tests d'intégration complets</span>
+              </a>
+            </td>
+            <td>
+              <span>Mar 27</span>
+            </td>
+            <td>
+              <span>Mar 28</span>
+            </td>
+            <td>
+              <span>1d </span>
+            </td>
+            <td>
+              <span>0%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>3.8</span>
+            </td>
+            <td>
+              <a name="task30" style="margin-left: 18px" id="task30">
+                <span>Production d'une version alpha</span>
+              </a>
+            </td>
+            <td>
+              <span>Apr 3</span>
+            </td>
+            <td>
+              <span>Apr 6</span>
+            </td>
+            <td>
+              <span>2d 1h </span>
+            </td>
+            <td>
+              <span>0%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</td>
+          </tr>
+          <tr class="odd" style="&#10;            font-weight: bold;&#10;          ">
+            <td>
+              <span>4</span>
+            </td>
+            <td>
+              <a name="task31" style="margin-left: 0px" id="task31">
+                <span>Fiabilisation (Facultatif en fonction de l'avancement)</span>
+              </a>
+            </td>
+            <td>
+              <span>Apr 10</span>
+            </td>
+            <td>
+              <span>May 4</span>
+            </td>
+            <td>
+              <span>5d 3h </span>
+            </td>
+            <td></td>
+            <td>
+              <span></span>
+            </td>
+            <td></td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>4.1</span>
+            </td>
+            <td>
+              <a name="task32" style="margin-left: 18px" id="task32">
+                <span>Tests du système complet en conditions réelles et dégradées</span>
+              </a>
+            </td>
+            <td>
+              <span>Apr 10</span>
+            </td>
+            <td>
+              <span>Apr 12</span>
+            </td>
+            <td>
+              <span>1d 5h </span>
+            </td>
+            <td>
+              <span>0%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>4.2</span>
+            </td>
+            <td>
+              <a name="task33" style="margin-left: 18px" id="task33">
+                <span>Débuggage des bugs notables</span>
+              </a>
+            </td>
+            <td>
+              <span>Apr 10</span>
+            </td>
+            <td>
+              <span>Apr 12</span>
+            </td>
+            <td>
+              <span>1d 5h </span>
+            </td>
+            <td>
+              <span>0%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>4.3</span>
+            </td>
+            <td>
+              <a name="task34" style="margin-left: 18px" id="task34">
+                <span>Amélioration et correction de la documentation utilisateur</span>
+              </a>
+            </td>
+            <td>
+              <span>Apr 13</span>
+            </td>
+            <td>
+              <span>May 2</span>
+            </td>
+            <td>
+              <span>1d 1h </span>
+            </td>
+            <td>
+              <span>0%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>4.4</span>
+            </td>
+            <td>
+              <a name="task35" style="margin-left: 18px" id="task35">
+                <span>Revue de Projet 3</span>
+              </a>
+            </td>
+            <td>
+              <span>May 2</span>
+            </td>
+            <td>
+              <span>May 2</span>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <span></span>
+            </td>
+            <td></td>
+          </tr>
+          <tr class="even" style="">
+            <td>
+              <span>4.5</span>
+            </td>
+            <td>
+              <a name="task36" style="margin-left: 18px" id="task36">
+                <span>Production d'une version beta</span>
+              </a>
+            </td>
+            <td>
+              <span>May 3</span>
+            </td>
+            <td>
+              <span>May 4</span>
+            </td>
+            <td>
+              <span>1d </span>
+            </td>
+            <td>
+              <span>0%
+              </span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>Théo[25], Zoubir[25], Sylvain[25], Ezio[25]</td>
+          </tr>
+          <tr class="odd" style="">
+            <td>
+              <span>5</span>
+            </td>
+            <td>
+              <a name="task37" style="margin-left: 0px" id="task37">
+                <span>Fin de projet</span>
+              </a>
+            </td>
+            <td>
+              <span>May 22</span>
+            </td>
+            <td>
+              <span>May 19</span>
+            </td>
+            <td></td>
+            <td></td>
+            <td>
+              <span></span>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <div class="resourcelist">
+      <h2>
+        <a name="resources" id="resources">Ressources</a>
+      </h2>
+      <div class="resourcelist-table">
+        <table cellspacing="0" cellpadding="0" border="1" width="100%">
+          <tr class="header" align="left">
+            <th>
+              <span>Nom</span>
+            </th>
+            <th>
+              <span>Nom abrégé</span>
+            </th>
+            <th>
+              <span>Type</span>
+            </th>
+            <th>
+              <span>Groupe</span>
+            </th>
+            <th>
+              <span>Adresse électronique</span>
+            </th>
+            <th>
+              <span>Coût</span>
+            </th>
+          </tr>
+          <tr class="odd">
+            <td>
+              <a name="res-4" id="res-4">
+                <span>Ezio Cangialosi</span>
+              </a>
+            </td>
+            <td>
+              <span>Ezio</span>
+            </td>
+            <td>
+              <span>Travail</span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>
+              <a href="mailto:eziocangialosi@gmail.com">
+                <span>eziocangialosi@gmail.com</span>
+              </a>
+            </td>
+            <td align="right">
+              <span>0</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <a name="res-3" id="res-3">
+                <span>Sylvain Brunet</span>
+              </a>
+            </td>
+            <td>
+              <span>Sylvain</span>
+            </td>
+            <td>
+              <span>Travail</span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>
+              <a href="mailto:">
+                <span></span>
+              </a>
+            </td>
+            <td align="right">
+              <span>0</span>
+            </td>
+          </tr>
+          <tr class="odd">
+            <td>
+              <a name="res-1" id="res-1">
+                <span>Théo Maréchal</span>
+              </a>
+            </td>
+            <td>
+              <span>Théo</span>
+            </td>
+            <td>
+              <span>Travail</span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>
+              <a href="mailto:">
+                <span></span>
+              </a>
+            </td>
+            <td align="right">
+              <span>0</span>
+            </td>
+          </tr>
+          <tr class="even">
+            <td>
+              <a name="res-2" id="res-2">
+                <span>Zoubir Bennane</span>
+              </a>
+            </td>
+            <td>
+              <span>Zoubir</span>
+            </td>
+            <td>
+              <span>Travail</span>
+            </td>
+            <td>
+              <span></span>
+            </td>
+            <td>
+              <a href="mailto:">
+                <span></span>
+              </a>
+            </td>
+            <td align="right">
+              <span>0</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer">
+      <div>Ce fichier a été généré par 
+      <a href="http://live.gnome.org/Planner/" style="text-decoration: underline;">Planner</a></div>
+    </div>
+  </body>
+</html>
