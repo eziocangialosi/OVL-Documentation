@@ -4,6 +4,7 @@
 - [TinyGSM](https://github.com/vshymanskyy/TinyGSM) for communication with the GPRS module
 - [TinyGPSPlus](https://github.com/mikalhart/TinyGPSPlus) for communication with the GPS module
 - [PubSubClient](https://github.com/knolleary/pubsubclient) for use the MQTT protocol
+- [FastLED](https://github.com/FastLED/FastLED) for manage the debug RGB LED
 
 ## Arduino Core
 You need to install a core for the firebeetle ESP32-E board, this core is the [DFRobot firebeetle core](http://download.dfrobot.top/FireBeetle/package_DFRobot_index.json)
