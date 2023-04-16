@@ -1,0 +1,5 @@
+<map id="Communicator" name="Communicator">
+<area shape="rect" id="node1" title="Class that managing everything related to comunication." alt="" coords="29,307,231,677"/>
+<area shape="rect" id="node2" href="$class_serial_debug.html" title="Used to send debug messages on usb serial link." alt="" coords="5,71,119,178"/>
+<area shape="rect" id="node3" href="$class_led_indicator.html" title="Class that managing the debug led." alt="" coords="143,5,256,244"/>
+</map>
