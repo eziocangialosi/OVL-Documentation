@@ -1,0 +1,980 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>OVL-Doc Tracker: Communicator Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="favicon.ico"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<!-- ... other metadata & script includes ... -->
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+</script>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/eziocangialosi/OVL-IoT" class="github-corner" title="View source on GitHub" target="_blank">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="OVL_logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">OpenVehicleLocator
+   &#160;<span id="projectnumber">dev</span>
+   </div>
+   <div id="projectbrief">Tracker Documentation</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_communicator.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="class_communicator-members.html">List of all members</a>  </div>
+  <div class="headertitle">
+<div class="title">Communicator Class Reference</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Class that managing everything related to comunication.  
+ <a href="class_communicator.html#details">More...</a></p>
+
+<p><code>#include &quot;<a class="el" href="_communicator_8h_source.html">Communicator.h</a>&quot;</code></p>
+<div class="dynheader">
+Collaboration diagram for Communicator:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_communicator__coll__graph.png" border="0" usemap="#a_communicator_coll__map" alt="Collaboration graph"/></div>
+<map name="a_communicator_coll__map" id="a_communicator_coll__map">
+<area shape="rect" title="Class that managing everything related to comunication." alt="" coords="29,307,231,677"/>
+<area shape="rect" href="class_serial_debug.html" title="Used to send debug messages on usb serial link." alt="" coords="5,71,119,178"/>
+<area shape="rect" href="class_led_indicator.html" title="Class that managing the debug led." alt="" coords="143,5,256,244"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a652b75d03dabf566d2b107f1540958ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a652b75d03dabf566d2b107f1540958ab">Communicator</a> (<a class="el" href="class_serial_debug.html">SerialDebug</a> *apSerialDebug, <a class="el" href="class_led_indicator.html">LedIndicator</a> *apLightSign)</td></tr>
+<tr class="memdesc:a652b75d03dabf566d2b107f1540958ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor, pointor to serial debug class needed to send debug info, pointor to led sign needed to debug via led codes.  <a href="class_communicator.html#a652b75d03dabf566d2b107f1540958ab">More...</a><br /></td></tr>
+<tr class="separator:a652b75d03dabf566d2b107f1540958ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7d4850b2293361b93d4feb3713c32a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#ab7d4850b2293361b93d4feb3713c32a7">unlockSIM</a> ()</td></tr>
+<tr class="memdesc:ab7d4850b2293361b93d4feb3713c32a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to (Re)unlock sim card @ return True if the sim card has been unlocked, false otherwise.  <a href="class_communicator.html#ab7d4850b2293361b93d4feb3713c32a7">More...</a><br /></td></tr>
+<tr class="separator:ab7d4850b2293361b93d4feb3713c32a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ce4f15c2d703dcacc9a3db30116ca3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a59ce4f15c2d703dcacc9a3db30116ca3">connectGPRS</a> ()</td></tr>
+<tr class="memdesc:a59ce4f15c2d703dcacc9a3db30116ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to (Re)connect GPRS.  <a href="class_communicator.html#a59ce4f15c2d703dcacc9a3db30116ca3">More...</a><br /></td></tr>
+<tr class="separator:a59ce4f15c2d703dcacc9a3db30116ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7e0f80662f3e1187e5bdb31960e29a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#af7e0f80662f3e1187e5bdb31960e29a1">connectMQTT</a> ()</td></tr>
+<tr class="memdesc:af7e0f80662f3e1187e5bdb31960e29a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to (Re)connect to MQTT broker.  <a href="class_communicator.html#af7e0f80662f3e1187e5bdb31960e29a1">More...</a><br /></td></tr>
+<tr class="separator:af7e0f80662f3e1187e5bdb31960e29a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6f158e4db260ac9715505777b723ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a6a6f158e4db260ac9715505777b723ae">sendMqtt</a> (String aFrame)</td></tr>
+<tr class="memdesc:a6a6f158e4db260ac9715505777b723ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to send an MQTT message on the TX topic.  <a href="class_communicator.html#a6a6f158e4db260ac9715505777b723ae">More...</a><br /></td></tr>
+<tr class="separator:a6a6f158e4db260ac9715505777b723ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ea4737c9eb064cb95bf441b220d0e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#aa4ea4737c9eb064cb95bf441b220d0e7">getIsConnected</a> ()</td></tr>
+<tr class="memdesc:aa4ea4737c9eb064cb95bf441b220d0e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter to know if the connection is established with server.  <a href="class_communicator.html#aa4ea4737c9eb064cb95bf441b220d0e7">More...</a><br /></td></tr>
+<tr class="separator:aa4ea4737c9eb064cb95bf441b220d0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fae621b72e6f7ede8de009434729936"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a3fae621b72e6f7ede8de009434729936">getWaitingForHandCheck</a> ()</td></tr>
+<tr class="memdesc:a3fae621b72e6f7ede8de009434729936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter to know we're currently waiting for the handcheck anwser.  <a href="class_communicator.html#a3fae621b72e6f7ede8de009434729936">More...</a><br /></td></tr>
+<tr class="separator:a3fae621b72e6f7ede8de009434729936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8df5458e2abf569e0cbb2c1cca210bb3"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a8df5458e2abf569e0cbb2c1cca210bb3">getLastHandCheckRq</a> ()</td></tr>
+<tr class="memdesc:a8df5458e2abf569e0cbb2c1cca210bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter of the timestamp of the last HandCheck attempt.  <a href="class_communicator.html#a8df5458e2abf569e0cbb2c1cca210bb3">More...</a><br /></td></tr>
+<tr class="separator:a8df5458e2abf569e0cbb2c1cca210bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6c35f194bbffbc2197dd2aba9d29755"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#af6c35f194bbffbc2197dd2aba9d29755">getHandCheckSuccess</a> ()</td></tr>
+<tr class="memdesc:af6c35f194bbffbc2197dd2aba9d29755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter to now is the handcheck has success.  <a href="class_communicator.html#af6c35f194bbffbc2197dd2aba9d29755">More...</a><br /></td></tr>
+<tr class="separator:af6c35f194bbffbc2197dd2aba9d29755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7de0e792607b3c10942c373014560a9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a7de0e792607b3c10942c373014560a9d">execMqttLoop</a> ()</td></tr>
+<tr class="memdesc:a7de0e792607b3c10942c373014560a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to call the mqtt loop (Mandatory to recived mqtt messages)  <a href="class_communicator.html#a7de0e792607b3c10942c373014560a9d">More...</a><br /></td></tr>
+<tr class="separator:a7de0e792607b3c10942c373014560a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf509d525f0263af8316718fca159eaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#abf509d525f0263af8316718fca159eaa">handCheckHandle</a> (String msg)</td></tr>
+<tr class="memdesc:abf509d525f0263af8316718fca159eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method that handle the handcheck answer.  <a href="class_communicator.html#abf509d525f0263af8316718fca159eaa">More...</a><br /></td></tr>
+<tr class="separator:abf509d525f0263af8316718fca159eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab823b7613ed734c1fdfe73a02eda4bfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#ab823b7613ed734c1fdfe73a02eda4bfb">setCallWhenMsg</a> (<a class="el" href="class_communicator.html#ab545fec72262e66ba797ffe1ca93ac2e">TRACKER_CALLBACK_SIG</a>)</td></tr>
+<tr class="memdesc:ab823b7613ed734c1fdfe73a02eda4bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter to define the method called when a mqtt message is recived.  <a href="class_communicator.html#ab823b7613ed734c1fdfe73a02eda4bfb">More...</a><br /></td></tr>
+<tr class="separator:ab823b7613ed734c1fdfe73a02eda4bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39fdaeb37baf53d766bc33d140382f15"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a39fdaeb37baf53d766bc33d140382f15">getBatteryPercent</a> ()</td></tr>
+<tr class="memdesc:a39fdaeb37baf53d766bc33d140382f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter of the battery percentage.  <a href="class_communicator.html#a39fdaeb37baf53d766bc33d140382f15">More...</a><br /></td></tr>
+<tr class="separator:a39fdaeb37baf53d766bc33d140382f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292ff3912a3ad26cf87a7f11bc09a6d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a292ff3912a3ad26cf87a7f11bc09a6d7">getBatteryInCharge</a> ()</td></tr>
+<tr class="memdesc:a292ff3912a3ad26cf87a7f11bc09a6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter to know if the battery is in charge.  <a href="class_communicator.html#a292ff3912a3ad26cf87a7f11bc09a6d7">More...</a><br /></td></tr>
+<tr class="separator:a292ff3912a3ad26cf87a7f11bc09a6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab90756521964f9a7c6cbaaa11568975c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#ab90756521964f9a7c6cbaaa11568975c">autoReconnect</a> ()</td></tr>
+<tr class="memdesc:ab90756521964f9a7c6cbaaa11568975c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method called when connection is lost, it tries to restore the connection.  <a href="class_communicator.html#ab90756521964f9a7c6cbaaa11568975c">More...</a><br /></td></tr>
+<tr class="separator:ab90756521964f9a7c6cbaaa11568975c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7773988eb91ba1d89892f3009c93409"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#ac7773988eb91ba1d89892f3009c93409">tryHandCheck</a> ()</td></tr>
+<tr class="memdesc:ac7773988eb91ba1d89892f3009c93409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method used to try an handcheck with server.  <a href="class_communicator.html#ac7773988eb91ba1d89892f3009c93409">More...</a><br /></td></tr>
+<tr class="separator:ac7773988eb91ba1d89892f3009c93409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04a6dc9589a9a7964517fc8baca18e85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a04a6dc9589a9a7964517fc8baca18e85">getSimLocked</a> ()</td></tr>
+<tr class="memdesc:a04a6dc9589a9a7964517fc8baca18e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter to know if the sim card is locked.  <a href="class_communicator.html#a04a6dc9589a9a7964517fc8baca18e85">More...</a><br /></td></tr>
+<tr class="separator:a04a6dc9589a9a7964517fc8baca18e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a749804f8a62d981a8aa47fecb48b16cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a749804f8a62d981a8aa47fecb48b16cc">connectNetwork</a> ()</td></tr>
+<tr class="memdesc:a749804f8a62d981a8aa47fecb48b16cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to (re)connect the cellular network.  <a href="class_communicator.html#a749804f8a62d981a8aa47fecb48b16cc">More...</a><br /></td></tr>
+<tr class="separator:a749804f8a62d981a8aa47fecb48b16cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302d5255fbea80e9d5b5cdabef8725ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a302d5255fbea80e9d5b5cdabef8725ff">sendDebugMqtt</a> (String aPayload)</td></tr>
+<tr class="memdesc:a302d5255fbea80e9d5b5cdabef8725ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to send a debug MQTT message on the TX topic.  <a href="class_communicator.html#a302d5255fbea80e9d5b5cdabef8725ff">More...</a><br /></td></tr>
+<tr class="separator:a302d5255fbea80e9d5b5cdabef8725ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a17c5e175e885cb14fbc763f898855e70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a17c5e175e885cb14fbc763f898855e70">mqttCallback</a> (char *topic, byte *payload, unsigned int len)</td></tr>
+<tr class="memdesc:a17c5e175e885cb14fbc763f898855e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method called when a mqtt message is recvied.  <a href="class_communicator.html#a17c5e175e885cb14fbc763f898855e70">More...</a><br /></td></tr>
+<tr class="separator:a17c5e175e885cb14fbc763f898855e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:afb41a71478755beb4718de63e663710f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_serial_debug.html">SerialDebug</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#afb41a71478755beb4718de63e663710f">pUsbDebug</a></td></tr>
+<tr class="memdesc:afb41a71478755beb4718de63e663710f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointor to <a class="el" href="class_serial_debug.html" title="Used to send debug messages on usb serial link.">SerialDebug</a> class.  <a href="class_communicator.html#afb41a71478755beb4718de63e663710f">More...</a><br /></td></tr>
+<tr class="separator:afb41a71478755beb4718de63e663710f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399c2e5084fc74387bc3547590229f65"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a399c2e5084fc74387bc3547590229f65">waitingForHandCheck</a> = false</td></tr>
+<tr class="memdesc:a399c2e5084fc74387bc3547590229f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">If we wait for the Hand Check validation.  <a href="class_communicator.html#a399c2e5084fc74387bc3547590229f65">More...</a><br /></td></tr>
+<tr class="separator:a399c2e5084fc74387bc3547590229f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c95f2ef7191ba737345228d3533a6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a82c95f2ef7191ba737345228d3533a6c">handCheckSuccess</a> = false</td></tr>
+<tr class="memdesc:a82c95f2ef7191ba737345228d3533a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the Hand Check as success.  <a href="class_communicator.html#a82c95f2ef7191ba737345228d3533a6c">More...</a><br /></td></tr>
+<tr class="separator:a82c95f2ef7191ba737345228d3533a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ae4d571de87fe70d3e6548a30fe4ec4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a7ae4d571de87fe70d3e6548a30fe4ec4">wasInit</a> = false</td></tr>
+<tr class="memdesc:a7ae4d571de87fe70d3e6548a30fe4ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the obj was initialize.  <a href="class_communicator.html#a7ae4d571de87fe70d3e6548a30fe4ec4">More...</a><br /></td></tr>
+<tr class="separator:a7ae4d571de87fe70d3e6548a30fe4ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa802d401b413a7a0661ebae0454fdbcf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#aa802d401b413a7a0661ebae0454fdbcf">isFirstHandCheck</a> = true</td></tr>
+<tr class="memdesc:aa802d401b413a7a0661ebae0454fdbcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">If there was more than one handcheck.  <a href="class_communicator.html#aa802d401b413a7a0661ebae0454fdbcf">More...</a><br /></td></tr>
+<tr class="separator:aa802d401b413a7a0661ebae0454fdbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e66a670222bf7778fb7c2521018acc"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#ae1e66a670222bf7778fb7c2521018acc">lastHandCheckRq</a> = 0</td></tr>
+<tr class="memdesc:ae1e66a670222bf7778fb7c2521018acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp of the last HandCheck request.  <a href="class_communicator.html#ae1e66a670222bf7778fb7c2521018acc">More...</a><br /></td></tr>
+<tr class="separator:ae1e66a670222bf7778fb7c2521018acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492ef503edb3acd155ffeaa2a85e2db9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a492ef503edb3acd155ffeaa2a85e2db9">lastReconnectAttempt</a> = 0</td></tr>
+<tr class="memdesc:a492ef503edb3acd155ffeaa2a85e2db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timestamp of the last reconnect attempt.  <a href="class_communicator.html#a492ef503edb3acd155ffeaa2a85e2db9">More...</a><br /></td></tr>
+<tr class="separator:a492ef503edb3acd155ffeaa2a85e2db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0cae0982d6cf453155e0997dd9971cf"><td class="memItemLeft" align="right" valign="top">TinyGsm *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#ac0cae0982d6cf453155e0997dd9971cf">pModem</a></td></tr>
+<tr class="memdesc:ac0cae0982d6cf453155e0997dd9971cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pontor to TinyGsm class (GSM/GPRS Module)  <a href="class_communicator.html#ac0cae0982d6cf453155e0997dd9971cf">More...</a><br /></td></tr>
+<tr class="separator:ac0cae0982d6cf453155e0997dd9971cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae1c2c343038ac5b6d0c30bc51b1da05"><td class="memItemLeft" align="right" valign="top">TinyGsmClient *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#aae1c2c343038ac5b6d0c30bc51b1da05">pClient</a></td></tr>
+<tr class="memdesc:aae1c2c343038ac5b6d0c30bc51b1da05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointor to TinyGsmClient class (Interface between MQTT and GSM/GPRS module)  <a href="class_communicator.html#aae1c2c343038ac5b6d0c30bc51b1da05">More...</a><br /></td></tr>
+<tr class="separator:aae1c2c343038ac5b6d0c30bc51b1da05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe311fca88164ecdec441eb327acfc51"><td class="memItemLeft" align="right" valign="top">PubSubClient *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#abe311fca88164ecdec441eb327acfc51">pMqtt</a></td></tr>
+<tr class="memdesc:abe311fca88164ecdec441eb327acfc51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointor to PubSubClient class (MQTT Client)  <a href="class_communicator.html#abe311fca88164ecdec441eb327acfc51">More...</a><br /></td></tr>
+<tr class="separator:abe311fca88164ecdec441eb327acfc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63b8a6ab1c4f1a08809cce86c367dedc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_led_indicator.html">LedIndicator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#a63b8a6ab1c4f1a08809cce86c367dedc">pLightSign</a></td></tr>
+<tr class="memdesc:a63b8a6ab1c4f1a08809cce86c367dedc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointor to led debug obj.  <a href="class_communicator.html#a63b8a6ab1c4f1a08809cce86c367dedc">More...</a><br /></td></tr>
+<tr class="separator:a63b8a6ab1c4f1a08809cce86c367dedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab545fec72262e66ba797ffe1ca93ac2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_communicator.html#ab545fec72262e66ba797ffe1ca93ac2e">TRACKER_CALLBACK_SIG</a></td></tr>
+<tr class="memdesc:ab545fec72262e66ba797ffe1ca93ac2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function stored.  <a href="class_communicator.html#ab545fec72262e66ba797ffe1ca93ac2e">More...</a><br /></td></tr>
+<tr class="separator:ab545fec72262e66ba797ffe1ca93ac2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This one is used to manage the dialog with the GPRS module and the implementation of MQTT protocol </p><dl class="section author"><dt>Author</dt><dd>Ezio CANGIALOSI <a href="#" onclick="location.href='mai'+'lto:'+'ezi'+'oc'+'ang'+'ia'+'los'+'i@'+'gma'+'il'+'.co'+'m'; return false;">ezioc<span style="display: none;">.nosp@m.</span>angi<span style="display: none;">.nosp@m.</span>alosi<span style="display: none;">.nosp@m.</span>@gma<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>dev </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>04/2023 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a652b75d03dabf566d2b107f1540958ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a652b75d03dabf566d2b107f1540958ab">&#9670;&nbsp;</a></span>Communicator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Communicator::Communicator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_serial_debug.html">SerialDebug</a> *&#160;</td>
+          <td class="paramname"><em>apSerialDebug</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_led_indicator.html">LedIndicator</a> *&#160;</td>
+          <td class="paramname"><em>apLightSign</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">apSerialDebug</td><td>pointor to <a class="el" href="class_serial_debug.html" title="Used to send debug messages on usb serial link.">SerialDebug</a> class needed to send debug info </td></tr>
+    <tr><td class="paramname">apLightSign</td><td>pointor to <a class="el" href="class_led_indicator.html" title="Class that managing the debug led.">LedIndicator</a> needed to debug via led codes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab90756521964f9a7c6cbaaa11568975c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab90756521964f9a7c6cbaaa11568975c">&#9670;&nbsp;</a></span>autoReconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communicator::autoReconnect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>It will try to restore GPRS and/or MQTT connection, it cannot retry to unlock the sim card </dd></dl>
+
+</div>
+</div>
+<a id="a59ce4f15c2d703dcacc9a3db30116ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59ce4f15c2d703dcacc9a3db30116ca3">&#9670;&nbsp;</a></span>connectGPRS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Communicator::connectGPRS </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True if the gprs is now connected, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="af7e0f80662f3e1187e5bdb31960e29a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7e0f80662f3e1187e5bdb31960e29a1">&#9670;&nbsp;</a></span>connectMQTT()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Communicator::connectMQTT </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True if the mqtt connection is established, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a749804f8a62d981a8aa47fecb48b16cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a749804f8a62d981a8aa47fecb48b16cc">&#9670;&nbsp;</a></span>connectNetwork()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Communicator::connectNetwork </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True if the connection succeeded, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a7de0e792607b3c10942c373014560a9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7de0e792607b3c10942c373014560a9d">&#9670;&nbsp;</a></span>execMqttLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communicator::execMqttLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>This loop should be called regularly to allow the client to process incoming messages and maintain its connection to the server </dd></dl>
+
+</div>
+</div>
+<a id="a292ff3912a3ad26cf87a7f11bc09a6d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a292ff3912a3ad26cf87a7f11bc09a6d7">&#9670;&nbsp;</a></span>getBatteryInCharge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Communicator::getBatteryInCharge </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section warning"><dt>Warning</dt><dd>This information is taken from the GPRS module, it can be not reliable </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the battery is in charge, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a39fdaeb37baf53d766bc33d140382f15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39fdaeb37baf53d766bc33d140382f15">&#9670;&nbsp;</a></span>getBatteryPercent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Communicator::getBatteryPercent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section warning"><dt>Warning</dt><dd>This percentage is taken from the GPRS module, it can be not reliable </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Percentage of the battery beetween 0 to 100% </dd></dl>
+
+</div>
+</div>
+<a id="af6c35f194bbffbc2197dd2aba9d29755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c35f194bbffbc2197dd2aba9d29755">&#9670;&nbsp;</a></span>getHandCheckSuccess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Communicator::getHandCheckSuccess </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>HandCheck is successful when tracker recive "SYN-ACK" </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the handcheck has success, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="aa4ea4737c9eb064cb95bf441b220d0e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4ea4737c9eb064cb95bf441b220d0e7">&#9670;&nbsp;</a></span>getIsConnected()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Communicator::getIsConnected </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>Connection is considered established when MQTT, GPRS and HandCheck as success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the connection is established, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a8df5458e2abf569e0cbb2c1cca210bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8df5458e2abf569e0cbb2c1cca210bb3">&#9670;&nbsp;</a></span>getLastHandCheckRq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long Communicator::getLastHandCheckRq </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>The timestamp is in milliseconds and does not represent UTC datetime </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Timestamp in milliseconds </dd></dl>
+
+</div>
+</div>
+<a id="a04a6dc9589a9a7964517fc8baca18e85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04a6dc9589a9a7964517fc8baca18e85">&#9670;&nbsp;</a></span>getSimLocked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Communicator::getSimLocked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section warning"><dt>Warning</dt><dd>This information is taken from the GPRS module, it can be not reliable </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the sim card is locked, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a3fae621b72e6f7ede8de009434729936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fae621b72e6f7ede8de009434729936">&#9670;&nbsp;</a></span>getWaitingForHandCheck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Communicator::getWaitingForHandCheck </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>True if the tracker waiting for an answer, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="abf509d525f0263af8316718fca159eaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf509d525f0263af8316718fca159eaa">&#9670;&nbsp;</a></span>handCheckHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communicator::handCheckHandle </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">String</td><td>that contain the recived message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a17c5e175e885cb14fbc763f898855e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17c5e175e885cb14fbc763f898855e70">&#9670;&nbsp;</a></span>mqttCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communicator::mqttCallback </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>topic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">byte *&#160;</td>
+          <td class="paramname"><em>payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">topic</td><td>char array with the topic name </td></tr>
+    <tr><td class="paramname">payload</td><td>byte array containing the MQTT message </td></tr>
+    <tr><td class="paramname">len</td><td>unsigned int containing the payload lenght </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a302d5255fbea80e9d5b5cdabef8725ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a302d5255fbea80e9d5b5cdabef8725ff">&#9670;&nbsp;</a></span>sendDebugMqtt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Communicator::sendDebugMqtt </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>aPayload</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aPayload</td><td>String containing the message to send </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This method use <a class="el" href="class_communicator.html#a6a6f158e4db260ac9715505777b723ae" title="Method to send an MQTT message on the TX topic.">sendMqtt()</a> method but adds TXT frame syntax </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the message has been sent, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="a6a6f158e4db260ac9715505777b723ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a6f158e4db260ac9715505777b723ae">&#9670;&nbsp;</a></span>sendMqtt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Communicator::sendMqtt </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>aFrame</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aFrame</td><td>String containing the frame to send </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the message has been sent, false otherwise </dd></dl>
+
+</div>
+</div>
+<a id="ab823b7613ed734c1fdfe73a02eda4bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab823b7613ed734c1fdfe73a02eda4bfb">&#9670;&nbsp;</a></span>setCallWhenMsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communicator::setCallWhenMsg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_communicator.html#ab545fec72262e66ba797ffe1ca93ac2e">TRACKER_CALLBACK_SIG</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section note"><dt>Note</dt><dd>TRACKER_CALLBACK_SIG is an address of an void function that take a String in parameter </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TRACKER_CALLBACK_SIG</td><td>address of a method that can handle mqtt messages </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac7773988eb91ba1d89892f3009c93409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7773988eb91ba1d89892f3009c93409">&#9670;&nbsp;</a></span>tryHandCheck()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Communicator::tryHandCheck </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab7d4850b2293361b93d4feb3713c32a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7d4850b2293361b93d4feb3713c32a7">&#9670;&nbsp;</a></span>unlockSIM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Communicator::unlockSIM </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a82c95f2ef7191ba737345228d3533a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c95f2ef7191ba737345228d3533a6c">&#9670;&nbsp;</a></span>handCheckSuccess</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Communicator::handCheckSuccess = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa802d401b413a7a0661ebae0454fdbcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa802d401b413a7a0661ebae0454fdbcf">&#9670;&nbsp;</a></span>isFirstHandCheck</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Communicator::isFirstHandCheck = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1e66a670222bf7778fb7c2521018acc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1e66a670222bf7778fb7c2521018acc">&#9670;&nbsp;</a></span>lastHandCheckRq</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long Communicator::lastHandCheckRq = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a492ef503edb3acd155ffeaa2a85e2db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a492ef503edb3acd155ffeaa2a85e2db9">&#9670;&nbsp;</a></span>lastReconnectAttempt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Communicator::lastReconnectAttempt = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae1c2c343038ac5b6d0c30bc51b1da05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae1c2c343038ac5b6d0c30bc51b1da05">&#9670;&nbsp;</a></span>pClient</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TinyGsmClient* Communicator::pClient</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63b8a6ab1c4f1a08809cce86c367dedc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63b8a6ab1c4f1a08809cce86c367dedc">&#9670;&nbsp;</a></span>pLightSign</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_led_indicator.html">LedIndicator</a>* Communicator::pLightSign</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac0cae0982d6cf453155e0997dd9971cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0cae0982d6cf453155e0997dd9971cf">&#9670;&nbsp;</a></span>pModem</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TinyGsm* Communicator::pModem</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe311fca88164ecdec441eb327acfc51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe311fca88164ecdec441eb327acfc51">&#9670;&nbsp;</a></span>pMqtt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PubSubClient* Communicator::pMqtt</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb41a71478755beb4718de63e663710f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb41a71478755beb4718de63e663710f">&#9670;&nbsp;</a></span>pUsbDebug</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_serial_debug.html">SerialDebug</a>* Communicator::pUsbDebug</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab545fec72262e66ba797ffe1ca93ac2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab545fec72262e66ba797ffe1ca93ac2e">&#9670;&nbsp;</a></span>TRACKER_CALLBACK_SIG</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Communicator::TRACKER_CALLBACK_SIG</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a399c2e5084fc74387bc3547590229f65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a399c2e5084fc74387bc3547590229f65">&#9670;&nbsp;</a></span>waitingForHandCheck</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Communicator::waitingForHandCheck = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ae4d571de87fe70d3e6548a30fe4ec4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ae4d571de87fe70d3e6548a30fe4ec4">&#9670;&nbsp;</a></span>wasInit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Communicator::wasInit = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="_communicator_8h_source.html">Communicator.h</a></li>
+<li><a class="el" href="_communicator_8cpp.html">Communicator.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_communicator.html">Communicator</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

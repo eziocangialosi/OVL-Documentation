@@ -1,0 +1,13 @@
+<map id="Tracker.h" name="Tracker.h">
+<area shape="rect" id="node1" title="Definition of Tracker class." alt="" coords="270,5,346,32"/>
+<area shape="rect" id="node2" href="$_serial_debug_8h.html" title="Definition of SerialDebug class." alt="" coords="269,155,373,181"/>
+<area shape="rect" id="node5" href="$_locator_8h.html" title="Definition of Locator class." alt="" coords="183,80,257,107"/>
+<area shape="rect" id="node9" href="$_communicator_8h.html" title="Definition of Communicator class." alt="" coords="345,80,463,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="367,229,444,256"/>
+<area shape="rect" id="node4" href="$config_8h.html" title="All the tracker configuration." alt="" coords="274,229,342,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,155,117,181"/>
+<area shape="rect" id="node7" href="$_led_indicator_8h.html" title="Definition of LedIndicator class." alt="" coords="142,155,245,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="151,229,236,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="542,155,655,181"/>
+<area shape="rect" id="node11" title=" " alt="" coords="397,155,517,181"/>
+</map>
