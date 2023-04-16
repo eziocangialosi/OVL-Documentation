@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "OpenVehicleLocator - Tracker Documentation", "index.html", [
+  [ "OpenVehicleLocator", "index.html", [
     [ "Introduction", "index.html", null ],
     [ "Dependencies", "page_dependencies.html", [
       [ "Libraries", "page_dependencies.html#autotoc_md0", null ],
@@ -66,7 +66,6 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]

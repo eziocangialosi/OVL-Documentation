@@ -1,5 +1,4 @@
 <map id="Tracker.h" name="Tracker.h">
-<area shape="rect" id="node1" title="Definition of Tracker class." alt="" coords="70,5,146,32"/>
-<area shape="rect" id="node2" href="$_o_v_l-_io_t_8ino.html" title="Arduino loop &amp; setup and instance creation of the tracker object." alt="" coords="5,80,96,107"/>
-<area shape="rect" id="node3" href="$_tracker_8cpp.html" title="All methods code for Tracker class." alt="" coords="120,80,211,107"/>
+<area shape="rect" id="node1" title="Definition of Tracker class." alt="" coords="13,5,89,32"/>
+<area shape="rect" id="node2" href="$_tracker_8cpp.html" title="All methods code for Tracker class." alt="" coords="5,80,96,107"/>
 </map>
