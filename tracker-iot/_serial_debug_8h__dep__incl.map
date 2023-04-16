@@ -2,10 +2,9 @@
 <area shape="rect" id="node1" title="Definition of SerialDebug class." alt="" coords="184,5,288,32"/>
 <area shape="rect" id="node2" href="$_communicator_8h.html" title="Definition of Communicator class." alt="" coords="44,80,161,107"/>
 <area shape="rect" id="node4" href="$_tracker_8h.html" title="Definition of Tracker class." alt="" coords="161,155,237,181"/>
-<area shape="rect" id="node7" href="$_locator_8h.html" title="Definition of Locator class." alt="" coords="236,80,311,107"/>
-<area shape="rect" id="node9" href="$_serial_debug_8cpp.html" title="All methods code for SerialDebug class." alt="" coords="335,80,454,107"/>
+<area shape="rect" id="node6" href="$_locator_8h.html" title="Definition of Locator class." alt="" coords="236,80,311,107"/>
+<area shape="rect" id="node8" href="$_serial_debug_8cpp.html" title="All methods code for SerialDebug class." alt="" coords="335,80,454,107"/>
 <area shape="rect" id="node3" href="$_communicator_8cpp.html" title="All methods code for Communicator class." alt="" coords="5,155,136,181"/>
-<area shape="rect" id="node5" href="$_o_v_l-_io_t_8ino.html" title="Arduino loop &amp; setup and instance creation of the tracker object." alt="" coords="96,229,187,256"/>
-<area shape="rect" id="node6" href="$_tracker_8cpp.html" title="All methods code for Tracker class." alt="" coords="211,229,301,256"/>
-<area shape="rect" id="node8" href="$_locator_8cpp.html" title="All methods code for Locator class." alt="" coords="261,155,350,181"/>
+<area shape="rect" id="node5" href="$_tracker_8cpp.html" title="All methods code for Tracker class." alt="" coords="153,229,244,256"/>
+<area shape="rect" id="node7" href="$_locator_8cpp.html" title="All methods code for Locator class." alt="" coords="261,155,350,181"/>
 </map>
