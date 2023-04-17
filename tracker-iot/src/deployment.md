@@ -38,7 +38,7 @@ The important points to edit are:
  - The MQTT credentials (\ref TOPIC_TX, \ref TOPIC_RX, \ref MQTT_USER, \ref MQTT_PSWD)
  - The GPRS settings (\ref GSM_PIN, \ref APN, \ref GPRS_USER, \ref GPRS_PSWD)
 
-If you want to add the recharging functionality, pass to true the \ref DEFAULT_VEH_CHG_STS flag.
+If you want to add the \ref page_chargebat, pass to true the \ref DEFAULT_VEH_CHG_STS flag.
 
 ## Upload
 After having edit the configuration file, you should upload the program to the microcontroller.
