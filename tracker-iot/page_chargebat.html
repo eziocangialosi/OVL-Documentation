@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="Doxygen Awesome" />
 <meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
 <!-- END twitter metadata -->
-<title>OVL-Doc Tracker: Introduction</title>
+<title>OVL-Doc Tracker: ChargingOnVehicle - Addon</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/svg+xml" href="favicon.ico"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -102,7 +102,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('page_chargebat.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -122,20 +122,31 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Introduction </div>  </div>
+<div class="title">ChargingOnVehicle - Addon </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><dl class="section remark"><dt>Remarks</dt><dd>This is the tracker documentation, to consult other part documentation go on <a href="https://doc.ovl-project.org">doc.ovl-project.org</a></dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>All the project is <b>UNREADY</b> for deployment ! An alpha version will be released in the coming months...</dd></dl>
-<p>Welcome on the tracker documentation of the OpenVehicleLocator Project ! All the tracker code is available it <a href="https://github.com/eziocangialosi/ovl-iot">github repository</a><br  />
- <br  />
- </p>
-<h2><a class="anchor" id="autotoc_md20"></a>
-Deploying the project</h2>
+<div class="textblock"><p>This page presenting the ChargingOnVehicle addon.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This addon is currently in developpement, caution when you use it !<br  />
+ It is implemented in the code but the electronic schematic is not yet definitive and reliable</dd></dl>
+<h1><a class="anchor" id="autotoc_md0"></a>
+Purpose</h1>
 <hr  />
-<p> To deploy the tracker part on the project go on <a class="el" href="page_deployment.html">Deployment</a> page. </p>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+<p> This addon is here to allow the tracker to recharging itself on the vehcile battery</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+How it's work</h1>
+<hr  />
+<p> When the addon is activated, the tracker will check if power is available on <a class="el" href="config_8h.html#af5040f7c7f90f1a1f336491beecd4b80">VEH_ALIM_SENSOR_PIN</a>.<br  />
+ If power is available from <a class="el" href="config_8h.html#abb49141c644cb66053bbae1869440992">DELAY_CHG_VEH</a> (default 5min), the tracker will order charging module to sending power on usb port by putting HIGH on <a class="el" href="config_8h.html#abe88486eb266e7b8e489af2993b32519">VEH_ALIM_RELAY_PIN</a>.</p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Make the charging module</h1>
+<hr  />
+<p> Soon...</p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+How to enable it</h1>
+<hr  />
+<p> To enable this addon put <a class="el" href="config_8h.html#a3e531535398e2fcb3f7506919f048a12">DEFAULT_VEH_CHG_STS</a> on true in <a class="el" href="config_8h.html" title="All the tracker configuration.">config.h</a> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

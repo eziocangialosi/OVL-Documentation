@@ -1,7 +1,6 @@
 var files_dup =
 [
     [ "OVL-Documentation", "dir_a6bc005cd98c53be9b2453a8df750b31.html", "dir_a6bc005cd98c53be9b2453a8df750b31" ],
-    [ "unit-tests", "dir_023eb7d0ab8cd0b14c68e7d4605a4116.html", "dir_023eb7d0ab8cd0b14c68e7d4605a4116" ],
     [ "Communicator.cpp", "_communicator_8cpp.html", null ],
     [ "Communicator.h", "_communicator_8h.html", "_communicator_8h" ],
     [ "config.h", "config_8h.html", "config_8h" ],
