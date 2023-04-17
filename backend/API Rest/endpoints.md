@@ -54,8 +54,8 @@
 | GET         | /position/safezone/{id}                                                                                       |
 | ----------- | ------------------------------------------------------------------------------------------------------------ |
 | Used to     | Obtain safezone for a specified tracker.                                                                      |
-| Json Output | `{safezone: {lat: float, lon: float}, "error": {"Code": int, "Message": string}}` |
-| Status      | Not Implemented ❌ |
+| Json Output | `{safezone: {lat: float, lon: float, diameter: int}, "error": {"Code": int, "Message": string}}` |
+| Status      | Implemented ✅ |
 | Unit Test      | TODO ⏳ |
 
 | POST        | /user/{mail}/{password}                                                                                                   |
@@ -68,7 +68,7 @@
 | POST        | /iot/{token}/{name}                                                                                                   |
 | ----------- | --------------------------------------------------------------------------------------------------------------------- |
 | Used to     | Add and link a tracker to the account and get the parameters needed to configure the tracker                          |
-| Json Output | `"error": {"Code": int, "Message": string}}` |
+| Json Output | `"error": {"Code": int, "Message": string}}, "Topics": {"RX": string, "TX": string}, TrackerId: int` |
 | Status      | Implemented ✅ |
 | Unit Test      | TODO ⏳ |
 
@@ -81,7 +81,7 @@
 
 | DELETE      | /iot/{name}                                 |
 | ----------- | ------------------------------------------- |
-| Used to     | Delete from system a tracker                |
+| Used to     | Delete a tracker from the system              |
 | Json Output | `{"error": {"Code": int, "Message": string}}` |
 | Status      | Not Implemented ❌ |
 | Unit Test      | TODO ⏳ |
