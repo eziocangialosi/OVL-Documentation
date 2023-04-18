@@ -188,7 +188,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:af7ab933337f93d0755af23b36fb9820e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This led is used to send debug codes via the RGB led </p><dl class="section author"><dt>Author</dt><dd>Ezio CANGIALOSI <a href="#" onclick="location.href='mai'+'lto:'+'ezi'+'oc'+'ang'+'ia'+'los'+'i@'+'gma'+'il'+'.co'+'m'; return false;">ezioc<span style="display: none;">.nosp@m.</span>angi<span style="display: none;">.nosp@m.</span>alosi<span style="display: none;">.nosp@m.</span>@gma<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+<div class="textblock"><p>Class that managing the debug led. </p>
+<p>This led is used to send debug codes via the RGB led </p><dl class="section author"><dt>Author</dt><dd>Ezio CANGIALOSI <a href="#" onclick="location.href='mai'+'lto:'+'ezi'+'oc'+'ang'+'ia'+'los'+'i@'+'gma'+'il'+'.co'+'m'; return false;">ezioc<span style="display: none;">.nosp@m.</span>angi<span style="display: none;">.nosp@m.</span>alosi<span style="display: none;">.nosp@m.</span>@gma<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>dev </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>04/2023 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -206,6 +207,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor of <a class="el" href="class_led_indicator.html" title="Class that managing the debug led.">LedIndicator</a> class. </p>
 <p>The constructor intialize the FastLED library and set the led in orange </p>
 
 </div>
@@ -226,6 +229,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This method commands a SINGLE flash of the led in the desired color. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">aColor</td><td>the desired color </td></tr>
@@ -251,6 +256,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This method commands infinite flashes of the led in the desired color. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">aColor</td><td>the desired color </td></tr>
@@ -275,6 +282,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter to know if the led is blinking. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if it bliking false otherwise </dd></dl>
 
 </div>
@@ -293,6 +302,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to call when a fatal error occured. </p>
 <p>This method is an infinite loop, it used to hold the program </p><dl class="section note"><dt>Note</dt><dd>For example, this loop is called when the sim card cannot be unlocked </dd></dl>
 
 </div>
@@ -311,6 +322,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Led managing loop. </p>
 <p>This loop is needed when you want a led blinking, otherwise, it cannot </p>
 
 </div>
@@ -330,6 +343,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to set the led in a color. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">aColor</td><td>the desired color </td></tr>
@@ -353,6 +368,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to set the led to black. </p>
 <p>This method just call <a class="el" href="class_led_indicator.html#aa0921cb2b3c6753b27a949b8769208db" title="Method to set the led in a color.">setTo()</a> method this black in param </p>
 
 </div>
@@ -371,6 +388,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to stop the led blinking. </p>
 
 </div>
 </div>
@@ -395,6 +414,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The color in witch we must blink. </p>
+
 </div>
 </div>
 <a id="ad3821d5815260520a660229907cd73d9"></a>
@@ -416,6 +437,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>If we should blink infinitly. </p>
 
 </div>
 </div>
@@ -460,6 +483,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>When the bliking mode is enabled, used to know if the next time should be a dark one. </p>
 
 </div>
 </div>

@@ -245,7 +245,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ade6d86eed41054c3b3934807d802d739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Ezio CANGIALOSI <a href="#" onclick="location.href='mai'+'lto:'+'ezi'+'oc'+'ang'+'ia'+'los'+'i@'+'gma'+'il'+'.co'+'m'; return false;">ezioc<span style="display: none;">.nosp@m.</span>angi<span style="display: none;">.nosp@m.</span>alosi<span style="display: none;">.nosp@m.</span>@gma<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+<div class="textblock"><p>This class manage call the positioning stuff. </p>
+<dl class="section author"><dt>Author</dt><dd>Ezio CANGIALOSI <a href="#" onclick="location.href='mai'+'lto:'+'ezi'+'oc'+'ang'+'ia'+'los'+'i@'+'gma'+'il'+'.co'+'m'; return false;">ezioc<span style="display: none;">.nosp@m.</span>angi<span style="display: none;">.nosp@m.</span>alosi<span style="display: none;">.nosp@m.</span>@gma<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>dev </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>04/2023 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -274,6 +275,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor. </p>
 <p>This constructor NOT initialize the class, it just usefull to give <a class="el" href="class_serial_debug.html" title="Used to send debug messages on usb serial link.">SerialDebug</a> and <a class="el" href="class_led_indicator.html" title="Class that managing the debug led.">LedIndicator</a> object address </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">aUsbDebug</td><td>pointor to <a class="el" href="class_serial_debug.html" title="Used to send debug messages on usb serial link.">SerialDebug</a> class needed to send debug info </td></tr>
@@ -309,6 +312,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Method to acquire gps data. </p>
 <p>This method wait for data for a delay given in milliseconds </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ms</td><td>Time to wait for data in milliseconds </td></tr>
@@ -333,6 +338,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Intialization method. </p>
 <p>This method intilize the class. It wait for the GPS fix and setting up parameters </p>
 
 </div>
@@ -351,6 +358,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Used to enter in protection mode. </p>
 <p>This method will define the safezone center at the current position </p><dl class="section note"><dt>Note</dt><dd>If the position cannot be established, the method will set the safezone at the last known position </dd></dl>
 
 </div>
@@ -369,6 +378,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter to know if the class was initialize or not. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the class is init, false otherwise </dd></dl>
 
 </div>
@@ -398,6 +409,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter for the current position. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">crntLat</td><td>pointor to a float where the latitude will be write </td></tr>
@@ -434,6 +447,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter for the protection position. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">aPrtLat</td><td>pointor to a float where the latitude will be write </td></tr>
@@ -460,6 +475,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter to know if the gps is fix. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the GPS has fix, false if hasn't </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>GPS fix --&gt; position avail </dd></dl>
 
@@ -479,6 +496,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter to know if the protection mode is enabled or not. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if it is, false otherwise </dd></dl>
 
 </div>
@@ -497,6 +516,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to quit the protection mode. </p>
 <dl class="section pre"><dt>Precondition</dt><dd>The protection mode should be enabled </dd></dl>
 
 </div>
@@ -534,6 +555,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Method that round float number for x decimals. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">in_value</td><td>float with the number to round off </td></tr>
@@ -568,6 +591,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Method to actualize the stored position with the last position recived from module. </p>
 <dl class="section note"><dt>Note</dt><dd>If GPS is not fix, position won't be refresh </dd></dl>
 
 </div>
@@ -587,6 +612,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Setter for the MAXIMUM interval between two positions refresh/send. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">secs</td><td>interval in seconds </td></tr>
@@ -612,6 +639,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Setter for the MINIMAL interval between two positions refresh/send. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">secs</td><td>interval in seconds </td></tr>
@@ -637,6 +666,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Setter for safezone diameter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">aDiam</td><td>safezone diameter in meters </td></tr>
@@ -669,6 +700,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Method that wait for gps fix during a maximum delay. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">max_wait_sec</td><td>maximum delay in milliseconds </td></tr>
@@ -694,6 +727,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Position algorithm. </p>
 <p>This method decide if the position has changed or not and if the position hasn't be send for too long </p><dl class="section return"><dt>Returns</dt><dd>Return a byte, if the first bit (LSB) is true, the position need to be send, if the 2nd bit is true, the tracker is outside the safezone </dd></dl>
 <dl class="section pre"><dt>Precondition</dt><dd>Before using this method, please initialize the class </dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000001">Bug:</a></b></dt><dd>The decision algorithm seems to be buggy, see dedicated github issue </dd></dl>
@@ -721,6 +756,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Pointor to GPS obj (GPS Module) </p>
+
 </div>
 </div>
 <a id="a5d9ef82520a8bee7f90d6113eb7d5240"></a>
@@ -742,6 +779,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Max interval between 2 position refresh. </p>
 
 </div>
 </div>
@@ -787,6 +826,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Last knowed position (Latitude) </p>
+
 </div>
 </div>
 <a id="ae61c59097c3a7ef0f0d44782e20fcbab"></a>
@@ -808,6 +849,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Last knowned position (Longitude) </p>
 
 </div>
 </div>
@@ -831,6 +874,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>"Timestamp" of the last position refresh </p>
+
 </div>
 </div>
 <a id="aabc4adf00539dd82487fa39cca59f5d5"></a>
@@ -852,6 +897,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Minimal interval between 2 position refresh. </p>
 
 </div>
 </div>
@@ -875,6 +922,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Pointor to led debug obj. </p>
+
 </div>
 </div>
 <a id="ade6d86eed41054c3b3934807d802d739"></a>
@@ -896,6 +945,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>If the protection mode is enable. </p>
 
 </div>
 </div>
@@ -919,6 +970,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Protection position (Latitude) </p>
+
 </div>
 </div>
 <a id="ad1b9c80200300f4dd65c4684c20245c0"></a>
@@ -940,6 +993,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Protection position (Longitude) </p>
 
 </div>
 </div>
@@ -963,6 +1018,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Pointor to serial debug obj. </p>
+
 </div>
 </div>
 <a id="a9e295e0073df40a65062cbe2b548601a"></a>
@@ -984,6 +1041,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Safe zone diameter. </p>
 
 </div>
 </div>

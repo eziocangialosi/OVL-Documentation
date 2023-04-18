@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "OpenVehicleLocator - Tracker part", "index.html", [
     [ "Introduction", "index.html", null ],
-    [ "ChargingOnVehicle - Addon", "page_chargebat.html", [
+    [ "ChargingOnVehicle - Option", "page_chargebat.html", [
       [ "Purpose", "page_chargebat.html#autotoc_md0", null ],
       [ "How it's work", "page_chargebat.html#autotoc_md1", null ],
       [ "Make the charging module", "page_chargebat.html#autotoc_md2", null ],
@@ -39,7 +39,7 @@ var NAVTREE =
     ] ],
     [ "Deployment", "page_deployment.html", [
       [ "Step 1: Electronic", "page_deployment.html#autotoc_md7", [
-        [ "Deploying the project", "index.html#autotoc_md20", null ],
+        [ "Deploying the project", "index.html#autotoc_md22", null ],
         [ "Hardware list", "page_deployment.html#autotoc_md8", null ],
         [ "Hardware schematic", "page_deployment.html#autotoc_md9", null ]
       ] ],
@@ -50,11 +50,15 @@ var NAVTREE =
       ] ],
       [ "Step 3: Tests", "page_deployment.html#autotoc_md14", null ]
     ] ],
+    [ "EcoMode - Option", "page_ecomode.html", [
+      [ "Purpose", "page_ecomode.html#autotoc_md15", null ],
+      [ "How to enable it", "page_ecomode.html#autotoc_md16", null ]
+    ] ],
     [ "Electronics", "page_electronic.html", [
-      [ "Microcontroler, developpement board", "page_electronic.html#autotoc_md15", null ],
-      [ "GPRS communication", "page_electronic.html#autotoc_md16", null ],
-      [ "Location", "page_electronic.html#autotoc_md17", null ],
-      [ "Debugging the tracker", "page_electronic.html#autotoc_md18", null ]
+      [ "Microcontroler, developpement board", "page_electronic.html#autotoc_md17", null ],
+      [ "GPRS communication", "page_electronic.html#autotoc_md18", null ],
+      [ "Location", "page_electronic.html#autotoc_md19", null ],
+      [ "Debugging the tracker", "page_electronic.html#autotoc_md20", null ]
     ] ],
     [ "RGB LED debug codes", "page_led_codes.html", null ],
     [ "Tracker-Server communication protocol", "md__home_ezio__open_vehicle_locator__o_v_l__documentation_tracker_iot_src_protocol__srv__io_t.html", null ],
@@ -62,7 +66,6 @@ var NAVTREE =
     [ "Deprecated List", "deprecated.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],

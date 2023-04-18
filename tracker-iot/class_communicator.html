@@ -252,7 +252,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab545fec72262e66ba797ffe1ca93ac2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This one is used to manage the dialog with the GPRS module and the implementation of MQTT protocol </p><dl class="section author"><dt>Author</dt><dd>Ezio CANGIALOSI <a href="#" onclick="location.href='mai'+'lto:'+'ezi'+'oc'+'ang'+'ia'+'los'+'i@'+'gma'+'il'+'.co'+'m'; return false;">ezioc<span style="display: none;">.nosp@m.</span>angi<span style="display: none;">.nosp@m.</span>alosi<span style="display: none;">.nosp@m.</span>@gma<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+<div class="textblock"><p>Class that managing everything related to comunication. </p>
+<p>This one is used to manage the dialog with the GPRS module and the implementation of MQTT protocol </p><dl class="section author"><dt>Author</dt><dd>Ezio CANGIALOSI <a href="#" onclick="location.href='mai'+'lto:'+'ezi'+'oc'+'ang'+'ia'+'los'+'i@'+'gma'+'il'+'.co'+'m'; return false;">ezioc<span style="display: none;">.nosp@m.</span>angi<span style="display: none;">.nosp@m.</span>alosi<span style="display: none;">.nosp@m.</span>@gma<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>dev </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>04/2023 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -281,6 +282,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor, pointor to serial debug class needed to send debug info, pointor to led sign needed to debug via led codes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">apSerialDebug</td><td>pointor to <a class="el" href="class_serial_debug.html" title="Used to send debug messages on usb serial link.">SerialDebug</a> class needed to send debug info </td></tr>
@@ -306,6 +309,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method called when connection is lost, it tries to restore the connection. </p>
 <dl class="section note"><dt>Note</dt><dd>It will try to restore GPRS and/or MQTT connection, it cannot retry to unlock the sim card </dd></dl>
 
 </div>
@@ -324,6 +329,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to (Re)connect GPRS. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the gprs is now connected, false otherwise </dd></dl>
 
 </div>
@@ -342,6 +349,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to (Re)connect to MQTT broker. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the mqtt connection is established, false otherwise </dd></dl>
 
 </div>
@@ -360,6 +369,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to (re)connect the cellular network. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the connection succeeded, false otherwise </dd></dl>
 
 </div>
@@ -378,6 +389,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to call the mqtt loop (Mandatory to recived mqtt messages) </p>
 <dl class="section note"><dt>Note</dt><dd>This loop should be called regularly to allow the client to process incoming messages and maintain its connection to the server </dd></dl>
 
 </div>
@@ -396,6 +409,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter to know if the battery is in charge. </p>
 <dl class="section warning"><dt>Warning</dt><dd>This information is taken from the GPRS module, it can be not reliable </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the battery is in charge, false otherwise </dd></dl>
 
@@ -415,6 +430,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter of the battery percentage. </p>
 <dl class="section warning"><dt>Warning</dt><dd>This percentage is taken from the GPRS module, it can be not reliable </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Percentage of the battery beetween 0 to 100% </dd></dl>
 
@@ -434,6 +451,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter to now is the handcheck has success. </p>
 <dl class="section note"><dt>Note</dt><dd>HandCheck is successful when tracker recive "SYN-ACK" </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the handcheck has success, false otherwise </dd></dl>
 
@@ -453,6 +472,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter to know if the connection is established with server. </p>
 <dl class="section note"><dt>Note</dt><dd>Connection is considered established when MQTT, GPRS and HandCheck as success </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the connection is established, false otherwise </dd></dl>
 
@@ -472,6 +493,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter of the timestamp of the last HandCheck attempt. </p>
 <dl class="section note"><dt>Note</dt><dd>The timestamp is in milliseconds and does not represent UTC datetime </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Timestamp in milliseconds </dd></dl>
 
@@ -491,6 +514,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter to know if the sim card is locked. </p>
 <dl class="section warning"><dt>Warning</dt><dd>This information is taken from the GPRS module, it can be not reliable </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the sim card is locked, false otherwise </dd></dl>
 
@@ -510,6 +535,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Getter to know we're currently waiting for the handcheck anwser. </p>
 <dl class="section return"><dt>Returns</dt><dd>True if the tracker waiting for an answer, false otherwise </dd></dl>
 
 </div>
@@ -529,6 +556,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method that handle the handcheck answer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">String</td><td>that contain the recived message </td></tr>
@@ -577,6 +606,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Method called when a mqtt message is recvied. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">topic</td><td>char array with the topic name </td></tr>
@@ -603,6 +634,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to send a debug MQTT message on the TX topic. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">aPayload</td><td>String containing the message to send </td></tr>
@@ -629,6 +662,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to send an MQTT message on the TX topic. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">aFrame</td><td>String containing the frame to send </td></tr>
@@ -654,6 +689,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Setter to define the method called when a mqtt message is recived. </p>
 <dl class="section note"><dt>Note</dt><dd>TRACKER_CALLBACK_SIG is an address of an void function that take a String in parameter </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -679,6 +716,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Method used to try an handcheck with server. </p>
+
 </div>
 </div>
 <a id="ab7d4850b2293361b93d4feb3713c32a7"></a>
@@ -695,6 +734,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to (Re)unlock sim card @ return True if the sim card has been unlocked, false otherwise. </p>
 
 </div>
 </div>
@@ -719,6 +760,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>If the Hand Check as success. </p>
+
 </div>
 </div>
 <a id="aa802d401b413a7a0661ebae0454fdbcf"></a>
@@ -740,6 +783,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>If there was more than one handcheck. </p>
 
 </div>
 </div>
@@ -763,6 +808,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Timestamp of the last HandCheck request. </p>
+
 </div>
 </div>
 <a id="a492ef503edb3acd155ffeaa2a85e2db9"></a>
@@ -784,6 +831,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Timestamp of the last reconnect attempt. </p>
 
 </div>
 </div>
@@ -807,6 +856,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Pointor to TinyGsmClient class (Interface between MQTT and GSM/GPRS module) </p>
+
 </div>
 </div>
 <a id="a63b8a6ab1c4f1a08809cce86c367dedc"></a>
@@ -828,6 +879,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Pointor to led debug obj. </p>
 
 </div>
 </div>
@@ -851,6 +904,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Pontor to TinyGsm class (GSM/GPRS Module) </p>
+
 </div>
 </div>
 <a id="abe311fca88164ecdec441eb327acfc51"></a>
@@ -872,6 +927,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Pointor to PubSubClient class (MQTT Client) </p>
 
 </div>
 </div>
@@ -895,6 +952,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Pointor to <a class="el" href="class_serial_debug.html" title="Used to send debug messages on usb serial link.">SerialDebug</a> class. </p>
+
 </div>
 </div>
 <a id="ab545fec72262e66ba797ffe1ca93ac2e"></a>
@@ -916,6 +975,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Callback function stored. </p>
 
 </div>
 </div>
@@ -939,6 +1000,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>If we wait for the Hand Check validation. </p>
+
 </div>
 </div>
 <a id="a7ae4d571de87fe70d3e6548a30fe4ec4"></a>
@@ -960,6 +1023,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>If the obj was initialize. </p>
 
 </div>
 </div>

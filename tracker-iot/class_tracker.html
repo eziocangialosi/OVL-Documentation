@@ -233,7 +233,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a3cfaf1ff2faf36fbc68649d03fc98eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Ezio CANGIALOSI <a href="#" onclick="location.href='mai'+'lto:'+'ezi'+'oc'+'ang'+'ia'+'los'+'i@'+'gma'+'il'+'.co'+'m'; return false;">ezioc<span style="display: none;">.nosp@m.</span>angi<span style="display: none;">.nosp@m.</span>alosi<span style="display: none;">.nosp@m.</span>@gma<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+<div class="textblock"><p>This class manage all the algorithm of the tracker (this is the tracker "skeleton") : MQTT answers, Alarm mode, etc... </p>
+<dl class="section author"><dt>Author</dt><dd>Ezio CANGIALOSI <a href="#" onclick="location.href='mai'+'lto:'+'ezi'+'oc'+'ang'+'ia'+'los'+'i@'+'gma'+'il'+'.co'+'m'; return false;">ezioc<span style="display: none;">.nosp@m.</span>angi<span style="display: none;">.nosp@m.</span>alosi<span style="display: none;">.nosp@m.</span>@gma<span style="display: none;">.nosp@m.</span>il.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>dev </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>04/2023 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -252,6 +253,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Method that should be call at each arduino loop turn. </p>
+
 </div>
 </div>
 <a id="a0abfcbb7bf87fed3c9643e0b38df04e1"></a>
@@ -268,6 +271,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Method to initialize the object. </p>
 <p>This method initialize the object and Comunicator, <a class="el" href="class_led_indicator.html" title="Class that managing the debug led.">LedIndicator</a> and <a class="el" href="class_serial_debug.html" title="Used to send debug messages on usb serial link.">SerialDebug</a> </p>
 
 </div>
@@ -294,6 +299,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Method to enter in alarm mode. </p>
 <p>This method edit the maximum and minimal interval and send ALM to server </p>
 
 </div>
@@ -320,6 +327,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Method to check the validity of <a class="el" href="config_8h.html" title="All the tracker configuration.">config.h</a> parameters. </p>
 <dl class="section warning"><dt>Warning</dt><dd>This method is not already coded </dd></dl>
 
 </div>
@@ -346,6 +355,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Method call when a position request is recived. </p>
 <p>This method responds the right frame depending of the situation : If position can be send, it send position, if it cannot send an error frame </p>
 
 </div>
@@ -373,6 +384,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Method call when the server try to change the protection mode value. </p>
 <p>This method responds the right frame depending of the situation </p><dl class="section remark"><dt>Remarks</dt><dd>If the gps fix isn't available the this method will send an "PRT-LIM" frame, this frame means that the protection mode is limited </dd></dl>
 
 </div>
@@ -399,6 +412,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Method call when a safezone request is recived. </p>
 <p>This method send the safe zone coordinates if protection mode is enabled </p>
 
 </div>
@@ -426,6 +441,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Method call when the tracker recived an STG frame to acquire parameters. </p>
 <p>This method extract the parameters from the recived frame </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">payload</td><td>String containing the STG frame </td></tr>
@@ -468,6 +485,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Method used to send the position to the server. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">aLat</td><td>float with the current latitude </td></tr>
@@ -501,6 +520,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Method used to send the tracker status to the server. </p>
+
 </div>
 </div>
 <a id="a21e976ca414a15dfc6410164a36bec5b"></a>
@@ -525,6 +546,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Method that manages the charge on vehicle battery. </p>
 
 </div>
 </div>
@@ -551,6 +574,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Method called when an MQTT message is recived. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">payload</td><td>String containing the recived message </td></tr>
@@ -583,6 +608,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>If the alarm is on/ringing. </p>
+
 </div>
 </div>
 <a id="a806ee3c7686c7cc24c46ee57fb5f8a60"></a>
@@ -604,6 +631,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>If the user allow charge on the vehicle battery. </p>
 
 </div>
 </div>
@@ -627,6 +656,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Pointor to <a class="el" href="class_communicator.html" title="Class that managing everything related to comunication.">Communicator</a> instance (Srv communication) </p>
+
 </div>
 </div>
 <a id="ae57a53d24ca88206e839cecb3d82466f"></a>
@@ -648,6 +679,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>If the eco mode is activated (NOT IMPLEMENTED YET) </p>
 
 </div>
 </div>
@@ -671,6 +704,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>If the vehicle is on charge. </p>
+
 </div>
 </div>
 <a id="a3cfaf1ff2faf36fbc68649d03fc98eae"></a>
@@ -692,6 +727,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Pointor to <a class="el" href="class_led_indicator.html" title="Class that managing the debug led.">LedIndicator</a> instance (Debug led) </p>
 
 </div>
 </div>
@@ -715,6 +752,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Last vehicle state read on sensor pin. </p>
+
 </div>
 </div>
 <a id="aefc0c830ae10bfce1e4dcfff930a1078"></a>
@@ -736,6 +775,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>If the parameters are set. </p>
 
 </div>
 </div>
@@ -759,6 +800,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>If the protection mode as been requested by server. </p>
+
 </div>
 </div>
 <a id="a8163169fbdb80a24a0189d4651a7b55b"></a>
@@ -780,6 +823,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Pointor to <a class="el" href="class_locator.html" title="This class manage call the positioning stuff.">Locator</a> instance (GPS communication, acquire and parse) </p>
 
 </div>
 </div>
@@ -803,6 +848,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Pointor to SeriaDebug instance (Debug msg on usb port) </p>
+
 </div>
 </div>
 <a id="a536a6b6c196569a5157cbc5f2c57864c"></a>
@@ -825,6 +872,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Time since which power is detected on sensor pin. </p>
+
 </div>
 </div>
 <a id="a6c9be54dd5c58bbb9df19a7508e32d4e"></a>
@@ -846,6 +895,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>If we wait for server for parameters. </p>
 
 </div>
 </div>
