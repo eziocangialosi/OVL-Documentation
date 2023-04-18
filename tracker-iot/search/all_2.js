@@ -2,7 +2,7 @@ var searchData=
 [
   ['cellular_15',['cellular',['../class_tracker.html#a147fff1242758e4e33ba053d80598777',1,'Tracker']]],
   ['charge_5fbattery_2emd_16',['charge_battery.md',['../charge__battery_8md.html',1,'']]],
-  ['chargingonvehicle_20_2d_20addon_17',['ChargingOnVehicle - Addon',['../page_chargebat.html',1,'']]],
+  ['chargingonvehicle_20_2d_20option_17',['ChargingOnVehicle - Option',['../page_chargebat.html',1,'']]],
   ['checkinitparam_18',['checkInitParam',['../class_tracker.html#a6d66d58d4173e6fb65570dc3c1a480a9',1,'Tracker']]],
   ['communicator_19',['Communicator',['../class_communicator.html',1,'Communicator'],['../class_communicator.html#a652b75d03dabf566d2b107f1540958ab',1,'Communicator::Communicator()']]],
   ['communicator_2ecpp_20',['Communicator.cpp',['../_communicator_8cpp.html',1,'']]],
