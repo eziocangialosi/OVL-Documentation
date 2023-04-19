@@ -29,36 +29,40 @@ var NAVTREE =
     [ "ChargingOnVehicle - Option", "page_chargebat.html", [
       [ "Purpose", "page_chargebat.html#autotoc_md0", null ],
       [ "How it's work", "page_chargebat.html#autotoc_md1", null ],
-      [ "Make the charging module", "page_chargebat.html#autotoc_md2", null ],
-      [ "How to enable it", "page_chargebat.html#autotoc_md3", null ]
+      [ "Make the charging module", "page_chargebat.html#autotoc_md2", [
+        [ "Deploying the project", "index.html#autotoc_md25", null ],
+        [ "Hardware list", "page_chargebat.html#autotoc_md3", null ],
+        [ "Module schematic", "page_chargebat.html#autotoc_md4", null ],
+        [ "Firebeetle wiring schematic", "page_chargebat.html#autotoc_md5", null ]
+      ] ],
+      [ "How to enable it", "page_chargebat.html#autotoc_md6", null ]
     ] ],
     [ "Dependencies", "page_dependencies.html", [
-      [ "Libraries", "page_dependencies.html#autotoc_md4", null ],
-      [ "Arduino Core", "page_dependencies.html#autotoc_md5", null ],
-      [ "Libraries modifications needed", "page_dependencies.html#autotoc_md6", null ]
+      [ "Libraries", "page_dependencies.html#autotoc_md7", null ],
+      [ "Arduino Core", "page_dependencies.html#autotoc_md8", null ],
+      [ "Libraries modifications needed", "page_dependencies.html#autotoc_md9", null ]
     ] ],
     [ "Deployment", "page_deployment.html", [
-      [ "Step 1: Electronic", "page_deployment.html#autotoc_md7", [
-        [ "Deploying the project", "index.html#autotoc_md22", null ],
-        [ "Hardware list", "page_deployment.html#autotoc_md8", null ],
-        [ "Hardware schematic", "page_deployment.html#autotoc_md9", null ]
+      [ "Step 1: Electronic", "page_deployment.html#autotoc_md10", [
+        [ "Hardware list", "page_deployment.html#autotoc_md11", null ],
+        [ "Hardware schematic", "page_deployment.html#autotoc_md12", null ]
       ] ],
-      [ "Step 2: Code", "page_deployment.html#autotoc_md10", [
-        [ "Download", "page_deployment.html#autotoc_md11", null ],
-        [ "Configuration", "page_deployment.html#autotoc_md12", null ],
-        [ "Upload", "page_deployment.html#autotoc_md13", null ]
+      [ "Step 2: Code", "page_deployment.html#autotoc_md13", [
+        [ "Download", "page_deployment.html#autotoc_md14", null ],
+        [ "Configuration", "page_deployment.html#autotoc_md15", null ],
+        [ "Upload", "page_deployment.html#autotoc_md16", null ]
       ] ],
-      [ "Step 3: Tests", "page_deployment.html#autotoc_md14", null ]
+      [ "Step 3: Tests", "page_deployment.html#autotoc_md17", null ]
     ] ],
     [ "EcoMode - Option", "page_ecomode.html", [
-      [ "Purpose", "page_ecomode.html#autotoc_md15", null ],
-      [ "How to enable it", "page_ecomode.html#autotoc_md16", null ]
+      [ "Purpose", "page_ecomode.html#autotoc_md18", null ],
+      [ "How to enable it", "page_ecomode.html#autotoc_md19", null ]
     ] ],
     [ "Electronics", "page_electronic.html", [
-      [ "Microcontroler, developpement board", "page_electronic.html#autotoc_md17", null ],
-      [ "GPRS communication", "page_electronic.html#autotoc_md18", null ],
-      [ "Location", "page_electronic.html#autotoc_md19", null ],
-      [ "Debugging the tracker", "page_electronic.html#autotoc_md20", null ]
+      [ "Microcontroler, developpement board", "page_electronic.html#autotoc_md20", null ],
+      [ "GPRS communication", "page_electronic.html#autotoc_md21", null ],
+      [ "Location", "page_electronic.html#autotoc_md22", null ],
+      [ "Debugging the tracker", "page_electronic.html#autotoc_md23", null ]
     ] ],
     [ "RGB LED debug codes", "page_led_codes.html", null ],
     [ "Tracker-Server communication protocol", "md__home_ezio__open_vehicle_locator__o_v_l__documentation_tracker_iot_src_protocol__srv__io_t.html", null ],

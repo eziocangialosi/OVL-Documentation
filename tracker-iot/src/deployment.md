@@ -39,6 +39,7 @@ The important points to edit are:
  - The GPRS settings (\ref GSM_PIN, \ref APN, \ref GPRS_USER, \ref GPRS_PSWD)
 
 If you want to add the \ref page_chargebat, pass to true the \ref DEFAULT_VEH_CHG_STS flag.
+\pre Caution, enabling this option requires additional hardware detailed on \ref page_chargebat page.
 
 ## Upload
 After having edit the configuration file, you should upload the program to the microcontroller.
@@ -49,6 +50,8 @@ After having edit the configuration file, you should upload the program to the m
 
 # Step 3: Tests
 ***
+\pre Before testing the tracker, please note that the server should be operational
+
 Plug the battery, and look at the RGB LED, if all is well, it should light up orange.\n
 Go on the \ref page_led_codes to learn more about LED error codes.\n
 If there is a problem, the LED should light up in red.

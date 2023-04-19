@@ -140,8 +140,31 @@ How it's work</h1>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Make the charging module</h1>
 <hr  />
-<p> Soon...</p>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<p> To make this charging module, some additionnal hardware is needed. </p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Hardware list</h2>
+<ul>
+<li>LM2596 DC-DC Power Supply Module</li>
+<li>5VDC Relay</li>
+<li>10k Ohms Resistor</li>
+<li>1k Ohms Resistor</li>
+<li>1N4007 Diode</li>
+<li>USB-A Female port</li>
+<li>BC547 Transistor</li>
+<li>Wires</li>
+<li>USB-A to USB-C Wire</li>
+<li>Terminal Block</li>
+</ul>
+<p>Caution, you also will need of 2 pairs of connectors for the SENSOR and COMMAND (CMD) Wires and the firebeetle.</p>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Module schematic</h2>
+<p><img src="./src/media/charging_on_vehicle.png" alt="" class="inline"/></p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Firebeetle wiring schematic</h2>
+<p><img src="./src/media/charging_on_veh_esp.png" alt="" width="50%" height="50%" class="inline"/><br  />
+ You can see on the schematic that vehicle power comes throught the USB-C port.<br  />
+You can also remark that the SENSOR and COMMAND are wired on pin 4 and 12.</p>
+<h1><a class="anchor" id="autotoc_md6"></a>
 How to enable it</h1>
 <hr  />
 <p> To enable this option put <a class="el" href="config_8h.html#a3e531535398e2fcb3f7506919f048a12">DEFAULT_VEH_CHG_STS</a> on true in <a class="el" href="config_8h.html" title="All the tracker configuration.">config.h</a> </p>
