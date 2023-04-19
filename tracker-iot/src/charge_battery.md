@@ -17,7 +17,31 @@ by putting HIGH on \ref VEH_ALIM_RELAY_PIN.
 
 # Make the charging module
 ***
-Soon...
+To make this charging module, some additionnal hardware is needed.
+## Hardware list
+- LM2596 DC-DC Power Supply Module
+- 5VDC Relay
+- 10k Ohms Resistor
+- 1k Ohms Resistor
+- 1N4007 Diode
+- USB-A Female port
+- BC547 Transistor
+- Wires
+- USB-A to USB-C Wire
+- Terminal Block
+
+Caution, you also will need of 2 pairs of connectors for the SENSOR and COMMAND (CMD) Wires and the firebeetle.
+
+## Module schematic
+
+<img src="./src/media/charging_on_vehicle.png">
+
+## Firebeetle wiring schematic
+
+<img src="./src/media/charging_on_veh_esp.png" width="50%" height="50%">\n
+
+You can see on the schematic that vehicle power comes throught the USB-C port.\n
+You can also remark that the SENSOR and COMMAND are wired on pin 4 and 12.
 
 # How to enable it
 ***

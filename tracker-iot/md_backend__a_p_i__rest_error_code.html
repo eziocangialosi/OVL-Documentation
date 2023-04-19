@@ -16,7 +16,7 @@
 <meta name="twitter:title" content="OpenVehicleLocator Documentation" />
 <meta name="twitter:description" content="Documentation of OpenVehicleLocator Project" />
 <!-- END twitter metadata -->
-<title>OVL-Doc Tracker: RGB LED debug codes</title>
+<title>OVL-Doc Tracker: [Error code list of the API](error-code-list-of-the-api)</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link rel="icon" type="image/svg+xml" href="favicon.ico"/>
 <script type="text/javascript" src="jquery.js"></script>
@@ -102,7 +102,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('page_led_codes.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('md_backend__a_p_i__rest_error_code.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -122,32 +122,53 @@ $(document).ready(function(){initNavTree('page_led_codes.html',''); initResizabl
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">RGB LED debug codes </div>  </div>
+<div class="title">[Error code list of the API](error-code-list-of-the-api) </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Here you will find the explaination of the debug codes printed by the RGB LED.<br  />
- </p><table class="markdownTable">
+<div class="textblock"><table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Color   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<th class="markdownTableHeadNone"><b>Error Code</b>   </th><th class="markdownTableHeadNone"><b>Error Name</b>   </th><th class="markdownTableHeadNone"><b>Error Message</b>   </th><th class="markdownTableHeadNone">Error Description    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">🟧🟧🟧🟧   </td><td class="markdownTableBodyNone">The tracker is initializing, please wait    </td></tr>
+<td class="markdownTableBodyNone"><b>0</b>   </td><td class="markdownTableBodyNone"><code>ErrorOK</code>   </td><td class="markdownTableBodyNone">Nothing goes wong.   </td><td class="markdownTableBodyNone">Nothing failed    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">⬛🟧⬛🟧   </td><td class="markdownTableBodyNone">The tracker trying to handcheck with the server    </td></tr>
+<td class="markdownTableBodyNone"><b>1</b>   </td><td class="markdownTableBodyNone"><code>ErrorUnknownError</code>   </td><td class="markdownTableBodyNone">An unknown error has occurred, please check system logs.   </td><td class="markdownTableBodyNone">Any error not handled below get this error code.    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">🟦🟦🟦🟦   </td><td class="markdownTableBodyNone">The tracker waiting for the gps fix (is available), please wait, it could last 60 sec max    </td></tr>
+<td class="markdownTableBodyNone"><b>10</b>   </td><td class="markdownTableBodyNone"><code>ErrorSQLUnavailable</code>   </td><td class="markdownTableBodyNone">SQL Server Unavalable, contact system administrator.   </td><td class="markdownTableBodyNone">The SQL server is unavailable    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">⬛🟦⬛🟦   </td><td class="markdownTableBodyNone">The tracker as lost gps fix, (position is no longer available), it try to keep it back    </td></tr>
+<td class="markdownTableBodyNone"><b>11</b>   </td><td class="markdownTableBodyNone"><code>ErrorSQLConnectionRefused</code>   </td><td class="markdownTableBodyNone">SQL Server rejected the credentials, contact system administrator.   </td><td class="markdownTableBodyNone">SQL Server credentials are refused by MariaDB    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">⬛🟪⬛🟪   </td><td class="markdownTableBodyNone">GPRS and/or MQTT connection is lost, trying to keep it back    </td></tr>
+<td class="markdownTableBodyNone"><b>12</b>   </td><td class="markdownTableBodyNone"><code>ErrorSQLSelectError</code>   </td><td class="markdownTableBodyNone">Unable to retrieve the data from the database, please check system logs.   </td><td class="markdownTableBodyNone">SQL Select request as failed    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">⬛🟩⬛🟩   </td><td class="markdownTableBodyNone">The tracker send/recive an MQTT message    </td></tr>
+<td class="markdownTableBodyNone"><b>13</b>   </td><td class="markdownTableBodyNone"><code>ErrorSQLInjectError</code>   </td><td class="markdownTableBodyNone">Unable to insert new data in the database, please check system logs.   </td><td class="markdownTableBodyNone">SQL Inject request as failed    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">🟥🟥🟥🟥   </td><td class="markdownTableBodyNone">A fatal error occured, please check the configuration and reboot the tracker   </td></tr>
+<td class="markdownTableBodyNone"><b>14</b>   </td><td class="markdownTableBodyNone"><code>ErrorSQLUpdateError</code>   </td><td class="markdownTableBodyNone">Unable to replace data in the database, please check system logs.   </td><td class="markdownTableBodyNone">SQL Update request as failed    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>15</b>   </td><td class="markdownTableBodyNone"><code>ErrorSQLDeleteError</code>   </td><td class="markdownTableBodyNone">Unable to delete data from the database, please check system logs.   </td><td class="markdownTableBodyNone">SQL Delete request as failed    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>16</b>   </td><td class="markdownTableBodyNone"><code>ErrorSQLTimeout</code>   </td><td class="markdownTableBodyNone">Timeout during SQL request, please check system logs.   </td><td class="markdownTableBodyNone">SQL Request got timeout    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>20</b>   </td><td class="markdownTableBodyNone"><code>ErrorMQTTConnectionRefused</code>   </td><td class="markdownTableBodyNone">MQTT has denied the connection, please check system logs.   </td><td class="markdownTableBodyNone">MQTT Refused the connection    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>21</b>   </td><td class="markdownTableBodyNone"><code>ErrorMQTTTrackerUnavailable</code>   </td><td class="markdownTableBodyNone">MQTT Can't access to the tracker, please check system logs.   </td><td class="markdownTableBodyNone">MQTT Can't access the tracker    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>22</b>   </td><td class="markdownTableBodyNone"><code>ErrorMQTTChecksumError</code>   </td><td class="markdownTableBodyNone">MQTT Answer got altered, please check system logs.   </td><td class="markdownTableBodyNone">MQTT Response got corrupted, wrong checksum    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>30</b>   </td><td class="markdownTableBodyNone"><code>ErrorUserWrongCredentials</code>   </td><td class="markdownTableBodyNone">The supplied password is wrong.   </td><td class="markdownTableBodyNone">The supplied password is wrong.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>31</b>   </td><td class="markdownTableBodyNone"><code>ErrorUserAlreadyExist</code>   </td><td class="markdownTableBodyNone">The specified mail already exist in the user DB.   </td><td class="markdownTableBodyNone">The specified mail already exist in the user DB.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>32</b>   </td><td class="markdownTableBodyNone"><code>ErrorUserNotFound</code>   </td><td class="markdownTableBodyNone">The specified mail is not associated with any account.   </td><td class="markdownTableBodyNone">The specified mail is not associated with any account.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>33</b>   </td><td class="markdownTableBodyNone"><code>ErrorUserHasNoTracker</code>   </td><td class="markdownTableBodyNone">The specified user don't have any tracker..   </td><td class="markdownTableBodyNone">The specified user don't have any tracker.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>34</b>   </td><td class="markdownTableBodyNone"><code>ErrorUserTokenIsInvalid</code>   </td><td class="markdownTableBodyNone">The specified token is invalid   </td><td class="markdownTableBodyNone">This token is invalid.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>90</b>   </td><td class="markdownTableBodyNone"><code>ErrorAPINotImplemented</code>   </td><td class="markdownTableBodyNone">This API call is not implemented, check your request and try again.   </td><td class="markdownTableBodyNone">API Call not implemented    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><b>91</b>   </td><td class="markdownTableBodyNone"><code>ErrorAPIInternalError</code>   </td><td class="markdownTableBodyNone">API Got an internal error, check your request and try again.   </td><td class="markdownTableBodyNone">API Got Internal error    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><b>92</b>   </td><td class="markdownTableBodyNone"><code>ErrorAPIWrongCall</code>   </td><td class="markdownTableBodyNone">Wrong args for this API Call   </td><td class="markdownTableBodyNone">API Got wrong arguments   </td></tr>
 </table>
-<h3><a class="anchor" id="autotoc_md24"></a>
-Legend:</h3>
-<p>⬜⬜⬜⬜ Constant light up in a color<br  />
-⬛⬜⬛⬜ Blinking in a color </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
