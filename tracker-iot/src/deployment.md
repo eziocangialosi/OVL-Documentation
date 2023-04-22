@@ -38,7 +38,8 @@ The important points to edit are:
  - The MQTT credentials (\ref TOPIC_TX, \ref TOPIC_RX, \ref MQTT_USER, \ref MQTT_PSWD)
  - The GPRS settings (\ref GSM_PIN, \ref APN, \ref GPRS_USER, \ref GPRS_PSWD)
 
-If you want to add the \ref page_chargebat, pass to true the \ref DEFAULT_VEH_CHG_STS flag.
+If you want to add the \ref page_chargebat, pass to true the \ref DEFAULT_VEH_CHG_STS flag.\n
+You can have more informations on the tracker configuration in the \ref page_conf page.
 \pre Caution, enabling this option requires additional hardware detailed on \ref page_chargebat page.
 
 ## Upload
