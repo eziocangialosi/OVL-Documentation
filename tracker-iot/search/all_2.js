@@ -8,7 +8,9 @@ var searchData=
   ['communicator_2ecpp_20',['Communicator.cpp',['../_communicator_8cpp.html',1,'']]],
   ['communicator_2eh_21',['Communicator.h',['../_communicator_8h.html',1,'']]],
   ['config_2eh_22',['config.h',['../config_8h.html',1,'']]],
-  ['connectgprs_23',['connectGPRS',['../class_communicator.html#a59ce4f15c2d703dcacc9a3db30116ca3',1,'Communicator']]],
-  ['connectmqtt_24',['connectMQTT',['../class_communicator.html#af7e0f80662f3e1187e5bdb31960e29a1',1,'Communicator']]],
-  ['connectnetwork_25',['connectNetwork',['../class_communicator.html#a749804f8a62d981a8aa47fecb48b16cc',1,'Communicator']]]
+  ['configuration_2emd_23',['configuration.md',['../configuration_8md.html',1,'']]],
+  ['configuring_20the_20tracker_24',['Configuring the tracker',['../page_conf.html',1,'']]],
+  ['connectgprs_25',['connectGPRS',['../class_communicator.html#a59ce4f15c2d703dcacc9a3db30116ca3',1,'Communicator']]],
+  ['connectmqtt_26',['connectMQTT',['../class_communicator.html#af7e0f80662f3e1187e5bdb31960e29a1',1,'Communicator']]],
+  ['connectnetwork_27',['connectNetwork',['../class_communicator.html#a749804f8a62d981a8aa47fecb48b16cc',1,'Communicator']]]
 ];
