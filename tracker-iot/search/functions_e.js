@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tryhandcheck_240',['tryHandCheck',['../class_communicator.html#ac7773988eb91ba1d89892f3009c93409',1,'Communicator']]]
+  ['tryhandshake_240',['tryHandshake',['../class_communicator.html#ab78d791c22f860e1390787cd22fb395c',1,'Communicator']]]
 ];
