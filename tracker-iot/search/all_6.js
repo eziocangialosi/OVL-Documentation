@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['handcheckhandle_64',['handCheckHandle',['../class_communicator.html#abf509d525f0263af8316718fca159eaa',1,'Communicator']]],
-  ['handchecksuccess_65',['handCheckSuccess',['../class_communicator.html#a82c95f2ef7191ba737345228d3533a6c',1,'Communicator']]]
+  ['handshakehandle_64',['handshakeHandle',['../class_communicator.html#af7372d1deb0554a94191cc2d22ee7ab7',1,'Communicator']]],
+  ['handshakesuccess_65',['handshakeSuccess',['../class_communicator.html#a7ff846892b62ab891382170611e0c6cc',1,'Communicator']]]
 ];

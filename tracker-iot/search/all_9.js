@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lasthandcheckrq_74',['lastHandCheckRq',['../class_communicator.html#ae1e66a670222bf7778fb7c2521018acc',1,'Communicator']]],
+  ['lasthandshakerq_74',['lastHandshakeRq',['../class_communicator.html#ac333797d3ffe58d6eac38ee3b2cde36a',1,'Communicator']]],
   ['lastlat_75',['lastLat',['../class_locator.html#a1dc37115792c4ce4e00c5b6b222e1f16',1,'Locator']]],
   ['lastlon_76',['lastLon',['../class_locator.html#ae61c59097c3a7ef0f0d44782e20fcbab',1,'Locator']]],
   ['lastpostime_77',['lastPosTime',['../class_locator.html#affa755d3b105fc72decbdaa36865082b',1,'Locator']]],
