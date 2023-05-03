@@ -58,7 +58,7 @@
 | Status      | Implemented ✅ |
 | Unit Test      | TODO ⏳ |
 
-| POST        | /user/{mail}/{password}                                                                                                   |
+| POST        | /user/{mail}/{password}/{notif}                                                                                                   |
 | ----------- | --------------------------------------------------------------------------------------------------------------------- |
 | Used to     | Add a user to the database with the specified mail and password.                          |
 | Json Output | `Topics: {"topicTX": string, "topicRX": string},TrackerId: int, "error": {"Code": int, "Message": string}}` |
