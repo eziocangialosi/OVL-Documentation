@@ -5,7 +5,7 @@ var class_tracker =
     [ "beginAlarm", "class_tracker.html#ac9ddff2353c683fa5dff8beb40d523fb", null ],
     [ "checkInitParam", "class_tracker.html#a6d66d58d4173e6fb65570dc3c1a480a9", null ],
     [ "mqtt_whenPosRq", "class_tracker.html#a5d8cd0788255288e74b18f9f6cd3d007", null ],
-    [ "mqtt_whenPrt", "class_tracker.html#a5be75081bc103c97556b775ed3181329", null ],
+    [ "mqtt_whenPrt", "class_tracker.html#a2b115bdaef5d11c05a8ba5bb93a53390", null ],
     [ "mqtt_whenSfzRq", "class_tracker.html#a2fe2fa5d82c1ab449016b5c4620a92c9", null ],
     [ "parseParamFrame", "class_tracker.html#adc6c23945fbb9caee3384dd41682dec8", null ],
     [ "sendPos", "class_tracker.html#a2d36da69e0a55c66a9dfe41697bf0fc9", null ],
