@@ -1,5 +1,4 @@
 \page page_dependencies Dependencies
-
 Dependencies for the Tracker (IoT) part
 
 # Libraries

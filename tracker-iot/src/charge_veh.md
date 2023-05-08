@@ -1,4 +1,4 @@
-\page page_chargebat ChargingOnVehicle - Option
+\page page_chargebat ChargingOnVehicle
 
 This page presenting the ChargingOnVehicle option.
 
@@ -46,3 +46,4 @@ You can also remark that the SENSOR and COMMAND are wired on pin 4 and 12.
 # How to enable it
 ***
 To enable this option put \ref DEFAULT_VEH_CHG_STS on true in config.h
+ 

@@ -7,6 +7,7 @@
 Welcome on the tracker documentation of the OpenVehicleLocator Project !
 All the tracker code is available it <a href="https://github.com/eziocangialosi/ovl-iot">github repository</a><br>
 <br>
+
 ## Deploying the project
 ***
 To deploy the tracker part on the project go on \ref page_deployment page.
