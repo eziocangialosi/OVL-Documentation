@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "OpenVehicleLocator - Documentation", "index.html", [
     [ "Microcontroller software", "./tracker-iot", null],
-    [ "Web Interface", "./web-interface", null],
+    [ "Web Interface", "./webinterface", null],
     [ "Mobile Application", "./mobile", null],
     [ "Backend - Server", "./backend", null]
     ]

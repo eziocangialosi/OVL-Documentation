@@ -5,6 +5,9 @@ This page presenting the ChargingOnVehicle option.
 \warning This option is currently in developpement, caution when you use it !<br>
 It is implemented in the code but the electronic schematic is not yet definitive and reliable
 
+\bug When the tracker battery is in charge, it may be the SIM800L unable to communicate
+(This because the SIM800L may recive 5 volts instead of 4,2 volts max)
+
 # Purpose
 ***
 This option is here to allow the tracker to recharging itself on the vehcile battery
