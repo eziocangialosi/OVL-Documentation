@@ -1,6 +1,7 @@
 var class_tracker =
 [
     [ "actionInLoop", "class_tracker.html#a739468dd72898b441a40aab02902f16f", null ],
+    [ "batteryWatchDog", "class_tracker.html#a62fb079e9562aebda2a2a9aff101fefb", null ],
     [ "beg", "class_tracker.html#a0abfcbb7bf87fed3c9643e0b38df04e1", null ],
     [ "beginAlarm", "class_tracker.html#ac9ddff2353c683fa5dff8beb40d523fb", null ],
     [ "checkInitParam", "class_tracker.html#a6d66d58d4173e6fb65570dc3c1a480a9", null ],

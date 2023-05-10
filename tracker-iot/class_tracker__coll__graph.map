@@ -1,7 +1,7 @@
 <map id="Tracker" name="Tracker">
-<area shape="rect" id="node1" title="This class manage all the algorithm of the tracker (this is the tracker &quot;skeleton&quot;) : MQTT answers,..." alt="" coords="324,828,486,1184"/>
-<area shape="rect" id="node2" href="$class_serial_debug.html" title="Used to send debug messages on usb serial link." alt="" coords="112,71,226,178"/>
-<area shape="rect" id="node3" href="$class_communicator.html" title="Class that managing everything related to comunication." alt="" coords="142,351,345,721"/>
-<area shape="rect" id="node5" href="$class_locator.html" title="This class manage call the positioning stuff." alt="" coords="369,307,550,765"/>
-<area shape="rect" id="node4" href="$class_led_indicator.html" title="Class that managing the debug led." alt="" coords="428,5,542,244"/>
+<area shape="rect" id="node1" title="This class manage all the algorithm of the tracker (this is the tracker &quot;skeleton&quot;) : MQTT answers,..." alt="" coords="323,828,486,1199"/>
+<area shape="rect" id="node2" href="$class_serial_debug.html" title="Used to send debug messages on usb serial link." alt="" coords="112,71,225,178"/>
+<area shape="rect" id="node3" href="$class_communicator.html" title="Class that managing everything related to comunication." alt="" coords="142,351,344,721"/>
+<area shape="rect" id="node5" href="$class_locator.html" title="This class manage call the positioning stuff." alt="" coords="368,307,550,765"/>
+<area shape="rect" id="node4" href="$class_led_indicator.html" title="Class that managing the debug led." alt="" coords="428,5,541,244"/>
 </map>

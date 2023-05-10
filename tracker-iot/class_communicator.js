@@ -8,6 +8,7 @@ var class_communicator =
     [ "execMqttLoop", "class_communicator.html#a7de0e792607b3c10942c373014560a9d", null ],
     [ "getBatteryInCharge", "class_communicator.html#a292ff3912a3ad26cf87a7f11bc09a6d7", null ],
     [ "getBatteryPercent", "class_communicator.html#a39fdaeb37baf53d766bc33d140382f15", null ],
+    [ "getBatteryVolt", "class_communicator.html#af9ab1dad516d6c5a8e254405da407cb9", null ],
     [ "getHandshakeSuccess", "class_communicator.html#a689f4d876adb28247915aabbc6bad9c7", null ],
     [ "getIsConnected", "class_communicator.html#aa4ea4737c9eb064cb95bf441b220d0e7", null ],
     [ "getLastHandshakeRq", "class_communicator.html#af392e120082f2a4d4b7245e4eab0b72d", null ],
