@@ -10,6 +10,7 @@ var config_8h =
     [ "GPS_BAUD", "config_8h.html#af0875ffe69dbe45df3f85c1f720c3eee", null ],
     [ "GSM_BAUD", "config_8h.html#a475f6fe34d7b56cd0697de25cb74f91f", null ],
     [ "GSM_PIN", "config_8h.html#a4509b4256e343f118f66bcfbf33a4ea7", null ],
+    [ "LOW_VOLTAGE", "config_8h.html#a2cd77be4abb715f193d94ffb78a349c2", null ],
     [ "MINIMAL_INTERVAL", "config_8h.html#a381a0f89d6f127c162746d80f04d46eb", null ],
     [ "MQTT_PORT", "config_8h.html#aa8632baff6bbb5004385998918f1e6bd", null ],
     [ "TINY_GSM_MODEM_SIM800", "config_8h.html#a549c9f602698a9c845ae97db51494d88", null ],
