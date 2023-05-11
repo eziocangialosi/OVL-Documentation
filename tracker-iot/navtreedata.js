@@ -28,45 +28,45 @@ var NAVTREE =
     [ "Introduction", "index.html", null ],
     [ "Tracker box", "page_box.html", null ],
     [ "Configuring the tracker", "page_conf.html", [
-      [ "GPRS Configuration", "page_conf.html#autotoc_md7", null ],
-      [ "MQTT Configuration", "page_conf.html#autotoc_md8", null ],
-      [ "Miscellaneous parameters", "page_conf.html#autotoc_md9", [
-        [ "Deploying the project", "index.html#autotoc_md35", null ],
-        [ "Modules baud", "page_conf.html#autotoc_md10", null ],
-        [ "GPRS Module selector", "page_conf.html#autotoc_md11", null ],
-        [ "Tracker algorithm configuration", "page_conf.html#autotoc_md12", [
-          [ "Triggered distance", "page_conf.html#autotoc_md13", null ],
-          [ "Position Intervals", "page_conf.html#autotoc_md14", null ],
-          [ "Safezone", "page_conf.html#autotoc_md15", null ],
-          [ "USB Serial baud", "page_conf.html#autotoc_md16", null ]
+      [ "GPRS Configuration", "page_conf.html#autotoc_md8", null ],
+      [ "MQTT Configuration", "page_conf.html#autotoc_md9", null ],
+      [ "Miscellaneous parameters", "page_conf.html#autotoc_md10", [
+        [ "Deploying the project", "index.html#autotoc_md36", null ],
+        [ "Modules baud", "page_conf.html#autotoc_md11", null ],
+        [ "GPRS Module selector", "page_conf.html#autotoc_md12", null ],
+        [ "Tracker algorithm configuration", "page_conf.html#autotoc_md13", [
+          [ "Triggered distance", "page_conf.html#autotoc_md14", null ],
+          [ "Position Intervals", "page_conf.html#autotoc_md15", null ],
+          [ "Safezone", "page_conf.html#autotoc_md16", null ],
+          [ "USB Serial baud", "page_conf.html#autotoc_md17", null ]
         ] ]
       ] ]
     ] ],
     [ "Dependencies", "page_dependencies.html", [
-      [ "Libraries", "page_dependencies.html#autotoc_md17", null ],
-      [ "Arduino Core", "page_dependencies.html#autotoc_md18", null ],
-      [ "Libraries modifications needed", "page_dependencies.html#autotoc_md19", null ]
+      [ "Libraries", "page_dependencies.html#autotoc_md18", null ],
+      [ "Arduino Core", "page_dependencies.html#autotoc_md19", null ],
+      [ "Libraries modifications needed", "page_dependencies.html#autotoc_md20", null ]
     ] ],
     [ "Deployment", "page_deployment.html", [
-      [ "Step 1: Electronic", "page_deployment.html#autotoc_md20", [
-        [ "Hardware list", "page_deployment.html#autotoc_md21", null ],
-        [ "Hardware schematic", "page_deployment.html#autotoc_md22", null ],
-        [ "Box", "page_deployment.html#autotoc_md23", null ]
+      [ "Step 1: Electronic", "page_deployment.html#autotoc_md21", [
+        [ "Hardware list", "page_deployment.html#autotoc_md22", null ],
+        [ "Hardware schematic", "page_deployment.html#autotoc_md23", null ],
+        [ "Box", "page_deployment.html#autotoc_md24", null ]
       ] ],
-      [ "Step 2: Code", "page_deployment.html#autotoc_md24", [
-        [ "Download", "page_deployment.html#autotoc_md25", null ],
-        [ "Configuration", "page_deployment.html#autotoc_md26", null ],
-        [ "Upload", "page_deployment.html#autotoc_md27", null ]
+      [ "Step 2: Code", "page_deployment.html#autotoc_md25", [
+        [ "Download", "page_deployment.html#autotoc_md26", null ],
+        [ "Configuration", "page_deployment.html#autotoc_md27", null ],
+        [ "Upload", "page_deployment.html#autotoc_md28", null ]
       ] ],
-      [ "Step 3: Tests", "page_deployment.html#autotoc_md28", null ],
-      [ "Step 4: Installation on the vehicle", "page_deployment.html#autotoc_md29", null ]
+      [ "Step 3: Tests", "page_deployment.html#autotoc_md29", null ],
+      [ "Step 4: Installation on the vehicle", "page_deployment.html#autotoc_md30", null ]
     ] ],
     [ "Electronics", "page_electronic.html", [
-      [ "Microcontroler, developpement board", "page_electronic.html#autotoc_md30", null ],
-      [ "GPRS communication", "page_electronic.html#autotoc_md31", null ],
-      [ "Location", "page_electronic.html#autotoc_md32", null ],
+      [ "Microcontroler, developpement board", "page_electronic.html#autotoc_md31", null ],
+      [ "GPRS communication", "page_electronic.html#autotoc_md32", null ],
+      [ "Location", "page_electronic.html#autotoc_md33", null ],
       [ "Battery", "page_electronic.html#section_battery", null ],
-      [ "Debugging the tracker", "page_electronic.html#autotoc_md33", null ]
+      [ "Debugging the tracker", "page_electronic.html#autotoc_md34", null ]
     ] ],
     [ "RGB LED debug codes", "page_led_codes.html", null ],
     [ "Options", "page_options.html", "page_options" ],
