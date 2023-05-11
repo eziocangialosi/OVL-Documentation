@@ -46,6 +46,13 @@ Caution, you also will need of 2 pairs of connectors for the SENSOR and COMMAND 
 You can see on the schematic that vehicle power comes throught the USB-C port.\n
 You can also remark that the SENSOR and COMMAND are wired on pin 4 and 12.
 
+## Example of a realization
+
+<img src="./src/media/charging_module.jpg" width="50%" height="50%">\n
+
+This is an example of a realization of the charging module.
+This realization it make with a 4x6cm PCB where components are solded.
+
 # How to enable it
 ***
 To enable this option put \ref DEFAULT_VEH_CHG_STS on true in config.h
