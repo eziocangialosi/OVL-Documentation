@@ -72,8 +72,12 @@ var NAVTREE =
     [ "Options", "page_options.html", "page_options" ],
     [ "Tracker-Server communication protocol", "md__home_ezio__open_vehicle_locator__o_v_l__documentation_tracker_iot_src_protocol__srv__io_t.html", null ],
     [ "Place the tracker on the vehicle", "page_veh_install.html", null ],
-    [ "Bug List", "bug.html", null ],
+    [ "Version history", "page_versions.html", [
+      [ "Releases", "page_versions.html#autotoc_md40", null ],
+      [ "Development", "page_versions.html#autotoc_md41", null ]
+    ] ],
     [ "Deprecated List", "deprecated.html", null ],
+    [ "Bug List", "bug.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
