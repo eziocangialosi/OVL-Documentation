@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['ecomode_340',['EcoMode',['../page_ecomode.html',1,'page_options']]],
-  ['electronics_341',['Electronics',['../page_electronic.html',1,'']]]
+  ['ecomode_343',['EcoMode',['../page_ecomode.html',1,'page_options']]],
+  ['electronics_344',['Electronics',['../page_electronic.html',1,'']]]
 ];
