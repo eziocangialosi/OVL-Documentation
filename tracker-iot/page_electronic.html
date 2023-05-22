@@ -127,17 +127,17 @@ $(document).ready(function(){initNavTree('page_electronic.html',''); initResizab
 <div class="contents">
 <div class="textblock"><p>Electronics modules/parts, specifications, debug infos<br  />
 Here are all the boards and electronics part used by the project</p>
-<h1><a class="anchor" id="autotoc_md35"></a>
+<h1><a class="anchor" id="autotoc_md31"></a>
 Microcontroler, developpement board</h1>
 <hr  />
 <p> The project use a <a href="https://www.dfrobot.com/product-2195.html">Firebeetle 2 ESP32-E</a>.</p>
-<h1><a class="anchor" id="autotoc_md36"></a>
+<h1><a class="anchor" id="autotoc_md32"></a>
 GPRS communication</h1>
 <hr  />
 <p> To communicate with the server, we chose to use the GPRS network. To do that we headed to the <a href="https://www.simcom.com/product/SIM800.html">SIMCom SIM800L</a> module. This module communicate with UART link at 9600 baud. </p><blockquote class="doxtable">
 <p>💡 <b>Tip:</b> The SIM800L module has a short peak consuption at 2A, this peak is unmanageable for the Firebeetle's battery monitor. To correct this problem, wire a capacitor in parallel with the SIM800L power supply. </p>
 </blockquote>
-<h1><a class="anchor" id="autotoc_md37"></a>
+<h1><a class="anchor" id="autotoc_md33"></a>
 Location</h1>
 <hr  />
 <p> To be able to locate we used a u-blox NEO6MV2 module. It communicate to with an UART link at 9600 baud.</p>
@@ -147,7 +147,7 @@ Battery</h1>
 <p> The tracker need a battery to work. This battery is an LiPo 3.7V. </p><dl class="section note"><dt>Note</dt><dd>The battery capacity has not been yet defined.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>The tracker haven't currently a security against battery discharge, so make cation to battery level.</dd></dl>
 <dl class="bug"><dt><b><a class="el" href="bug.html#_bug000002">Bug:</a></b></dt><dd>When the tracker battery is in charge, it may be the SIM800L unable to communicate (This because the SIM800L may recive 5 volts instead of 4,2 volts max)</dd></dl>
-<h1><a class="anchor" id="autotoc_md38"></a>
+<h1><a class="anchor" id="autotoc_md34"></a>
 Debugging the tracker</h1>
 <hr  />
 <p> If the tracker seems not working you can firstly reset it with the RST button on the Firebeetle board. Secondly, you can plug it to your computer with an USB-C wire, and read the debug infos with a serial communication program like minicom at 115200 baud. The debugging is also possible with <a class="el" href="page_led_codes.html">RGB LED debug codes</a>. </p>
