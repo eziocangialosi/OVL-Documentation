@@ -7,9 +7,9 @@
       <day-type id="0" name="Travaill&#xE9;" description="Un jour de travail normal"/>
       <day-type id="1" name="Ch&#xF4;m&#xE9;" description="Un jour ch&#xF4;m&#xE9; normal"/>
       <day-type id="2" name="Utiliser la base" description="Utilise un jour du calendrier de base"/>
-      <day-type id="3" name="Mercredi" description=""/>
-      <day-type id="4" name="Jeudi" description=""/>
-      <day-type id="5" name="Lundi" description=""/>
+      <day-type id="3" name="Jeudi" description=""/>
+      <day-type id="4" name="Lundi" description=""/>
+      <day-type id="5" name="Mercredi" description=""/>
       <day-type id="6" name="Mardi" description=""/>
     </day-types>
     <calendar id="1" name="D&#xE9;faut">
@@ -24,49 +24,49 @@
         <day date="20230518" type="day-type" id="1"/>
       </days>
       <calendar id="2" name="OVL">
-        <default-week mon="5" tue="6" wed="3" thu="4" fri="1" sat="2" sun="2"/>
+        <default-week mon="4" tue="6" wed="5" thu="3" fri="1" sat="2" sun="2"/>
         <overridden-day-types>
-          <overridden-day-type id="5">
-            <interval start="1400" end="1800"/>
+          <overridden-day-type id="3">
+            <interval start="1300" end="1700"/>
           </overridden-day-type>
           <overridden-day-type id="6">
             <interval start="1300" end="1800"/>
           </overridden-day-type>
           <overridden-day-type id="4">
-            <interval start="1300" end="1700"/>
+            <interval start="1400" end="1800"/>
           </overridden-day-type>
-          <overridden-day-type id="3">
+          <overridden-day-type id="5">
             <interval start="0900" end="1300"/>
           </overridden-day-type>
         </overridden-day-types>
         <days>
-          <day date="20230313" type="day-type" id="5"/>
+          <day date="20230313" type="day-type" id="4"/>
           <day date="20230222" type="day-type" id="1"/>
-          <day date="20230214" type="day-type" id="1"/>
+          <day date="20230417" type="day-type" id="1"/>
           <day date="20230427" type="day-type" id="1"/>
           <day date="20230223" type="day-type" id="1"/>
           <day date="20230426" type="day-type" id="1"/>
-          <day date="20230221" type="day-type" id="1"/>
           <day date="20230425" type="day-type" id="1"/>
           <day date="20230106" type="day-type" id="1"/>
+          <day date="20230221" type="day-type" id="1"/>
           <day date="20230424" type="day-type" id="1"/>
           <day date="20230220" type="day-type" id="1"/>
-          <day date="20230323" type="day-type" id="4"/>
-          <day date="20230322" type="day-type" id="3"/>
+          <day date="20230323" type="day-type" id="3"/>
+          <day date="20230322" type="day-type" id="5"/>
           <day date="20230119" type="day-type" id="1"/>
           <day date="20230321" type="day-type" id="6"/>
-          <day date="20230320" type="day-type" id="5"/>
           <day date="20230420" type="day-type" id="1"/>
-          <day date="20230216" type="day-type" id="1"/>
+          <day date="20230320" type="day-type" id="4"/>
           <day date="20230419" type="day-type" id="1"/>
-          <day date="20230215" type="day-type" id="1"/>
+          <day date="20230216" type="day-type" id="1"/>
           <day date="20230418" type="day-type" id="1"/>
+          <day date="20230215" type="day-type" id="1"/>
           <day date="20230317" type="day-type" id="1"/>
-          <day date="20230417" type="day-type" id="1"/>
-          <day date="20230316" type="day-type" id="4"/>
+          <day date="20230214" type="day-type" id="1"/>
           <day date="20230213" type="day-type" id="1"/>
+          <day date="20230316" type="day-type" id="3"/>
           <day date="20230501" type="day-type" id="1"/>
-          <day date="20230315" type="day-type" id="3"/>
+          <day date="20230315" type="day-type" id="5"/>
           <day date="20230314" type="day-type" id="6"/>
         </days>
       </calendar>
@@ -175,7 +175,7 @@
       <task id="30" name="Revue de Projet 3" note="" work="0" start="20230509T000000Z" end="20230509T000000Z" work-start="20230509T130000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
         <constraint type="must-start-on" time="20230509T000000Z"/>
       </task>
-      <task id="31" name="Production d'une version alpha" note="" work="61200" start="20230504T170000Z" end="20230511T170000Z" work-start="20230508T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="31" name="Production d'une version alpha" note="" work="61200" start="20230504T170000Z" end="20230511T170000Z" work-start="20230508T140000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
         <predecessors>
           <predecessor id="1" predecessor-id="29" type="FS"/>
         </predecessors>
