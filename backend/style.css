@@ -1,0 +1,67 @@
+a{
+    user-select: none !important; 
+    transition: transform .4s !important; /* Animation */
+    margin: 0 auto !important;
+}
+a:hover{
+    transform: scale(1.04) !important;
+}
+button{
+    user-select: none !important; 
+    transition: transform .4s !important; /* Animation */
+    margin: 0 auto !important;
+}
+button:hover{
+    transform: scale(1.2) !important;
+}
+.search-result-item:hover {
+    transform: scale(1) !important;
+}
+.sidebar-items-container{
+    user-select: none !important; 
+}
+.footer-wrapper {
+    user-select: none !important; 
+}
+.details-item-container {
+    user-select: none !important; 
+}
+.pre-top-bar-container {
+    user-select: none !important; 
+}
+.subsection-title {
+    user-select: none !important; 
+}
+.toc-content {
+    user-select: none !important; 
+    overflow: hidden !important;
+}
+.toc-content div{
+    user-select: none !important; 
+    overflow: hidden !important;
+}
+.readme li{
+    user-select: none !important; 
+    transition: transform .4s !important; /* Animation */
+    margin: 0 auto !important;
+}
+
+.readme li:hover {
+    transform: scale(1.04) !important;
+}
+header{
+    user-select: none !important; 
+}
+#example {
+    user-select: none !important; 
+}
+
+#methods {
+    user-select: none !important; 
+}
+strong {
+    user-select: none !important; 
+}
+thead {
+    user-select: none !important; 
+}
