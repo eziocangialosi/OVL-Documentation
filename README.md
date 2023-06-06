@@ -3,9 +3,7 @@
 </a>
 
 # OpenVehicleLocator - Documentation repository
-Welcome on the documentation repository of the OpenVehicleLocator project ! Here you will find all the documentation of the project.<br>
+Welcome on the documentation repository of the OpenVehicleLocator project ! Here you will find all the files related to the documentation of the project.<br>
+The documentation is available on https://doc.ovl-project.org.<br>
 The documentation is stored by part (electronic, backend, etc), see good the directory to access the documentation.<br>
 If you're not looking for the documentation you can navigate between all the repositories in the [Project navigator](https://github.com/eziocangialosi/OpenVehicleLocator#project-navigation).
-
-> **Warning**<br>
-> All the project is **UNREADY** for deployment ! An alpha version will be released in the coming months...
