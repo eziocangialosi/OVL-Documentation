@@ -1,0 +1,1196 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.9">
+    
+    
+      
+        <title>Developper Documentation - OVL-Website</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.85bb2934.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a6bdf11c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#developper-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="OVL-Website" class="md-header__button md-logo" aria-label="OVL-Website" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OVL-Website
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Developper Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      User Documentation
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      Developper Documentation
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OVL-Website" class="md-nav__button md-logo" aria-label="OVL-Website" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    OVL-Website
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        User Documentation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Developper Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Developper Documentation
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#connection" class="md-nav__link">
+    Connection
+  </a>
+  
+    <nav class="md-nav" aria-label="Connection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connectphp" class="md-nav__link">
+    connect.php
+  </a>
+  
+    <nav class="md-nav" aria-label="connect.php">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-for" class="md-nav__link">
+    Use for
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explanation" class="md-nav__link">
+    Explanation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#templateconnectphp" class="md-nav__link">
+    template/connect.php
+  </a>
+  
+    <nav class="md-nav" aria-label="template/connect.php">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-for_1" class="md-nav__link">
+    Use for
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explanation_1" class="md-nav__link">
+    Explanation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phpverifyconnectphp" class="md-nav__link">
+    php/verifyConnect.php
+  </a>
+  
+    <nav class="md-nav" aria-label="php/verifyConnect.php">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-for_2" class="md-nav__link">
+    Use for
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explanation_2" class="md-nav__link">
+    Explanation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iot-list" class="md-nav__link">
+    IOT List
+  </a>
+  
+    <nav class="md-nav" aria-label="IOT List">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iotlistphp" class="md-nav__link">
+    iotList.php
+  </a>
+  
+    <nav class="md-nav" aria-label="iotList.php">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-for" class="md-nav__link">
+    Using for
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explanation_3" class="md-nav__link">
+    Explanation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#templateiotarrayphp" class="md-nav__link">
+    template/iotArray.php
+  </a>
+  
+    <nav class="md-nav" aria-label="template/iotArray.php">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-for_1" class="md-nav__link">
+    Using for
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explanation_4" class="md-nav__link">
+    Explanation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#position-history" class="md-nav__link">
+    Position History
+  </a>
+  
+    <nav class="md-nav" aria-label="Position History">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#historiquephp" class="md-nav__link">
+    historique.php
+  </a>
+  
+    <nav class="md-nav" aria-label="historique.php">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-for_2" class="md-nav__link">
+    Using for
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explanation_5" class="md-nav__link">
+    Explanation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#templatepositionarrayphp" class="md-nav__link">
+    template/PositionArray.php
+  </a>
+  
+    <nav class="md-nav" aria-label="template/PositionArray.php">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-for_3" class="md-nav__link">
+    Using for
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explanation_6" class="md-nav__link">
+    Explanation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="developper-documentation">Developper Documentation</h1>
+<h2 id="connection">Connection</h2>
+<h3 id="connectphp">connect.php</h3>
+<h4 id="use-for">Use for</h4>
+<ul>
+<li>Declare the HTML document with a DOCTYPE and set the language attribute to "en".</li>
+<li>Define the head section, including meta tags, custom styles, and a title.</li>
+<li>Begin the body of the document.</li>
+<li>Include the header and connect templates.</li>
+<li>Define an associative array of messages and their corresponding CSS classes.</li>
+<li>Check if the 'connexion' GET parameter is set and if it exists in the messages array.</li>
+<li>Display the corresponding message and apply the appropriate CSS class if the condition is met.</li>
+<li>Close the message display condition.</li>
+<li>Include the footer template.</li>
+<li>Include the MDB (Material Design Bootstrap) JavaScript library.</li>
+<li>Close the body and HTML tags.</li>
+</ul>
+<h4 id="explanation">Explanation</h4>
+<p>➡️ This section is used to set up the HTML document structure and include necessary files.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;X-UA-Compatible&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;IE=edge&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Connection<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/style.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/mdb.min.css&quot;</span> <span class="p">/&gt;</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</code></pre></div>
+➡️ This code snippet is used to include the header and connect templates.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="x">    </span><span class="cp">&lt;?php</span> 
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">include</span><span class="p">(</span><span class="s1">&#39;template/header.php&#39;</span><span class="p">);</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="k">include</span><span class="p">(</span><span class="s2">&quot;template/connect.php&quot;</span><span class="p">);</span> 
+</code></pre></div>
+➡️ This code snippet defines an array of messages and their corresponding CSS classes.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="x">    // Define messages and their corresponding CSS classes</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="x">    $messages = [</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="x">        1 =&gt; [&#39;message&#39; =&gt; &#39;Wrong Password !&#39;, &#39;class&#39; =&gt; &#39;alert-danger&#39;],</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="x">        2 =&gt; [&#39;message&#39; =&gt; &#39;Wrong Email !&#39;, &#39;class&#39; =&gt; &#39;alert-danger&#39;],</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="x">        3 =&gt; [&#39;message&#39; =&gt; &#39;Successfully disconnect !&#39;, &#39;class&#39; =&gt; &#39;alert-success&#39;],</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="x">        4 =&gt; [&#39;message&#39; =&gt; &#39;API Connection Lost !&#39;, &#39;class&#39; =&gt; &#39;alert-danger&#39;],</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="x">    ];</span>
+</code></pre></div>
+➡️ This code snippet is used to display a message if it exists based on the 'connexion' GET parameter.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="x">    // Display the message if it exists</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="x">    if (isset($_GET[&#39;connexion&#39;]) &amp;&amp; isset($messages[$_GET[&#39;connexion&#39;]])) {</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="x">        $message = $messages[$_GET[&#39;connexion&#39;]];</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="x">    ?&gt;</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="x">        &lt;div class=&quot;alert </span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$message</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">];</span> <span class="cp">?&gt;</span><span class="x"> mt-4 mb-4 alert_test alert-dismissible&quot; role=&quot;alert&quot;&gt;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="x">            </span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nv">$message</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">];</span> <span class="cp">?&gt;</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="x">            &lt;a href=&quot;#&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; style=&quot;margin-left: 20px; margin-right: 20px&quot; aria-label=&quot;close&quot;&gt;&lt;i class=&quot;fa-solid fa-xmark&quot;&gt;&lt;/i&gt;&lt;/a&gt;</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="x">        &lt;/div&gt;</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="x">    </span><span class="cp">&lt;?php</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="p">}</span>
+</code></pre></div>
+➡️ This code snippet is used to include the footer template and load the JavaScript file.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="x">    include(&#39;template/footer.php&#39;);</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="x">    ?&gt; </span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="x">    &lt;script type=&quot;text/javascript&quot; src=&quot;js/mdb.min.js&quot;&gt;&lt;/script&gt;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="x">&lt;/body&gt;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="x">&lt;/html&gt;</span>
+</code></pre></div>
+<h3 id="templateconnectphp">template/connect.php</h3>
+<h4 id="use-for_1">Use for</h4>
+<ul>
+<li>Create a centered background color section using the <code>&lt;section&gt;</code> element with a "text-center" class.</li>
+<li>Add a background image with a custom style, setting the background color and height.</li>
+<li>Create a design block for the login form using a <code>&lt;div&gt;</code> element with a card and other styling classes.<ul>
+<li>Apply custom styles for the card, such as margin, background color, backdrop filter, and maximum width.</li>
+</ul>
+</li>
+<li>Add a card body with a form inside.<ul>
+<li>Use a <code>&lt;div&gt;</code> element with a "card-body" class and apply padding styles.</li>
+</ul>
+</li>
+<li>Create a row with centered content using "d-flex" and "justify-content-center" classes.</li>
+<li>Add the login form inside a <code>&lt;div&gt;</code> element.<ul>
+<li>Set the column width for large screens to 8.</li>
+</ul>
+</li>
+<li>Add a form header with a bold "Login" title.</li>
+<li>Create the form with an action pointing to "php/verifyConnect.php" and a POST method.<ul>
+<li>Add an email input field with validation error.<ul>
+<li>Use a "form-outline" class and apply margin styles.</li>
+</ul>
+</li>
+<li>Add a password input field with validation error.<ul>
+<li>Use a "form-outline" class and apply margin styles.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Add a submit button with Bootstrap classes and custom styles.</li>
+<li>Close all the HTML elements.</li>
+</ul>
+<h4 id="explanation_1">Explanation</h4>
+<p>➡️ This section is use for center the text</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="cm">&lt;!-- Background color section--&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-center&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>➡️ This div is use for add an background color
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>  <span class="cm">&lt;!-- Background image --&gt;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;p-5 bg-image&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="s">        background-color: #647295;</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="s">        height: 300px;</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="s">        &quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<p>➡️ this code snippet allows you to position the form
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>  <span class="cm">&lt;!-- Design block for the login form --&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card mx-4 mb-5 mx-md-auto shadow-5-strong&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="s">        margin-top: -100px;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="s">        background: hsla(0, 0%, 100%, 0.8);</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="s">        backdrop-filter: blur(30px);</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="s">        max-width: 900px;</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="s">        &quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>    <span class="cm">&lt;!--Card body with form --&gt;</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card-body py-5 px-md-5 card_modify&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;row d-flex justify-content-center&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>        <span class="cm">&lt;!-- Login form --&gt;</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-lg-8&quot;</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<p>➡️ this html tag use for position... the form title
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="cm">&lt;!-- Form header --&gt;</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fw-bold mb-5&quot;</span><span class="p">&gt;</span>Login<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<p>➡️ this form tag redirect the informations of the form to the php/verifyConnect.php using the method POST
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">&lt;</span><span class="nt">form</span>  <span class="na">action</span><span class="o">=</span><span class="s">&quot;php/verifyConnect.php&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;POST&quot;</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<p>➡️ this code snippet is an input in the form use for enter an email adress. This input verify if the email adress is corect. If the email is not in the database the input will be red 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="cm">&lt;!-- Email input field with validation error--&gt;</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-outline mb-4&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;form3Example3&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control &lt;!-- PHP code to check if the connexion is valid, if not then show error message. --&gt; &lt;?php if([&quot;</span><span class="na">connexion</span><span class="err">&quot;]</span> <span class="err">==</span> <span class="na">2</span><span class="err">){</span> <span class="err">?</span><span class="p">&gt;</span> is-invalid <span class="cp">&lt;?php } ?&gt;</span>&quot; name=&quot;email&quot; required/&gt;
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-label&quot;</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;form3Example3&quot;</span><span class="p">&gt;</span>Email<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<p>➡️ This one is the same but for the password
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="cm">&lt;!-- Password input field with validation error--&gt;</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-outline mb-4&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;form3Example4&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control &lt;!-- PHP code to check if the connexion is valid, if not then show error message. --&gt; &lt;?php if([&quot;</span><span class="na">connexion</span><span class="err">&quot;]</span> <span class="err">==</span> <span class="na">1</span><span class="err">){</span> <span class="err">?</span><span class="p">&gt;</span> is-invalid <span class="cp">&lt;?php } ?&gt;</span>&quot; name=&quot;password&quot; required/&gt;
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-label&quot;</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;form3Example4&quot;</span><span class="p">&gt;</span>Password<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<p>➡️ This is just the submit button
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>    <span class="cm">&lt;!-- Submit button --&gt;</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary btn-primary btn-block mb-4 button_modify&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>        Login
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+</code></pre></div></p>
+<h3 id="phpverifyconnectphp">php/verifyConnect.php</h3>
+<h4 id="use-for_2">Use for</h4>
+<ul>
+<li><code>if (isset($_POST['email']) &amp;&amp; isset($_POST['password'])) {</code> - Verify if the user complete the form</li>
+<li><code>$users_verif = file_get_contents($API_link ."/user/" . $email . "/" . $mdp);</code> - Get informations about the user using the API request</li>
+<li><code>if($users_verif != "")</code> - Verify if the user exist in the database</li>
+<li><code>if ($parsed_users_verif-&gt;{'error'}-&gt;{'Code'} == "0") {</code> - Check that the error code is returned by the Api</li>
+<li><code>header('Location: https://exemple.com/iotList.php?connexion=0');</code> - Redirects to a page based on the Api response</li>
+</ul>
+<h4 id="explanation_2">Explanation</h4>
+<p>➡️ The script starts a new session and includes the initLink.php file</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="x">session_start();</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="x">include &#39;initLink.php&#39;;</span>
+</code></pre></div>
+<p>➡️ The script checks if email and password are set in the POST request</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="x">if (isset($_POST[&#39;email&#39;]) &amp;&amp; isset($_POST[&#39;password&#39;])) {</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="x">    $email = $_POST[&#39;email&#39;];</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="x">    $mdp = $_POST[&#39;password&#39;];</span>
+</code></pre></div>
+➡️ The script fetches user data from the API using email and password</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="x">$users_verif = file_get_contents($API_link .&quot;/user/&quot; . $email . &quot;/&quot; . $mdp);</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="x">$parsed_users_verif = json_decode($users_verif);</span>
+</code></pre></div>
+➡️ The script prints the raw response data</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="x">echo $users_verif;</span>
+</code></pre></div>
+<p>➡️ The script checks if the response is not empty</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="x">if($users_verif != &quot;&quot;) {</span>
+</code></pre></div>
+<p>➡️ The script checks the response status code and handles it accordingly</p>
+<ul>
+<li>If the status code is 0 (successful login), it sets the session variables and redirects to iotList.php</li>
+<li>If the status code is 30 (wrong password), it unsets the user session and redirects to connect.php with a flag for wrong password</li>
+<li>If the status code is 32 (non-registered user), it unsets the user session and redirects to connect.php with a flag for non-registered user</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="x">if ($parsed_users_verif-&gt;{&#39;error&#39;}-&gt;{&#39;Code&#39;} == &quot;0&quot;) {</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="x">    unset($_SESSION[&quot;Connexion&quot;]);</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="x">    $_SESSION[&quot;user&quot;][&quot;time&quot;] = time();</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="x">    $_SESSION[&quot;user&quot;][&quot;token&quot;] = $parsed_users_verif-&gt;{&#39;user&#39;};</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="x">    header(&#39;Location: https://exemple.com/iotList.php?connexion=0&#39;);</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="x">} elseif ($parsed_users_verif-&gt;{&#39;error&#39;}-&gt;{&#39;Code&#39;} == &quot;30&quot;) {</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="x">    unset($_SESSION[&quot;user&quot;]);</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="x">    header(&#39;Location: https://exemple.com/connect.php?connexion=1&#39;);</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="x">} elseif ($parsed_users_verif-&gt;{&#39;error&#39;}-&gt;{&#39;Code&#39;} == &quot;32&quot;) {</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="x">    unset($_SESSION[&quot;user&quot;]);</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="x">    header(&#39;Location: https://exemple.com/connect.php?connexion=2&#39;);</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="x">}</span>
+</code></pre></div>
+<p>➡️ If the response is empty, the script redirects to connect.php with a flag for API connection lost</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="x">} else {</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="x">    header(&#39;Location: https://exemple.com/connect.php?connexion=4&#39;);</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="x">}</span>
+</code></pre></div>
+<h2 id="iot-list">IOT List</h2>
+<h3 id="iotlistphp">iotList.php</h3>
+<h4 id="using-for">Using for</h4>
+<ul>
+<li>Declare the HTML document with a DOCTYPE and set the language attribute to "en".</li>
+<li>Define the head section, including meta tags, custom styles, and a title.</li>
+<li>Begin the body of the document.</li>
+<li>Include the header template.</li>
+<li>Check if a user session is set and display content accordingly.</li>
+<li>Display a centered title "Trackers List".</li>
+<li>Include the IoTArray template.</li>
+<li>Display a success message if the 'connexion' GET parameter is set.</li>
+<li>Close the content display condition when a user session is set.</li>
+<li>Include the footer template.</li>
+<li>Close the body and HTML tags.</li>
+</ul>
+<h4 id="explanation_3">Explanation</h4>
+<p>➡️ The HTML document is declared with a DOCTYPE and a lang attribute set to "en"</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>➡️ The head section includes meta tags, custom styles, and a title</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">http-equiv</span><span class="o">=</span><span class="s">&quot;X-UA-Compatible&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;IE=edge&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>    <span class="cm">&lt;!-- Custom styles --&gt;</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/style.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;css/mdb.min.css&quot;</span> <span class="p">/&gt;</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Trackers<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>➡️ The body of the document begins</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>➡️ The header template is included</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="x">    </span><span class="cp">&lt;?php</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>        <span class="c1">// Include header template</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>        <span class="k">include</span><span class="p">(</span><span class="s1">&#39;template/header.php&#39;</span><span class="p">);</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>    <span class="cp">?&gt;</span>
+</code></pre></div>
+<p>➡️ The content is displayed if a user session is set</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="x">    </span><span class="cp">&lt;?php</span> <span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">&#39;user&#39;</span><span class="p">]))</span> <span class="p">{</span> <span class="cp">?&gt;</span>
+</code></pre></div>
+<p>➡️ A centered title "Trackers List" is displayed</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>    <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;text-align: center&quot;</span><span class="p">&gt;</span>Trackers List<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</code></pre></div>
+➡️ The IoTArray template is included</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="x">        </span><span class="cp">&lt;?php</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>            <span class="c1">// Include IoTArray template</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>            <span class="k">include</span><span class="p">(</span><span class="s1">&#39;template/IotArray.php&#39;</span><span class="p">);</span>
+</code></pre></div>
+➡️ A success message is displayed if the 'connexion' GET parameter is set</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="x">            // Display success message if &#39;connexion&#39; is set</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="x">            if (isset($_GET[&#39;connexion&#39;])) {</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="x">        ?&gt;</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a><span class="x">                &lt;div class=&quot;alert alert-success mt-4 mb-4 alert_test alert-dismissible&quot; role=&quot;alert&quot;&gt;</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="x">                    Login Successfully !</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="x">                    &lt;a href=&quot;#&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; style=&quot;margin-left: 20px; margin-right: 20px&quot; aria-label=&quot;close&quot;&gt;&lt;i class=&quot;fa-solid fa-xmark&quot;&gt;&lt;/i&gt;&lt;/a&gt;</span>
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a><span class="x">                &lt;/div&gt;</span>
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="x">        </span><span class="cp">&lt;?php</span> 
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>            <span class="p">}</span> 
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>        <span class="cp">?&gt;</span>
+</code></pre></div>
+<p>➡️ The content is closed if a user session is set</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="x">    </span><span class="cp">&lt;?php</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>        <span class="p">}</span>
+</code></pre></div>
+➡️ The footer template is included</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="x">        // Include footer template</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="x">        include(&#39;template/footer.php&#39;);</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="x">    ?&gt;</span>
+</code></pre></div>
+➡️ The body and HTML tags are closed</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<h3 id="templateiotarrayphp">template/iotArray.php</h3>
+<h4 id="using-for_1">Using for</h4>
+<ul>
+<li>Declare the HTML document with a DOCTYPE and set the language attribute to "en".</li>
+<li>Define the head section, including meta tags, custom styles, and a title.</li>
+<li>Begin the body of the document.</li>
+<li>Include the header template.</li>
+<li>Check if a user session is set and display content accordingly.<ul>
+<li>Fetch status and IoT data from a remote server.</li>
+<li>Decode the JSON data into arrays.</li>
+<li>Check if there are no errors in the fetched IoT list.<ul>
+<li>Create an HTML table to display IoT devices and their information.</li>
+<li>Loop through the IoT devices and create a table row for each one.<ul>
+<li>Display the IoT device data in the table row, including its online status.</li>
+<li>Fetch historical data for the current IoT device and display it, or display "NaN" if not available.</li>
+</ul>
+</li>
+<li>Close the loop.</li>
+<li>Close the HTML table.</li>
+</ul>
+</li>
+<li>Display an error message if there are errors in the fetched IoT list.</li>
+</ul>
+</li>
+<li>Display a success message if the 'connexion' GET parameter is set.</li>
+<li>Close the content display condition when a user session is set.</li>
+<li>Include the footer template.</li>
+<li>Close the body and HTML tags.</li>
+</ul>
+<h4 id="explanation_4">Explanation</h4>
+<p>➡️ This code snippet fetches status and IoT data from a remote server and stores them in variables.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="x">$status_list = file_get_contents($API_link .&quot;/status_list/&quot; . $_SESSION[&quot;user&quot;][&quot;token&quot;]);</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="x">$iot_list = file_get_contents($API_link .&quot;/iot_list/&quot; . $_SESSION[&quot;user&quot;][&quot;token&quot;]);</span>
+</code></pre></div>
+➡️ This code snippet decodes the fetched JSON data into arrays.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="x">$parsed_status_list = json_decode($status_list);</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="x">$parsed_iot_list = json_decode($iot_list);</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="x">$extract_iot_list = $parsed_iot_list-&gt;{&#39;trackers&#39;}-&gt;{&#39;iotArray&#39;};</span>
+</code></pre></div>
+➡️ This code checks if there are no errors in the fetched IoT list.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="x">if ($parsed_iot_list-&gt;{&#39;error&#39;}-&gt;{&#39;Code&#39;} == 0) {</span>
+</code></pre></div>
+➡️ This code snippet creates the start of an HTML table.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="x">    echo &quot;&lt;br&gt;&quot;;</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="x">    echo &quot;&lt;div class=&#39;table-responsive&#39;&gt;&quot;;</span>
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="x">    echo &quot;&lt;table class=&#39;table table_modify table-responsive container-xxl mt-5 mb-5&#39;&gt;&quot;;</span>
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="x">    echo     &quot;&lt;thead class=&#39;table-dark table_modify&#39;&gt;&quot;;</span>
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="x">    echo         &quot;&lt;th scope=&#39;col&#39;&gt;#&lt;/th&gt;&quot;;</span>
+<a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a><span class="x">    echo         &quot;&lt;th scope=&#39;col&#39;&gt;Name&lt;/th&gt;&quot;;</span>
+<a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="x">    echo         &quot;&lt;th scope=&#39;col&#39;&gt;Status&lt;/th&gt;&quot;;</span>
+<a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a><span class="x">    echo         &quot;&lt;th scope=&#39;col&#39;&gt;PosX&lt;/th&gt;&quot;;</span>
+<a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a><span class="x">    echo         &quot;&lt;th scope=&#39;col&#39;&gt;PosY&lt;/th&gt;&quot;;</span>
+<a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a><span class="x">    echo         &quot;&lt;th scope=&#39;col&#39;&gt;&lt;/th&gt;&quot;;</span>
+<a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a><span class="x">    echo     &quot;&lt;/thead&gt;&quot;;</span>
+<a id="__codelineno-34-12" name="__codelineno-34-12" href="#__codelineno-34-12"></a><span class="x">    echo     &quot;&lt;tbody&gt;&quot;;</span>
+</code></pre></div>
+➡️ This code snippet loops through the IoT devices and creates a table row for each one.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="x">    for ($i = 0; $i &lt; count($extract_iot_list); $i++) {</span>
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="x">        $id = $i + 1;</span>
+</code></pre></div>
+➡️ This code snippet displays the IoT device data in the table row.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="x">        echo &quot;&lt;tr&gt;&quot;;</span>
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="x">        echo &quot;&lt;th scope=&#39;row&#39;&gt;&quot;, $parsed_iot_list-&gt;{&#39;trackers&#39;}-&gt;{&#39;iotArray&#39;}[$i]-&gt;{&#39;id&#39;}, &quot;&lt;/th&gt;&quot;;</span>
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="x">        echo &quot;&lt;td&gt;&quot;, $parsed_iot_list-&gt;{&#39;trackers&#39;}-&gt;{&#39;iotArray&#39;}[$i]-&gt;{&#39;trackerName&#39;},  &quot;&lt;/td&gt;&quot;;</span>
+</code></pre></div>
+➡️ This code snippet checks the online status of the IoT device and displays it.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="x">        if ($parsed_status_list-&gt;{&#39;status_list&#39;}[$id - 1]-&gt;{&#39;status_online&#39;} == 1) {</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="x">            echo &quot;&lt;td&gt;&lt;i class=&#39;fa-solid fa-check&#39;&gt;&lt;/i&gt; Online !&lt;/td&gt;&quot;;</span>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="x">        } else {</span>
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="x">            echo &quot;&lt;td&gt;&lt;i class=&#39;fa-solid fa-xmark&#39;&gt;&lt;/i&gt; Offline !&lt;/td&gt;&quot;;</span>
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a><span class="x">        }</span>
+</code></pre></div>
+➡️ This code snippet fetches historical data for the current IoT device and displays it.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="x">        $history = file_get_contents($API_link .&quot;/position/history/&quot; . $id . &quot;/&quot;);</span>
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="x">        $parsed_history = json_decode($history);</span>
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>
+<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a><span class="x">        if ($parsed_history-&gt;{&#39;error&#39;}-&gt;{&#39;Code&#39;} == 0) {</span>
+<a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a><span class="x">            echo &quot;&lt;td&gt;&quot;, end($parsed_history-&gt;{&#39;history&#39;})-&gt;{&#39;lat&#39;}, &quot;&lt;/td&gt;&quot;;</span>
+<a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a><span class="x">            echo &quot;&lt;td&gt;&quot;, end($parsed_history-&gt;{&#39;history&#39;})-&gt;{&#39;lon&#39;}, &quot;&lt;/td&gt;&quot;;</span>
+<a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a><span class="x">            echo &quot;&lt;td&gt;&lt;a href=&#39;historique.php?iot=&quot;, ($i + 1),  &quot;&#39;&gt;&quot;,</span>
+<a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a><span class="x">            &quot;&lt;button type=&#39;button&#39; class=&#39;btn button_modify&#39;&gt;  See &quot;,</span>
+<a id="__codelineno-38-9" name="__codelineno-38-9" href="#__codelineno-38-9"></a><span class="x">            &quot;&lt;/button&gt;&lt;/a&gt;&lt;/td&gt;&quot;;</span>
+<a id="__codelineno-38-10" name="__codelineno-38-10" href="#__codelineno-38-10"></a><span class="x">            echo &quot;&lt;/tr&gt;&quot;;</span>
+<a id="__codelineno-38-11" name="__codelineno-38-11" href="#__codelineno-38-11"></a><span class="x">        } else {</span>
+<a id="__codelineno-38-12" name="__codelineno-38-12" href="#__codelineno-38-12"></a><span class="x">            echo &quot;&lt;td&gt; NaN &lt;/td&gt;&quot;;</span>
+<a id="__codelineno-38-13" name="__codelineno-38-13" href="#__codelineno-38-13"></a><span class="x">            echo &quot;&lt;td&gt; NaN &lt;/td&gt;&quot;;</span>
+<a id="__codelineno-38-14" name="__codelineno-38-14" href="#__codelineno-38-14"></a><span class="x">            echo &quot;&lt;td&gt;&lt;button type=&#39;button&#39; class=&#39;btn button_modify&#39; disabled</span>
+</code></pre></div>
+<h2 id="position-history">Position History</h2>
+<h3 id="historiquephp">historique.php</h3>
+<h4 id="using-for_2">Using for</h4>
+<ul>
+<li>Declare and retrieve GET parameters "iot" and "pos".</li>
+<li>Define the HTML document with a DOCTYPE and set the language attribute to "en".</li>
+<li>Define the head section, including meta tags, styles, and scripts for Leaflet and Bootstrap, and a title.</li>
+<li>Begin the body of the document.</li>
+<li>Include the header template.</li>
+<li>Fetch position history from the API and decode the JSON data.</li>
+<li>Check if a user session is set and display content accordingly.<ul>
+<li>Display a centered title "Position History".</li>
+<li>Check if there are no errors in the fetched position history.<ul>
+<li>Create a row with two columns for displaying the map and position array.<ul>
+<li>In the first column, include a div element for the map.</li>
+<li>In the second column, include the PositionArray template.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Close the content display condition when there are no errors in the fetched position history.</li>
+<li>Include the param and map templates.</li>
+</ul>
+</li>
+<li>Close the content display condition when a user session is set.</li>
+<li>Display an error message if there are errors in the fetched position history.</li>
+<li>Include the footer template.</li>
+<li>Close the body and HTML tags.</li>
+</ul>
+<h4 id="explanation_5">Explanation</h4>
+<p>➡️ Retrieve and store GET parameters "iot" and "pos".</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="nv">$iot</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s2">&quot;iot&quot;</span><span class="p">];</span>
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a><span class="nv">$pos</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s2">&quot;pos&quot;</span><span class="p">];</span>
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+➡️ Define the HTML document with a DOCTYPE and set the language attribute to "en".</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>➡️ Define the head section, including meta tags, styles, and scripts for Leaflet and Bootstrap, and a title.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>    ...
+<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>➡️ Begin the body of the document and include the header template.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>    <span class="cp">&lt;?php</span>
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="cp">    include(&#39;template/header.php&#39;);</span>
+<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a><span class="cp">    ...</span>
+<a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+<p>➡️ Fetch position history from the API and decode the JSON data.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="x">    // Get position history from the API</span>
+<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a><span class="x">    $history = file_get_contents($API_link .&quot;/position/history/&quot; . $iot . &quot;/&quot;);</span>
+<a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a><span class="x">    $parsed_history = json_decode($history);</span>
+</code></pre></div>
+<p>➡️ Check if a user session is set and display content accordingly.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="x">    </span><span class="cp">&lt;?php</span> <span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">&#39;user&#39;</span><span class="p">]))</span> <span class="p">{</span> <span class="cp">?&gt;</span>
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a><span class="x">        ...</span>
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a><span class="x">    </span><span class="cp">&lt;?php</span> <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a>        <span class="k">echo</span> <span class="nv">$parsed_history</span><span class="o">-&gt;</span><span class="p">{</span><span class="s1">&#39;error&#39;</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="s1">&#39;Message&#39;</span><span class="p">};</span>
+<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a>    <span class="p">}</span>
+<a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+➡️ Display a centered title "Position History".</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>        <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;text-align: center&quot;</span><span class="p">&gt;</span>Position History<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>➡️ Check if there are no errors in the fetched position history and create a row with two columns for displaying the map and position array.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="x">        </span><span class="cp">&lt;?php</span> <span class="k">if</span> <span class="p">(</span><span class="nv">$parsed_history</span><span class="o">-&gt;</span><span class="p">{</span><span class="s1">&#39;error&#39;</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="s1">&#39;Code&#39;</span><span class="p">}</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="cp">?&gt;</span>
+<a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a><span class="x">            &lt;div class=&quot;row mb-5 history&quot;&gt;</span>
+<a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a><span class="x">                ...</span>
+<a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a><span class="x">            &lt;/div&gt;</span>
+<a id="__codelineno-46-5" name="__codelineno-46-5" href="#__codelineno-46-5"></a><span class="x">            </span><span class="cp">&lt;?php</span>
+<a id="__codelineno-46-6" name="__codelineno-46-6" href="#__codelineno-46-6"></a>        <span class="p">}</span>
+</code></pre></div>
+<p>➡️ In the first column, include a div element for the map.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col mt-5&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a>                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;img-fluid&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a>                        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;map&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;min-height: 700px&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-47-4" name="__codelineno-47-4" href="#__codelineno-47-4"></a>                    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-47-5" name="__codelineno-47-5" href="#__codelineno-47-5"></a>                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>➡️ In the second column, include the PositionArray template.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col mt-5&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a>                    <span class="cp">&lt;?php include(&#39;template/PositionArray.php&#39;); ?&gt;</span>
+<a id="__codelineno-48-3" name="__codelineno-48-3" href="#__codelineno-48-3"></a>                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>➡️ Include the param and map templates.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="x">        include(&#39;template/param.php&#39;);</span>
+<a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a><span class="x">        include(&#39;template/map.php&#39;);</span>
+</code></pre></div>
+<p>➡️ Display an error message if there are errors in the fetched position history.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="x">    } else {</span>
+<a id="__codelineno-50-2" name="__codelineno-50-2" href="#__codelineno-50-2"></a><span class="x">        echo $parsed_history-&gt;{&#39;error&#39;}-&gt;{&#39;Message&#39;};</span>
+<a id="__codelineno-50-3" name="__codelineno-50-3" href="#__codelineno-50-3"></a><span class="x">    }</span>
+</code></pre></div>
+<p>➡️ Include the footer template and close the body and HTML tags.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a>    include(&#39;template/footer.php&#39;);
+<a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a>    ?&gt;
+<a id="__codelineno-51-3" name="__codelineno-51-3" href="#__codelineno-51-3"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-51-4" name="__codelineno-51-4" href="#__codelineno-51-4"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+<h3 id="templatepositionarrayphp">template/PositionArray.php</h3>
+<h4 id="using-for_3">Using for</h4>
+<ul>
+<li>Declare and retrieve GET parameters "iot" and "pos".</li>
+<li>Define the HTML document with a DOCTYPE and set the language attribute to "en".</li>
+<li>Define the head section, including meta tags, styles, and scripts for Leaflet and Bootstrap, and a title.</li>
+<li>Begin the body of the document.</li>
+<li>Include the header template.</li>
+<li>Fetch position history from the API and decode the JSON data.</li>
+<li>Check if a user session is set and display content accordingly.<ul>
+<li>Display a centered title "Position History".</li>
+<li>Check if there are no errors in the fetched position history.<ul>
+<li>Create a row with two columns for displaying the map and position array.<ul>
+<li>In the first column, include a div element for the map.</li>
+<li>In the second column, include the PositionArray template.</li>
+</ul>
+</li>
+<li>Close the content display condition when there are no errors in the fetched position history.</li>
+<li>Include the param and map templates.</li>
+</ul>
+</li>
+<li>Close the content display condition when a user session is set.</li>
+</ul>
+</li>
+<li>Display an error message if there are errors in the fetched position history.</li>
+<li>Include the footer template.</li>
+<li>Close the body and HTML tags.</li>
+</ul>
+<h4 id="explanation_6">Explanation</h4>
+<p>➡️ Check if there are no errors in the fetched position history.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="cp">&lt;?php</span>
+<a id="__codelineno-52-2" name="__codelineno-52-2" href="#__codelineno-52-2"></a><span class="k">if</span> <span class="p">(</span><span class="nv">$parsed_history</span><span class="o">-&gt;</span><span class="p">{</span><span class="s1">&#39;error&#39;</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="s1">&#39;Code&#39;</span><span class="p">}</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-52-3" name="__codelineno-52-3" href="#__codelineno-52-3"></a>    <span class="o">...</span>
+<a id="__codelineno-52-4" name="__codelineno-52-4" href="#__codelineno-52-4"></a><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<a id="__codelineno-52-5" name="__codelineno-52-5" href="#__codelineno-52-5"></a>    <span class="k">echo</span> <span class="nv">$parsed_history</span><span class="o">-&gt;</span><span class="p">{</span><span class="s1">&#39;error&#39;</span><span class="p">}</span><span class="o">-&gt;</span><span class="p">{</span><span class="s1">&#39;Message&#39;</span><span class="p">};</span>
+<a id="__codelineno-52-6" name="__codelineno-52-6" href="#__codelineno-52-6"></a><span class="p">}</span>
+<a id="__codelineno-52-7" name="__codelineno-52-7" href="#__codelineno-52-7"></a><span class="cp">?&gt;</span>
+</code></pre></div>
+➡️ Retrieve and store GET parameters "iot" and "pos" and fetch safezone data from the API, then store its latitude and longitude in cookies.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="x">    // Get the iot device&#39;s key from the URL</span>
+<a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a><span class="x">    $iot = $_GET[&quot;iot&quot;];</span>
+<a id="__codelineno-53-3" name="__codelineno-53-3" href="#__codelineno-53-3"></a><span class="x">    $pos = $_GET[&quot;pos&quot;];</span>
+<a id="__codelineno-53-4" name="__codelineno-53-4" href="#__codelineno-53-4"></a><span class="x">    $safezone = file_get_contents($API_link . &quot;/position/safezone/&quot; . $iot . &quot;/&quot;);</span>
+<a id="__codelineno-53-5" name="__codelineno-53-5" href="#__codelineno-53-5"></a><span class="x">    $safezone_Json = json_decode($safezone);</span>
+<a id="__codelineno-53-6" name="__codelineno-53-6" href="#__codelineno-53-6"></a><span class="x">    $_COOKIE[&#39;safezone&#39;][&#39;lat&#39;] = $safezone_Json-&gt;{&#39;safezone&#39;}-&gt;{&#39;lat&#39;};</span>
+<a id="__codelineno-53-7" name="__codelineno-53-7" href="#__codelineno-53-7"></a><span class="x">    $_COOKIE[&#39;safezone&#39;][&#39;lon&#39;] = $safezone_Json-&gt;{&#39;safezone&#39;}-&gt;{&#39;lon&#39;};</span>
+</code></pre></div>
+➡️ Extract position history data from the decoded JSON data.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="x">    $extract_pos = json_decode($history)-&gt;{&#39;history&#39;};</span>
+</code></pre></div>
+➡️ Create a responsive Bootstrap table with a custom scrollbar.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;table-responsive table-wrapper-scroll-y my-custom-scrollbar&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-55-2" name="__codelineno-55-2" href="#__codelineno-55-2"></a>        <span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;table table_modify container-xxl&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-55-3" name="__codelineno-55-3" href="#__codelineno-55-3"></a>            ...
+<a id="__codelineno-55-4" name="__codelineno-55-4" href="#__codelineno-55-4"></a>        <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+<a id="__codelineno-55-5" name="__codelineno-55-5" href="#__codelineno-55-5"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+➡️ Define table headers for date, latitude, longitude, and an empty header for a button.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a>            <span class="p">&lt;</span><span class="nt">thead</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;table-dark table_modify&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-56-2" name="__codelineno-56-2" href="#__codelineno-56-2"></a>                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&quot;col&quot;</span><span class="p">&gt;</span>Date<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+<a id="__codelineno-56-3" name="__codelineno-56-3" href="#__codelineno-56-3"></a>                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&quot;col&quot;</span><span class="p">&gt;</span>Latitude<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+<a id="__codelineno-56-4" name="__codelineno-56-4" href="#__codelineno-56-4"></a>                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&quot;col&quot;</span><span class="p">&gt;</span>Longitude<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+<a id="__codelineno-56-5" name="__codelineno-56-5" href="#__codelineno-56-5"></a>                <span class="p">&lt;</span><span class="nt">th</span> <span class="na">scope</span><span class="o">=</span><span class="s">&quot;col&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+<a id="__codelineno-56-6" name="__codelineno-56-6" href="#__codelineno-56-6"></a>            <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+</code></pre></div>
+➡️ Loop through the history data in reverse order and create table rows with extracted information.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a><span class="x">            &lt;tbody&gt;</span>
+<a id="__codelineno-57-2" name="__codelineno-57-2" href="#__codelineno-57-2"></a><span class="x">                </span><span class="cp">&lt;?php</span>
+<a id="__codelineno-57-3" name="__codelineno-57-3" href="#__codelineno-57-3"></a>                <span class="c1">// Loop through the history data and create table rows</span>
+<a id="__codelineno-57-4" name="__codelineno-57-4" href="#__codelineno-57-4"></a>                <span class="k">for</span> <span class="p">(</span><span class="nv">$i</span> <span class="o">=</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$extract_pos</span><span class="p">);</span> <span class="nv">$i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$i</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+<a id="__codelineno-57-5" name="__codelineno-57-5" href="#__codelineno-57-5"></a>                <span class="cp">?&gt;</span>
+<a id="__codelineno-57-6" name="__codelineno-57-6" href="#__codelineno-57-6"></a><span class="x">                    ...</span>
+<a id="__codelineno-57-7" name="__codelineno-57-7" href="#__codelineno-57-7"></a><span class="x">                </span><span class="cp">&lt;?php</span>
+<a id="__codelineno-57-8" name="__codelineno-57-8" href="#__codelineno-57-8"></a>                <span class="p">}</span>
+<a id="__codelineno-57-9" name="__codelineno-57-9" href="#__codelineno-57-9"></a>                <span class="cp">?&gt;</span>
+<a id="__codelineno-57-10" name="__codelineno-57-10" href="#__codelineno-57-10"></a><span class="x">            &lt;/tbody&gt;</span>
+</code></pre></div>
+➡️ For each table row, display date, latitude, longitude, and a "See" button linking to the "historique.php" page with "iot" and "pos" parameters.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a>                    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a id="__codelineno-58-2" name="__codelineno-58-2" href="#__codelineno-58-2"></a>                        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span> ... <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-58-3" name="__codelineno-58-3" href="#__codelineno-58-3"></a>                        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span> ... <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-58-4" name="__codelineno-58-4" href="#__codelineno-58-4"></a>                        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span> ... <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-58-5" name="__codelineno-58-5" href="#__codelineno-58-5"></a>                        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/historique.php?iot=&lt;?php echo $iot ?&gt;&amp;pos=&lt;?php echo $i - 1 ?&gt;&quot;</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn button_modify&quot;</span><span class="p">&gt;</span> See <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a id="__codelineno-58-6" name="__codelineno-58-6" href="#__codelineno-58-6"></a>                    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</code></pre></div>
+➡️ Add "Global" and "Exporter" buttons below the table, both linking to the "historique.php" page with the "iot" parameter.</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>    <span class="cm">&lt;!-- &quot;Global&quot; and &quot;Exporter&quot; buttons --&gt;</span>
+<a id="__codelineno-59-2" name="__codelineno-59-2" href="#__codelineno-59-2"></a>    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/historique.php?iot=&lt;?php echo $iot ?&gt;&quot;</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn button_modify&quot;</span><span class="p">&gt;</span> Global <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<a id="__codelineno-59-3" name="__codelineno-59-3" href="#__codelineno-59-3"></a>    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;php/download.php?iot=&lt;?php echo $iot ?&gt;&quot;</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn button_modify&quot;</span><span class="p">&gt;</span> Export <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</code></pre></div>
+➡️ Display an error message if there are errors in the fetched position history.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="x">} else {</span>
+<a id="__codelineno-60-2" name="__codelineno-60-2" href="#__codelineno-60-2"></a><span class="x">    echo $parsed_history-&gt;{&#39;error&#39;}-&gt;{&#39;Message&#39;};</span>
+<a id="__codelineno-60-3" name="__codelineno-60-3" href="#__codelineno-60-3"></a><span class="x">}</span>
+</code></pre></div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2023 <a href="https://github.com/gamard912"  target="_blank" rel="noopener">BENNANE Zoubir</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/gamard912" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fac441b0.min.js"></script>
+      
+    
+  </body>
+</html>
