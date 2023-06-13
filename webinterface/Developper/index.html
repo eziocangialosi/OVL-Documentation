@@ -8,18 +8,16 @@
       
       
       
-        <link rel="canonical" href="https://doc.ovl-website.org/webinterface/Developper/">
-      
       
         <link rel="prev" href="..">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.9">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.9">
     
     
       
-        <title>Developper Documentation - OVL-Doc WebInterface</title>
+        <title>Developper Documentation - OVL-Website</title>
       
     
     
@@ -85,7 +83,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="OVL-Doc WebInterface" class="md-header__button md-logo" aria-label="OVL-Doc WebInterface" data-md-component="logo">
+    <a href=".." title="OVL-Website" class="md-header__button md-logo" aria-label="OVL-Website" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -98,7 +96,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            OVL-Doc WebInterface
+            OVL-Website
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -238,13 +236,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="OVL-Doc WebInterface" class="md-nav__button md-logo" aria-label="OVL-Doc WebInterface" data-md-component="logo">
+    <a href=".." title="OVL-Website" class="md-nav__button md-logo" aria-label="OVL-Website" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    OVL-Doc WebInterface
+    OVL-Website
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -1118,7 +1116,7 @@
 ➡️ Add "Global" and "Exporter" buttons below the table, both linking to the "historique.php" page with the "iot" parameter.</p>
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a>    <span class="cm">&lt;!-- &quot;Global&quot; and &quot;Exporter&quot; buttons --&gt;</span>
 <a id="__codelineno-59-2" name="__codelineno-59-2" href="#__codelineno-59-2"></a>    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/historique.php?iot=&lt;?php echo $iot ?&gt;&quot;</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn button_modify&quot;</span><span class="p">&gt;</span> Global <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-<a id="__codelineno-59-3" name="__codelineno-59-3" href="#__codelineno-59-3"></a>    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;/historique.php?iot=&lt;?php echo $iot ?&gt;&quot;</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn button_modify&quot;</span><span class="p">&gt;</span> Export <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<a id="__codelineno-59-3" name="__codelineno-59-3" href="#__codelineno-59-3"></a>    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;php/download.php?iot=&lt;?php echo $iot ?&gt;&quot;</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn button_modify&quot;</span><span class="p">&gt;</span> Export <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </code></pre></div>
 ➡️ Display an error message if there are errors in the fetched position history.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="x">} else {</span>
@@ -1154,7 +1152,6 @@
   
     <div class="md-copyright__highlight">
       &copy; 2023 <a href="https://github.com/gamard912"  target="_blank" rel="noopener">BENNANE Zoubir</a>
-
     </div>
   
   

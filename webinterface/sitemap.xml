@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://doc.ovl-website.org/webinterface/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <loc>None</loc>
+         <lastmod>2023-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://doc.ovl-website.org/webinterface/Developper/</loc>
-         <lastmod>2023-05-08</lastmod>
+         <loc>None</loc>
+         <lastmod>2023-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
